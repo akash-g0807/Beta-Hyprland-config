@@ -1,0 +1,19 @@
+2023-05-14 05:30:14.185 [info] Log level: Info
+2023-05-14 05:30:14.185 [info] Validating found git in: "git"
+2023-05-14 05:30:14.185 [info] Using git "2.40.1" from "git"
+2023-05-14 05:30:14.185 [info] > git rev-parse --show-toplevel [8ms]
+2023-05-14 05:30:14.185 [info] > git rev-parse --git-dir --git-common-dir [9ms]
+2023-05-14 05:30:14.185 [info] Open repository: /home/akashg/Documents/Beta-Hyprland-config
+2023-05-14 05:30:14.193 [info] > git rev-parse --show-toplevel [11ms]
+2023-05-14 05:30:14.216 [info] > git rev-parse --show-toplevel [17ms]
+2023-05-14 05:30:14.224 [info] > git config --get commit.template [31ms]
+2023-05-14 05:30:14.236 [info] > git rev-parse --show-toplevel [14ms]
+2023-05-14 05:30:14.244 [info] No remotes found in the git config file.
+2023-05-14 05:30:14.252 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2023-05-14 05:30:14.392 [info] > git status -z -uall [133ms] (cancelled)
+2023-05-14 05:30:14.731 [info] > git check-ignore -v -z --stdin [12ms]
+2023-05-14 05:30:19.460 [info] > git config --get commit.template [4ms]
+2023-05-14 05:30:20.248 [info] No remotes found in the git config file.
+2023-05-14 05:30:20.249 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2023-05-14 05:30:20.480 [info] > git status -z -uall [222ms] (cancelled)
+2023-05-14 05:30:22.329 [info] > git check-ignore -v -z --stdin [46ms]

@@ -31,7 +31,7 @@ window:
 
 import:
   # uncomment the flavour you want below:
-  - ~/.config/alacritty/theme.yml
+  -  ~/.config/alacritty/theme.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml

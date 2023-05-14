@@ -1,0 +1,6 @@
+2023-05-14 08:47:54.995 [info] Running tunnel CLI
+2023-05-14 08:47:54.995 [info] status Spawning: /opt/visual-studio-code/bin/code-tunnel tunnel status
+2023-05-14 08:47:55.031 [info] [2023-05-14 08:47:55] error no tunnel process is currently running
+
+2023-05-14 08:47:55.033 [info] status exit(20617): + 1 
+2023-05-14 08:47:55.033 [info] No other tunnel running

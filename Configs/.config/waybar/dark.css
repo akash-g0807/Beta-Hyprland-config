@@ -127,6 +127,7 @@ tooltip {
     border-radius: 10px;
     margin-left: 60px;
     margin-right: 60px;
+    color: #B7D3EE;
 }
 
 #clock {
@@ -176,6 +177,7 @@ tooltip {
     border-radius: 0px 10px 10px 0px;
     border-right: 0px;
     margin-left: 0px;
+    color: #B4D3EC;
 }
 
 

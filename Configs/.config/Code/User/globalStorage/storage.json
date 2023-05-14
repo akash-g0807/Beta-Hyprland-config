@@ -3,12 +3,13 @@
     "profileAssociations": {
         "workspaces": {
             "file:///home/akashg/Downloads/hyprdots/Configs/.config/waybar": "__default__profile__",
-            "file:///home/akashg/Downloads/hyprland-config/.config/waybar": "__default__profile__"
+            "file:///home/akashg/Downloads/hyprland-config/.config/waybar": "__default__profile__",
+            "file:///home/akashg/Documents/Beta-Hyprland-config": "__default__profile__",
+            "file:///home/akashg/.config/waybar/waybar": "__default__profile__",
+            "file:///home/akashg/.config/waybar": "__default__profile__"
         },
         "emptyWindows": {
-            "1684034554151": "__default__profile__",
-            "1684034709135": "__default__profile__",
-            "1684035508625": "__default__profile__"
+            "1684048131878": "__default__profile__"
         }
     },
     "profileAssociationsMigration": true,
@@ -17,21 +18,15 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/akashg/Downloads/hyprdots/Configs/.config/waybar"
+                "folderUri": "file:///home/akashg/.config/waybar/waybar"
             },
             {
-                "folderUri": "file:///home/akashg/Downloads/hyprland-config/.config/waybar"
+                "folderUri": "file:///home/akashg/.config/waybar"
             }
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1684034554151"
-            },
-            {
-                "backupFolder": "1684034709135"
-            },
-            {
-                "backupFolder": "1684035508625"
+                "backupFolder": "1684048131878"
             }
         ]
     },
@@ -83,12 +78,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/akashg/Downloads/hyprland-config/.config/waybar",
-                                        "path": "/home/akashg/Downloads/hyprland-config/.config/waybar",
+                                        "external": "file:///home/akashg/.config/waybar",
+                                        "path": "/home/akashg/.config/waybar",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Downloads/hyprland-config/.config/waybar"
+                                    "label": "~/.config/waybar"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/akashg/Documents/Beta-Hyprland-config",
+                                        "path": "/home/akashg/Documents/Beta-Hyprland-config",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Beta-Hyprland-config"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -100,6 +106,42 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Downloads/hyprdots/Configs/.config/waybar"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/akashg/Downloads/hyprland-config/.config/waybar",
+                                        "path": "/home/akashg/Downloads/hyprland-config/.config/waybar",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/hyprland-config/.config/waybar"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/akashg/Documents/Beta-Hyprland-config/Configs/.config/waybar/light.css",
+                                        "path": "/home/akashg/Documents/Beta-Hyprland-config/Configs/.config/waybar/light.css",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Beta-Hyprland-config/Configs/.config/waybar/light.css"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/akashg/.config/qt5ct/colors/dark.conf",
+                                        "path": "/home/akashg/.config/qt5ct/colors/dark.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/qt5ct/colors/dark.conf"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1645,15 +1687,15 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 300,
+            "sideBarWidth": 170,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/akashg/Downloads/hyprdots/Configs/.config/waybar",
-            "backupPath": "/home/akashg/.config/Code/Backups/f95c687b4f8378542a1b4a71e800bb3c",
+            "folder": "file:///home/akashg/.config/waybar",
+            "backupPath": "/home/akashg/.config/Code/Backups/002ee7e4151e06d076cb9050a4c73118",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -1662,29 +1704,6 @@
                 "height": 1015
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/akashg/Downloads/hyprdots/Configs/.config/waybar",
-                "backupPath": "/home/akashg/.config/Code/Backups/f95c687b4f8378542a1b4a71e800bb3c",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1906,
-                    "height": 1015
-                }
-            },
-            {
-                "folder": "file:///home/akashg/Downloads/hyprland-config/.config/waybar",
-                "backupPath": "/home/akashg/.config/Code/Backups/e1def87fb4cb61be97ad8a4a088ed7d8",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1906,
-                    "height": 1015
-                }
-            }
-        ]
+        "openedWindows": []
     }
 }
