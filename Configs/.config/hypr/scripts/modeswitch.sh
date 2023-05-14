@@ -53,3 +53,5 @@ killall -SIGUSR2 waybar
 
 ## Alacritty ##
 ln -fs $CFGDIR/alacritty/${S_MODE}.yml $CFGDIR/alacritty/theme.yml
+
+hyprctl reload
