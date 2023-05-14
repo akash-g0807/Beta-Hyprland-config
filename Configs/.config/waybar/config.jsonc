@@ -10,6 +10,7 @@
         "clock",
         "custom/weather",
 	"custom/cava-internal",
+	"custom/wallchange",
         "wlr/workspaces"
     ],
     "modules-center": ["hyprland/window"],
@@ -201,6 +202,22 @@
             "paused": "󰏦",
             "stopped": ""
         }
+    },
+
+    "custom/wallchange": {
+        "format": "{}",
+        "exec": "~/.config/swww/swwwallpaper.sh -t",
+        "on-click": "~/.config/swww/swwwallpaper.sh -n",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+
+    "custom/mode": {
+        "format": "{}",
+        "exec": "echo ; echo 󰟡 switch mode",
+        "on-click": "~/.config/hypr/scripts/modeswitch.sh switch",
+        "interval" : 86400, // once every day
+        "tooltip": true
     }
 
 
