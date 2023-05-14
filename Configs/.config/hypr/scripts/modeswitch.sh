@@ -50,3 +50,6 @@ killall -SIGUSR1 kitty
 ln -fs $CFGDIR/waybar/${S_MODE}.css $CFGDIR/waybar/style.css
 sleep 1
 killall -SIGUSR2 waybar
+
+## Alacritty ##
+ln -fs $CFGDIR/alacritty/${S_MODE}.yml $CFGDIR/alacritty/theme.yml
