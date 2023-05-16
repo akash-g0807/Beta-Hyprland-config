@@ -8,7 +8,6 @@
 - replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general
 - Make a tutorial on how to use config
 
-# Installation tutorial
 
 # Installation tutorial
 
@@ -25,6 +24,12 @@
 7. Copy `.themes` and `.icons` to `home` directory
     - `cp -r .thmes ~/`
     - `cp -r .icons ~/`
+8. Restore symlinks
+    - Go to the `Scripts` folder: `cd ../Scripts`
+    - Run `restore_lnk.sh`: `./restore_lnk.sh`
+
+# Post Installation
+1. Go so
 
 # Shortcuts Guide
 
