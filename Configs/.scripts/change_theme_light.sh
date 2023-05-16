@@ -8,5 +8,4 @@ sed -ri 's/gtk-cursor-theme-name=.*/gtk-cursor-theme-name=Nordzy-cursors-white/g
 
 flatpak --user override --env=GTK_THEME=Catppuccin-Latte-Standard-Blue-Light
 flatpak --user override --env=ICON_THEME=Papirus-Light
-flatpak --user override --env=ICON_THEME=Nordzy-cursors-white
-flatpak --user override --filesystem=/home/$USER/.icons/:ro
+flatpak --user override --env=XCURSOR_THEME=Nordzy-cursors-white
