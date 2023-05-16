@@ -88,6 +88,14 @@
 | Move Window into group (in up direction)    | `SUPER + ALT + UP`    |
 | Move Window out of group                    | `SUPER + ALT + M`     |
 
+# Mouse Bindings
+
+| Action                                      | Shortcut                     |
+|---------------------------------------------|------------------------------|
+| Move Window                                 | `SUPER + LEFT CLICK + DRAG`  |
+| Resize Window                               | `SUPER + RIGHT CLICK + DRAG` |
+| Move to next workspace                      | `SUPER + SCROLL DOWN`        |
+| Move to previous work space                 | `SUPER + SCROLL UP`          |
 
 # Hyprland Screenshot
 ![Hyprland Screenshot](Assets/Screenshot.png)
