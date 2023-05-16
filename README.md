@@ -62,10 +62,8 @@
 # Master Stack Specific Shortcuts
 | Action                                  | Shortcut            |
 |-----------------------------------------|---------------------|
-| Pseudo tile                             | `SUPER + Q`         |
-| Toggle Split                            | `SUPER + S`         |
 | Swap with Master                        | `SUPER + SHIFT + M` |
-| Add t0 Master                           | `SUPER + A`         |
+| Add to Master                           | `SUPER + A`         |
 | Remove from Master                      | `SUPER + X`         |
 | Cycle through Windows                   | `SUPER + J`         |
 | Cycle through Windows in reverse        | `SUPER + K`         |
