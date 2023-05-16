@@ -25,29 +25,30 @@
 # Lock Screen
 | Action                     | Shortcut            |
 |----------------------------|---------------------|
-| Lock Screen (swaylock)     | `SUPER + L`         |
+| Lock Screen (swaylock)     | `SUPER + SHIFT + L` |
 
 # Window Management
 - Default Layout is Master and Stack Layout
 
-| Action              | Shortcut                |
-|---------------------|-------------------------|
-| Move Focus Up       | `SUPER + Up`            |
-| Move Focus Down     | `SUPER + Down`          |
-| Move Focus Left     | `SUPER + Left`          |
-| Move Focus Right    | `SUPER + Right`         |
-| Fullscreen          | `SUPER + F`             |
-| Move Window Up      | `SUPER + SHIFT + UP`    |
-| Move Window Down    | `SUPER + SHIFT + DOWN`  |
-| Move Window Left    | `SUPER + SHIFT + LEFT`  |
-| Move Window Eight   | `SUPER + SHIFT + RIGHT` |
-| Resize Window Up    | `SUPER + CTRL + UP`     |
-| Resize Window Down  | `SUPER + CTRL + DOWN`   |
-| Resize Window Left  | `SUPER + CTRL + LEFT`   |
-| Resize Window Right | `SUPER + CTRL + RIGHT`  |
-| Kill Active Window  | `SUPER + C`             |
-| Toggle Floating     | `SUPER + V`             |
-| Change Layout       | `SUPER + M`             |
+| Action                | Shortcut                |
+|-----------------------|-------------------------|
+| Move Focus Up         | `SUPER + UP`            |
+| Move Focus Down       | `SUPER + DOWN`          |
+| Move Focus Left       | `SUPER + LEFT`          |
+| Move Focus Right      | `SUPER + RIGHT`         |
+| Fullscreen            | `SUPER + F`             |
+| Move Window Up        | `SUPER + SHIFT + UP`    |
+| Move Window Down      | `SUPER + SHIFT + DOWN`  |
+| Move Window Left      | `SUPER + SHIFT + LEFT`  |
+| Move Window Eight     | `SUPER + SHIFT + RIGHT` |
+| Swap with next window | `SUPER + SHIFT + N`     |
+| Resize Window Up      | `SUPER + CTRL + UP`     |
+| Resize Window Down    | `SUPER + CTRL + DOWN`   |
+| Resize Window Left    | `SUPER + CTRL + LEFT`   |
+| Resize Window Right   | `SUPER + CTRL + RIGHT`  |
+| Kill Active Window    | `SUPER + C`             |
+| Toggle Floating       | `SUPER + V`             |
+| Change Layout         | `SUPER + M`             |
 
 ## Dwindle Specific Shortcuts
 | Action          | Shortcut                     |
@@ -57,7 +58,7 @@
 | Preselect Up    | `SUPER + CTRL + ALT + UP`    |
 | Preselect Down  | `SUPER + CTRL + ALT + DOWN`  |
 | Preselect Left  | `SUPER + CTRL + ALT + LEFT`  |
-| Preselect Right | `SUPER + CTRL + ALT + Right` |
+| Preselect Right | `SUPER + CTRL + ALT + RIGHT` |
 
 # Master Stack Specific Shortcuts
 | Action                                  | Shortcut            |
@@ -70,6 +71,23 @@
 | Cycle through Master Layouts            | `SUPER + SHIFT + .` |
 | Cycle through Master Layouts in reverse | `SUPER + SHIFT + ,` |
 | Focus Master Window                     | `SUPER + CTRL + ,`  |
+
+## Tabbed/Grouped Layout Shortcuts
+
+- Works in both Master and Dwindle
+
+| Action                                      | Shortcut              |
+|---------------------------------------------|-----------------------|
+| Toggle Group                                | `SUPER + G`           |
+| Change active Window in group               | `SUPER + TAB`         |
+| Change active Window in group in reverse    | `SUPER + SHIFT + TAB` |
+| Lock Groups                                 | `SUPER + L`           |
+| Move Window into group (in left direction)  | `SUPER + ALT + LEFT`  |
+| Move Window into group (in right direction) | `SUPER + ALT + RIGHT` |
+| Move Window into group (in down direction)  | `SUPER + ALT + DOWN`  |
+| Move Window into group (in up direction)    | `SUPER + ALT + UP`    |
+| Move Window out of group                    | `SUPER + ALT + M`     |
+
 
 # Hyprland Screenshot
 ![Hyprland Screenshot](Assets/Screenshot.png)
