@@ -28,8 +28,22 @@
     - Go to the `Scripts` folder: `cd ../Scripts`
     - Run `restore_lnk.sh`: `./restore_lnk.sh`
 
-# Post Installation
-1. Go so
+# Post Installation (optional but reccommended)
+1. Install flatpak:
+    - `sudo pacman -Syu flatpak`
+    - Run `flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
+    - Then `cd ~/.scripts` and run `./flatpak_file_override.sh` to give flatpaks access to `~/.themes` and `~/.icons`
+
+2. Install `auto-cpufreq`:
+    - `yay -S auto-cpufreq`
+    - Enable systemd service: `systemctl enable --now auto-cpufreq.service`
+
+3. Install TLP (refer to [Arch Wiki](https://wiki.archlinux.org/title/TLP) for more info):
+    - `yay -S tlp-git tlp-rdw-git ethtool` (git version has given me a better time)
+    - Enable/Start systemd service: `systemctl enable tlp.service` and `systemctl start tlp.service`
+    - Mask rfkill service andd socket: `systemctl mask rfkill.service` and `systemctl mask rfkill.socket`
+    - `systemctl enable NetworkManager-dispatcher.service` to use `tlp-rdw`     
+    (if TLP gices any trouble please see Troubleshooting section)
 
 # Shortcuts Guide
 
