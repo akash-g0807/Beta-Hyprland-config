@@ -97,6 +97,25 @@
 | Move to next workspace                      | `SUPER + SCROLL DOWN`        |
 | Move to previous work space                 | `SUPER + SCROLL UP`          |
 
+# Screenshot and Screen Recording
+
+## Screenshot
+
+| Action                                                      | Shortcut                                        |
+|-------------------------------------------------------------|-------------------------------------------------|
+| Take screenshot of entire screen                            | `PRINT SCREEN`                                  |
+| Take screenshot of entire screen and annotate (with swappy) | `SUPER + SHIFT + PRINT SCREEN`                  |
+| Take screenshot of a particular area                        | `SUPER + SHIFT + S` and `DRAG`                  |
+| Take screenshot of a particular Window                      | `SUPER + SHIFT + S`  and  `CLICK` on the window |
+
+## Recording Screen
+
+| Record Entire Screen                                            | `SUPER + CTRL + PRINT SCREEN`                    |
+| Record Particular Window                                        | `SUPER + CTRL + SHIFT + W` and `CLICK` on Window |
+| Record particular area                                          | `SUPER + CTRL + SHIFT + S` + `DRAG`              |
+| Stop Recording (applies when the either of the above is active) | `SUPER + CTRL + PRINT SCREEN`                    |
+
+
 # Hyprland Screenshot
 ![Hyprland Screenshot](Assets/Screenshot.png)
 
