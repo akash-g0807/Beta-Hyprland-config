@@ -8,6 +8,24 @@
 - replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general
 - Make a tutorial on how to use config
 
+# Installation tutorial
+
+# Installation tutorial
+
+1. First clone the repo by running the command: `git clone https://github.com/akash-g0807/Beta-Hyprland-config.git`
+2. Then install yay (AUR helper):
+    - cd into `Scripts` directory: `cd scripts`
+    - Run `install_yay.sh`: `./install_yay.sh` 
+3. Then install the packages by running install `install_pkg.sh`: `./install_pkg.sh`
+4. cd into `Configs` directory (this command is from `Scripts` directory): `cd ../Configs`
+5. Copy configs into `home` directory:
+    - `cp -r .config ~/`
+    - `cp -r .scripts ~/`
+6. cd into `Themes_Icons` directory (this command is run from Configs directory): `cd ../Themes_Icons`
+7. Copy `.themes` and `.icons` to `home` directory
+    - `cp -r .thmes ~/`
+    - `cp -r .icons ~/`
+
 # Shortcuts Guide
 
 ## General Shortcuts
@@ -123,3 +141,6 @@
 ![Hyprland Screenshot](Assets/Screenshot.png)
 
 ![Hyprland Screenshot](Assets/ScreenshotLight.png)
+
+# Aknowledgements
+Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scripts I could use to make my install
