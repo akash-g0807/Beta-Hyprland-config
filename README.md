@@ -60,7 +60,7 @@
 | Preselect Left  | `SUPER + CTRL + ALT + LEFT`  |
 | Preselect Right | `SUPER + CTRL + ALT + RIGHT` |
 
-# Master Stack Specific Shortcuts
+## Master Stack Specific Shortcuts
 | Action                                  | Shortcut            |
 |-----------------------------------------|---------------------|
 | Swap with Master                        | `SUPER + SHIFT + M` |
@@ -72,7 +72,7 @@
 | Cycle through Master Layouts in reverse | `SUPER + SHIFT + ,` |
 | Focus Master Window                     | `SUPER + CTRL + ,`  |
 
-## Tabbed/Grouped Layout Shortcuts
+### Tabbed/Grouped Layout Shortcuts
 
 - Works in both Master and Dwindle
 
