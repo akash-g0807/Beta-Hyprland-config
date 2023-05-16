@@ -20,3 +20,8 @@
 | Open File Manager (Thunar) | `SUPER + T`         |
 | Open swaync control center | `SUPER + SHIFT + I` |
 | Open nwg-drawer            | `SUPER + D`         |
+
+# Lock Screen
+| Action                     | Shortcut            |
+|----------------------------|---------------------|
+| Lock Screen (swaylock)     | `SUPER + L`         |
