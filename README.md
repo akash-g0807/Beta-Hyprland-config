@@ -110,6 +110,8 @@
 
 ## Recording Screen
 
+| Action                                                          | Shortcut                                         |
+|-----------------------------------------------------------------|--------------------------------------------------|
 | Record Entire Screen                                            | `SUPER + CTRL + PRINT SCREEN`                    |
 | Record Particular Window                                        | `SUPER + CTRL + SHIFT + W` and `CLICK` on Window |
 | Record particular area                                          | `SUPER + CTRL + SHIFT + S` + `DRAG`              |
