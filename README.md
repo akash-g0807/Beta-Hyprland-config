@@ -59,4 +59,16 @@
 | Preselect Left  | `SUPER + CTRL + ALT + LEFT`  |
 | Preselect Right | `SUPER + CTRL + ALT + Right` |
 
-
+# Master Stack Specific Shortcuts
+| Action                                  | Shortcut            |
+|-----------------------------------------|---------------------|
+| Pseudo tile                             | `SUPER + Q`         |
+| Toggle Split                            | `SUPER + S`         |
+| Swap with Master                        | `SUPER + SHIFT + M` |
+| Add t0 Master                           | `SUPER + A`         |
+| Remove from Master                      | `SUPER + X`         |
+| Cycle through Windows                   | `SUPER + J`         |
+| Cycle through Windows in reverse        | `SUPER + K`         |
+| Cycle through Master Layouts            | `SUPER + SHIFT + .` |
+| Cycle through Master Layouts in reverse | `SUPER + SHIFT + ,` |
+| Focus Master Window                     | `SUPER + CTRL + ,`  |
