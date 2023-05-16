@@ -91,3 +91,5 @@
 
 # Hyprland Screenshot
 ![Hyprland Screenshot](Assets/Screenshot.png)
+
+![Hyprland Screenshot](Assets/ScreenshotLight.png)
