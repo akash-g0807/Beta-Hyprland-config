@@ -20,8 +20,42 @@
 | Open File Manager (Thunar) | `SUPER + T`         |
 | Open swaync control center | `SUPER + SHIFT + I` |
 | Open nwg-drawer            | `SUPER + D`         |
+| Open Wofi                  | `SUPER + R`         |
 
 # Lock Screen
 | Action                     | Shortcut            |
 |----------------------------|---------------------|
 | Lock Screen (swaylock)     | `SUPER + L`         |
+
+# Window Management
+- Default Layout is Master and Stack Layout
+| Action              | Shortcut                |
+|---------------------|-------------------------|
+| Move Focus Up       | `SUPER + Up`            |
+| Move Focus Down     | `SUPER + Down`          |
+| Move Focus Left     | `SUPER + Left`          |
+| Move Focus Right    | `SUPER + Right`         |
+| Fullscreen          | `SUPER + F`             |
+| Move Window Up      | `SUPER + SHIFT + UP`    |
+| Move Window Down    | `SUPER + SHIFT + DOWN`  |
+| Move Window Left    | `SUPER + SHIFT + LEFT`  |
+| Move Window Eight   | `SUPER + SHIFT + RIGHT` |
+| Resize Window Up    | `SUPER + CTRL + UP`     |
+| Resize Window Down  | `SUPER + CTRL + DOWN`   |
+| Resize Window Left  | `SUPER + CTRL + LEFT`   |
+| Resize Window Right | `SUPER + CTRL + RIGHT`  |
+| Kill Active Window  | `SUPER + C`             |
+| Toggle Floating     | `SUPER + V`             |
+| Change Layout       | `SUPER + M`             |
+
+## Dwindle Specific Shortcuts
+| Action          | Shortcut                     |
+|-----------------|------------------------------|
+| Pseudo tile     | `SUPER + Q`                  |
+| Toggle Split    | `SUPER + S`                  |
+| Preselect Up    | `SUPER + CTRL + ALT + UP`    |
+| Preselect Down  | `SUPER + CTRL + ALT + DOWN`  |
+| Preselect Left  | `SUPER + CTRL + ALT + LEFT`  |
+| Preselect Right | `SUPER + CTRL + ALT + Right` |
+
+
