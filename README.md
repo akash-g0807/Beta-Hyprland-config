@@ -70,3 +70,6 @@
 | Cycle through Master Layouts            | `SUPER + SHIFT + .` |
 | Cycle through Master Layouts in reverse | `SUPER + SHIFT + ,` |
 | Focus Master Window                     | `SUPER + CTRL + ,`  |
+
+# Hyprland Screenshot
+![Hyprland Screenshot](Assets/Screenshot.png)
