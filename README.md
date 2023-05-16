@@ -8,8 +8,11 @@
 - replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general
 - Make a tutorial on how to use config
 
+Dotfiles for [Hyprland Tiling Wayland Compositor](https://github.com/hyprwm/Hyprland).
 
-# Installation tutorial
+These instructions written with Arch Linux using btrfs fike system with grub-bootloader
+
+# Installation tutorial from Base Arch install
 
 1. First clone the repo by running the command: `git clone https://github.com/akash-g0807/Beta-Hyprland-config.git`
 2. Then install yay (AUR helper):
@@ -27,6 +30,9 @@
 8. Restore symlinks
     - Go to the `Scripts` folder: `cd ../Scripts`
     - Run `restore_lnk.sh`: `./restore_lnk.sh`
+9. Enable login manager: `systemctl enable sddm.service` and `systemctl start sddm.service`
+
+Login and Enjoy!
 
 # Post Installation (optional but reccommended)
 1. Install flatpak:
@@ -44,6 +50,10 @@
     - Mask rfkill service andd socket: `systemctl mask rfkill.service` and `systemctl mask rfkill.socket`
     - `systemctl enable NetworkManager-dispatcher.service` to use `tlp-rdw`     
     (if TLP gices any trouble please see Troubleshooting section)
+
+- Enable bluetooth by running: `systenctl enable bluetooth.service` and `systemctl start bluetooth.service`
+    - `blueman` is the graphical utility used for managing bluetooth devices
+
 
 # Shortcuts Guide
 
