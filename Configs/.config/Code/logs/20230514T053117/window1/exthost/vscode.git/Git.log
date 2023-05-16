@@ -1,51 +1,0 @@
-2023-05-14 05:31:19.475 [info] Log level: Info
-2023-05-14 05:31:19.475 [info] Validating found git in: "git"
-2023-05-14 05:31:19.475 [info] Using git "2.40.1" from "git"
-2023-05-14 05:31:19.475 [info] > git rev-parse --show-toplevel [7ms]
-2023-05-14 05:31:19.476 [info] > git rev-parse --git-dir --git-common-dir [9ms]
-2023-05-14 05:31:19.495 [info] Open repository: /home/akashg/Documents/Beta-Hyprland-config
-2023-05-14 05:31:19.518 [info] > git rev-parse --show-toplevel [15ms]
-2023-05-14 05:31:19.547 [info] > git rev-parse --show-toplevel [22ms]
-2023-05-14 05:31:19.555 [info] > git config --get commit.template [37ms]
-2023-05-14 05:31:19.574 [info] > git rev-parse --show-toplevel [20ms]
-2023-05-14 05:31:19.584 [info] No remotes found in the git config file.
-2023-05-14 05:31:19.588 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
-2023-05-14 05:31:19.666 [info] > git status -z -uall [70ms]
-2023-05-14 05:31:19.687 [info] No remotes found in the git config file.
-2023-05-14 05:31:19.689 [info] > git config --get commit.template [9ms]
-2023-05-14 05:31:19.690 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
-2023-05-14 05:31:19.761 [info] > git status -z -uall [64ms]
-2023-05-14 05:31:20.058 [info] > git check-ignore -v -z --stdin [11ms]
-2023-05-14 05:31:24.811 [info] > git remote add origin https://github.com/akash-g0807/Beta-Hyprland-config.git [2ms]
-2023-05-14 05:31:24.828 [info] > git config --get commit.template [9ms]
-2023-05-14 05:31:24.829 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
-2023-05-14 05:31:24.894 [info] > git status -z -uall [58ms]
-2023-05-14 05:31:38.962 [info] > git check-ignore -v -z --stdin [6ms]
-2023-05-14 05:31:52.932 [info] > git push -u origin master [28025ms]
-2023-05-14 05:31:52.932 [info] /bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
-/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
-remote: Resolving deltas:   0% (0/9492)        remote: Resolving deltas:   1% (95/9492)        remote: Resolving deltas:   2% (190/9492)        remote: Resolving deltas:   3% (285/9492)        remote: Resolving deltas:   4% (380/9492)        remote: Resolving deltas:   5% (475/9492)        remote: Resolving deltas:   6% (570/9492)        remote: Resolving deltas:   7% (665/9492)        remote: Resolving deltas:   8% (760/9492)        remote: Resolving deltas:   9% (855/9492)        remote: Resolving deltas:  10% (950/9492)        remote: Resolving deltas:  11% (1045/9492)        remote: Resolving deltas:  12% (1140/9492)        remote: Resolving deltas:  13% (1234/9492)        remote: Resolving deltas:  14% (1329/9492)        remote: Resolving deltas:  15% (1424/9492)        remote: Resolving deltas:  16% (1519/9492)        remote: Resolving deltas:  17% (1614/9492)        remote: Resolving deltas:  18% (1709/9492)        remote: Resolving deltas:  19% (1804/9492)        remote: Resolving deltas:  20% (1899/9492)        remote: Resolving deltas:  21% (1994/9492)        remote: Resolving deltas:  22% (2089/9492)        remote: Resolving deltas:  23% (2184/9492)        remote: Resolving deltas:  24% (2279/9492)        remote: Resolving deltas:  25% (2373/9492)        remote: Resolving deltas:  26% (2468/9492)        remote: Resolving deltas:  27% (2563/9492)        remote: Resolving deltas:  28% (2658/9492)        remote: Resolving deltas:  29% (2753/9492)        remote: Resolving deltas:  30% (2848/9492)        remote: Resolving deltas:  31% (2943/9492)        remote: Resolving deltas:  32% (3038/9492)        remote: Resolving deltas:  33% (3133/9492)        remote: Resolving deltas:  34% (3228/9492)        remote: Resolving deltas:  35% (3323/9492)        remote: Resolving deltas:  36% (3418/9492)        remote: Resolving deltas:  37% (3513/9492)        remote: Resolving deltas:  38% (3607/9492)        remote: Resolving deltas:  39% (3702/9492)        remote: Resolving deltas:  40% (3797/9492)        remote: Resolving deltas:  41% (3892/9492)        remote: Resolving deltas:  42% (3987/9492)        remote: Resolving deltas:  43% (4082/9492)        remote: Resolving deltas:  44% (4177/9492)        remote: Resolving deltas:  45% (4272/9492)        remote: Resolving deltas:  46% (4367/9492)        remote: Resolving deltas:  47% (4462/9492)        remote: Resolving deltas:  48% (4557/9492)        remote: Resolving deltas:  49% (4652/9492)        remote: Resolving deltas:  50% (4746/9492)        remote: Resolving deltas:  51% (4841/9492)        remote: Resolving deltas:  52% (4936/9492)        remote: Resolving deltas:  53% (5031/9492)        remote: Resolving deltas:  54% (5126/9492)        remote: Resolving deltas:  55% (5221/9492)        remote: Resolving deltas:  56% (5316/9492)        remote: Resolving deltas:  57% (5411/9492)        remote: Resolving deltas:  58% (5506/9492)        remote: Resolving deltas:  59% (5601/9492)        remote: Resolving deltas:  60% (5696/9492)        remote: Resolving deltas:  61% (5791/9492)        remote: Resolving deltas:  62% (5886/9492)        remote: Resolving deltas:  63% (5980/9492)        remote: Resolving deltas:  64% (6075/9492)        remote: Resolving deltas:  65% (6170/9492)        remote: Resolving deltas:  66% (6265/9492)        remote: Resolving deltas:  67% (6360/9492)        remote: Resolving deltas:  68% (6455/9492)        remote: Resolving deltas:  69% (6550/9492)        remote: Resolving deltas:  70% (6645/9492)        remote: Resolving deltas:  71% (6740/9492)        remote: Resolving deltas:  72% (6835/9492)        remote: Resolving deltas:  73% (6930/9492)        remote: Resolving deltas:  74% (7025/9492)        remote: Resolving deltas:  75% (7119/9492)        remote: Resolving deltas:  76% (7214/9492)        remote: Resolving deltas:  77% (7309/9492)        remote: Resolving deltas:  78% (7404/9492)        remote: Resolving deltas:  79% (7499/9492)        remote: Resolving deltas:  80% (7594/9492)        remote: Resolving deltas:  81% (7689/9492)        remote: Resolving deltas:  82% (7784/9492)        remote: Resolving deltas:  83% (7879/9492)        remote: Resolving deltas:  84% (7974/9492)        remote: Resolving deltas:  85% (8069/9492)        remote: Resolving deltas:  86% (8164/9492)        remote: Resolving deltas:  87% (8259/9492)        remote: Resolving deltas:  88% (8353/9492)        remote: Resolving deltas:  89% (8448/9492)        remote: Resolving deltas:  90% (8543/9492)        remote: Resolving deltas:  91% (8638/9492)        remote: Resolving deltas:  92% (8733/9492)        remote: Resolving deltas:  93% (8828/9492)        remote: Resolving deltas:  94% (8923/9492)        remote: Resolving deltas:  95% (9018/9492)        remote: Resolving deltas:  96% (9113/9492)        remote: Resolving deltas:  97% (9208/9492)        remote: Resolving deltas:  98% (9303/9492)        remote: Resolving deltas:  99% (9398/9492)        remote: Resolving deltas: 100% (9492/9492)        remote: Resolving deltas: 100% (9492/9492), done.        
-To https://github.com/akash-g0807/Beta-Hyprland-config.git
- * [new branch]        master -> master
-2023-05-14 05:31:52.958 [info] > git config --get commit.template [17ms]
-2023-05-14 05:31:52.959 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
-2023-05-14 05:31:53.032 [info] > git status -z -uall [65ms]
-2023-05-14 05:31:54.014 [info] > git check-ignore -v -z --stdin [6ms]
-2023-05-14 05:33:14.585 [info] > git config --get commit.template [4ms]
-2023-05-14 05:33:14.595 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
-2023-05-14 05:33:14.672 [info] > git status -z -uall [69ms]
-2023-05-14 05:33:19.687 [info] > git config --get commit.template [1ms]
-2023-05-14 05:33:19.697 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
-2023-05-14 05:33:19.774 [info] > git status -z -uall [71ms]
-2023-05-14 05:33:21.639 [info] > git log --oneline --cherry master...master@{upstream} -- [2ms]
-2023-05-14 05:33:22.054 [info] > git pull --tags origin master [407ms]
-2023-05-14 05:33:22.054 [info] From https://github.com/akash-g0807/Beta-Hyprland-config
- * branch              master     -> FETCH_HEAD
-2023-05-14 05:33:23.744 [info] > git push origin master:master [1683ms]
-2023-05-14 05:33:23.744 [info] /bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
-/bin/sh: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
-To https://github.com/akash-g0807/Beta-Hyprland-config.git
-   33b8e29b..8324eb51  master -> master
-2023-05-14 05:33:23.761 [info] > git config --get commit.template [8ms]
-2023-05-14 05:33:23.762 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
-2023-05-14 05:33:23.824 [info] > git status -z -uall [55ms]

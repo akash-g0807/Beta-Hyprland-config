@@ -6,11 +6,11 @@
             "file:///home/akashg/Downloads/hyprland-config/.config/waybar": "__default__profile__",
             "file:///home/akashg/Documents/Beta-Hyprland-config": "__default__profile__",
             "file:///home/akashg/.config/waybar/waybar": "__default__profile__",
-            "file:///home/akashg/.config/waybar": "__default__profile__"
+            "file:///home/akashg/.config/waybar": "__default__profile__",
+            "file:///home/akashg/Documents/Beta-Hyprland-config/Configs/.scripts": "__default__profile__",
+            "file:///home/akashg/.scripts": "__default__profile__"
         },
-        "emptyWindows": {
-            "1684048131878": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "telemetry.machineId": "beb3c4133e05aab84556cf14a4af5c18a6c2ff934a2084f81b0034d421a05abd",
@@ -18,15 +18,15 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/akashg/.config/waybar/waybar"
+                "folderUri": "file:///home/akashg/Documents/Beta-Hyprland-config/Configs/.scripts"
             },
             {
-                "folderUri": "file:///home/akashg/.config/waybar"
+                "folderUri": "file:///home/akashg/.scripts"
             }
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1684048131878"
+                "backupFolder": "1684252955517"
             }
         ]
     },
@@ -78,6 +78,28 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/akashg/.scripts",
+                                        "path": "/home/akashg/.scripts",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.scripts"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/akashg/Documents/Beta-Hyprland-config/Configs/.scripts",
+                                        "path": "/home/akashg/Documents/Beta-Hyprland-config/Configs/.scripts",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Beta-Hyprland-config/Configs/.scripts"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/akashg/.config/waybar",
                                         "path": "/home/akashg/.config/waybar",
                                         "scheme": "file"
@@ -120,6 +142,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/akashg/Documents/Beta-Hyprland-config/Configs/.scripts/change_theme_dark.sh",
+                                        "path": "/home/akashg/Documents/Beta-Hyprland-config/Configs/.scripts/change_theme_dark.sh",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Beta-Hyprland-config/Configs/.scripts/change_theme_dark.sh"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -1694,13 +1727,13 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/akashg/.config/waybar",
-            "backupPath": "/home/akashg/.config/Code/Backups/002ee7e4151e06d076cb9050a4c73118",
+            "folder": "file:///home/akashg/.scripts",
+            "backupPath": "/home/akashg/.config/Code/Backups/6d9694fd374c021ab6d27d453ab78071",
             "uiState": {
                 "mode": 1,
                 "x": 0,
                 "y": 0,
-                "width": 1906,
+                "width": 946,
                 "height": 1015
             }
         },

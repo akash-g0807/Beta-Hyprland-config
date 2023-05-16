@@ -1,6 +1,0 @@
-2023-05-14 05:29:25.787 [info] Extension host with pid 29780 started
-2023-05-14 05:29:25.787 [info] Skipping acquiring lock for /home/akashg/.config/Code/User/workspaceStorage/1b88a1c262281c976cd86392236ab6f8.
-2023-05-14 05:29:26.028 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
-2023-05-14 05:29:26.040 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
-2023-05-14 05:29:26.336 [info] Extension host terminating: renderer closed the MessagePort
-2023-05-14 05:29:26.338 [info] Extension host with pid 29780 exiting with code 0
