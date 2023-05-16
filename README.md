@@ -29,6 +29,7 @@
 
 # Window Management
 - Default Layout is Master and Stack Layout
+
 | Action              | Shortcut                |
 |---------------------|-------------------------|
 | Move Focus Up       | `SUPER + Up`            |
