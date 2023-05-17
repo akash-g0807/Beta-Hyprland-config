@@ -45,6 +45,7 @@ Login and Enjoy!
     - Run `flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
     - Then `cd ~/.scripts` and run `./flatpak_file_override.sh` to give flatpaks access to `~/.themes` and `~/.icons`
 
+![Hyprland Screenshot](Assets/ScreenshotLight.png)
 3. Install `auto-cpufreq`:
     - `yay -S auto-cpufreq`
     - Enable systemd service: `systemctl enable --now auto-cpufreq.service`
@@ -163,6 +164,34 @@ Login and Enjoy!
 | Move Window into group (in down direction)  | `SUPER + ALT + DOWN`  |
 | Move Window into group (in up direction)    | `SUPER + ALT + UP`    |
 | Move Window out of group                    | `SUPER + ALT + M`     |
+
+# Workspace Shortcuts
+
+| Action             | Shortcut     |
+|--------------------|--------------|
+| Go to Workspace 1  | `SUPER + 1`  |
+| Go to Workspace 2  | `SUPER + 2`  |
+| Go to Workspace 3  | `SUPER + 3`  |
+| Go to Workspace 4  | `SUPER + 4`  |
+| Go to Workspace 5  | `SUPER + 5`  |
+| Go to Workspace 6  | `SUPER + 6`  |
+| Go to Workspace 7  | `SUPER + 7`  |
+| Go to Workspace 8  | `SUPER + 8`  |
+| Go to Workspace 9  | `SUPER + 9`  |
+| Go to Workspace 10 | `SUPER + 0'` |
+
+| Action                      | Shortcut            |
+|-----------------------------|---------------------|
+| Move Window to Workspace 1  | `SUPER + SHIFT + 1` |
+| Move Window to Workspace 2  | `SUPER + SHIFT + 2` |
+| Move Window to Workspace 3  | `SUPER + SHIFT + 3` |
+| Move Window to Workspace 4  | `SUPER + SHIFT + 4` |
+| Move Window to Workspace 5  | `SUPER + SHIFT + 5` |
+| Move Window to Workspace 6  | `SUPER + SHIFT + 6` |
+| Move Window to Workspace 7  | `SUPER + SHIFT + 7` |
+| Move Window to Workspace 8  | `SUPER + SHIFT + 8` |
+| Move Window to Workspace 9  | `SUPER + SHIFT + 9` |
+| Move Window to Workspace 10 | `SUPER + SHIFT + 0` |
 
 # Mouse Bindings
 
