@@ -74,14 +74,23 @@ Login and Enjoy!
 
 # Software used here:
 - [hyprland-git](https://github.com/hyprwm/Hyprland) - Wayland Tiling Compositor
+- [sddm](https://github.com/sddm/sddm) - Login/Display Manager (using `-git` version found on [AUR](https://aur.archlinux.org/packages/sddm-git))
+- [Kitty](https://github.com/kovidgoyal/kitty) - Default Terminal
 - [Waybar](https://github.com/Alexays/Waybar) - Top Bar
 - [Rofi](https://github.com/davatorium/rofi) - App Launcher
 - [swww](https://github.com/Horus645/swww) - Wallpaper Daemon
 - [swaync](https://github.com/ErikReider/SwayNotificationCenter) - Notification center/Daemon and Control Center
+- [swaylock-effects](https://github.com/mortie/swaylock-effects) - Lock Screen
 - [Thunar](https://gitlab.xfce.org/xfce/thunar) - File manager
 - [Visual Studio Code (microsoft propietary one)](https://code.visualstudio.com/) - Code Editor (use the [AUR](https://aur.archlinux.org/packages/visual-studio-code-bin))
 (List not complete yet)
 - [Clementine](https://www.clementine-player.org) - Music Player
+- [Snapper](https://github.com/openSUSE/snapper) - Utility for managing filesysten snapshots and allows for easy rollbacks
+- [btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant) - For helping with managing btrfs snapshots
+- [wf-recorder](https://github.com/ammen99/wf-recorder) - Screen Recording
+- [Grimblast](https://github.com/hyprwm/contrib) - Screenshot tool
+
+(List not yet complete)
 
 # Shortcuts Guide
 
