@@ -1,13 +1,5 @@
 # HYPRLAND CONFIG
 
-# To Do
-- Iron out bugs in light mode (Done)
-- Make Light mode Colors consistent (Done)
-- Add Light Mode button (Done)
-- Make better scripts
-- replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general (Done I hope will lookout for more)
-- Make a tutorial on how to use config (Started)
-
 Dotfiles for [Hyprland Tiling Wayland Compositor](https://github.com/hyprwm/Hyprland). This is intended for **personal use**
 
 These instructions written with Arch Linux using btrfs fike system with grub-bootloader.
@@ -225,3 +217,11 @@ Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scrip
     - edit `tlp.conf` and replace the values in `RUNTIME_PM_DENYLIST`
     - replace the one found in `/etc/tlp.conf`
 - If want to only siable autosuspend on specific device then use `lsusb` to get ID and then: `USB_DENYLIST = "****:**** ****:****"` Each successive entry is seperated by a space
+
+# To Do
+- Iron out bugs in light mode (Done)
+- Make Light mode Colors consistent (Done)
+- Add Light Mode button (Done)
+- Make better scripts
+- replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general (Done I hope will lookout for more)
+- Make a tutorial on how to use config (Started)
