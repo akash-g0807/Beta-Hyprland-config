@@ -179,7 +179,7 @@ Login and Enjoy!
 | Go to Workspace 7  | `SUPER + 7`  |
 | Go to Workspace 8  | `SUPER + 8`  |
 | Go to Workspace 9  | `SUPER + 9`  |
-| Go to Workspace 10 | `SUPER + 0'` |
+| Go to Workspace 10 | `SUPER + 0`  |
 
 | Action                      | Shortcut            |
 |-----------------------------|---------------------|
@@ -201,7 +201,7 @@ Login and Enjoy!
 | Move Window                                 | `SUPER + LEFT CLICK + DRAG`  |
 | Resize Window                               | `SUPER + RIGHT CLICK + DRAG` |
 | Move to next Workspace                      | `SUPER + SCROLL DOWN`        |
-| Move to previous Workspace                 | `SUPER + SCROLL UP`          |
+| Move to previous Workspace                  | `SUPER + SCROLL UP`          |
 
 # Screenshot and Screen Recording
 
@@ -220,7 +220,7 @@ Login and Enjoy!
 |-----------------------------------------------------------------|--------------------------------------------------|
 | Record Entire Screen                                            | `SUPER + CTRL + PRINT SCREEN`                    |
 | Record Particular Window                                        | `SUPER + CTRL + SHIFT + W` and `CLICK` on Window |
-| Record particular area                                          | `SUPER + CTRL + SHIFT + S` + `DRAG`              |
+| Record particular area                                          | `SUPER + CTRL + SHIFT + S` and `DRAG`            |
 | Stop Recording (applies when the either of the above is active) | `SUPER + CTRL + PRINT SCREEN`                    |
 
 # Aknowledgements
