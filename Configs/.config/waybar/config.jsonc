@@ -10,6 +10,7 @@
         "clock",
         "custom/weather",
 	"custom/cava-internal",
+	"custom/mode",
 	"custom/wallchange",
         "wlr/workspaces"
     ],

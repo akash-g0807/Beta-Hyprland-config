@@ -3,7 +3,7 @@
 # To Do
 - Iron out bugs in light mode (Done)
 - Make Light mode Colors consistent (Done)
-- Add Light Mode button
+- Add Light Mode button (Done)
 - Make better scripts
 - replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general (Done I hope will lookout for more)
 - Make a tutorial on how to use config
