@@ -12,10 +12,15 @@ Dotfiles for [Hyprland Tiling Wayland Compositor](https://github.com/hyprwm/Hypr
 
 These instructions written with Arch Linux using btrfs fike system with grub-bootloader.
 
-# Hyprland Screenshot
+# Hyprland Screenshots
 ![Hyprland Screenshot](Assets/Screenshot.png)
 
 ![Hyprland Screenshot](Assets/ScreenshotLight.png)
+
+### Rofi
+
+![Rofi Screenshot](Assets/Rofi.png)
+
 
 # Installation tutorial from Base Arch install
 
