@@ -4,8 +4,6 @@ Dotfiles for [Hyprland Tiling Wayland Compositor](https://github.com/hyprwm/Hypr
 
 These instructions written with Arch Linux using btrfs fike system with grub-bootloader.
 
-(Note: Do not use `.install.sh` script in `Scripts` folder as it is not yet complete)
-
 # Hyprland Screenshots
 ![Hyprland Screenshot](Assets/Screenshot.png)
 
@@ -17,6 +15,8 @@ These instructions written with Arch Linux using btrfs fike system with grub-boo
 
 
 # Installation tutorial from Base Arch install
+
+(Note: Do not use `.install.sh` script in `Scripts` folder as it is not yet complete, use instructions below)
 
 1. First clone the repo by running the command: `git clone https://github.com/akash-g0807/Beta-Hyprland-config.git`
 2. Then install yay (AUR helper):
