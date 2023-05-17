@@ -5,12 +5,17 @@
 - Make Light mode Colors consistent (Done)
 - Add Light Mode button
 - Make better scripts
-- replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general
+- replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general (Done I hope will lookout for more)
 - Make a tutorial on how to use config
 
 Dotfiles for [Hyprland Tiling Wayland Compositor](https://github.com/hyprwm/Hyprland).
 
-These instructions written with Arch Linux using btrfs fike system with grub-bootloader
+These instructions written with Arch Linux using btrfs fike system with grub-bootloader.
+
+# Hyprland Screenshot
+![Hyprland Screenshot](Assets/Screenshot.png)
+
+![Hyprland Screenshot](Assets/ScreenshotLight.png)
 
 # Installation tutorial from Base Arch install
 
@@ -167,11 +172,6 @@ Login and Enjoy!
 | Record particular area                                          | `SUPER + CTRL + SHIFT + S` + `DRAG`              |
 | Stop Recording (applies when the either of the above is active) | `SUPER + CTRL + PRINT SCREEN`                    |
 
-
-# Hyprland Screenshot
-![Hyprland Screenshot](Assets/Screenshot.png)
-
-![Hyprland Screenshot](Assets/ScreenshotLight.png)
 
 # Aknowledgements
 Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scripts I could use to make my install
