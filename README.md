@@ -8,7 +8,7 @@
 - replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general (Done I hope will lookout for more)
 - Make a tutorial on how to use config
 
-Dotfiles for [Hyprland Tiling Wayland Compositor](https://github.com/hyprwm/Hyprland).
+Dotfiles for [Hyprland Tiling Wayland Compositor](https://github.com/hyprwm/Hyprland). This is intended for **personal use**
 
 These instructions written with Arch Linux using btrfs fike system with grub-bootloader.
 
