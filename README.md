@@ -78,8 +78,8 @@ Login and Enjoy!
 - [Thunar](https://gitlab.xfce.org/xfce/thunar) - File manager
 - [Visual Studio Code (microsoft propietary one)](https://code.visualstudio.com/) - Code Editor (use the [AUR](https://aur.archlinux.org/packages/visual-studio-code-bin))
 - [Clementine](https://www.clementine-player.org) - Music Player
-- [Snapper](https://github.com/openSUSE/snapper) - Utility for managing filesysten snapshots and allows for easy rollbacks
-- [btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant) - For helping with managing btrfs snapshots
+- [Snapper](https://github.com/openSUSE/snapper) - Utility for managing filesystem snapshots and allows for easy rollbacks
+- [btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant) - GUI for helping with managing btrfs snapshots
 - [wf-recorder](https://github.com/ammen99/wf-recorder) - Screen Recording
 - [Grimblast](https://github.com/hyprwm/contrib) - Screenshot tool
 
