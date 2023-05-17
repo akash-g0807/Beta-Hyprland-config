@@ -201,6 +201,27 @@ Login and Enjoy!
 | Record particular area                                          | `SUPER + CTRL + SHIFT + S` + `DRAG`              |
 | Stop Recording (applies when the either of the above is active) | `SUPER + CTRL + PRINT SCREEN`                    |
 
-
 # Aknowledgements
 Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scripts I could use to make my install
+
+# TLP Settings and Troubleshooting
+
+- TLP suspends USB devices by default so to disable `USB_AUTOSUSPEND`:
+    - Go to `/etc/tlp.conf`
+    - Then find and type in `USB_AUTOSUSPEND=0`
+- Sometimes TLP suspends bluetooth so to remedy this:
+    - Go to `/etc/tlp.conf`
+    - Then find and type in `USB_EXCLUDE_BTUSB=1`
+        - If that does not work then edit grub parameters:
+            - Go to `/etc/default/grub`
+            - Find the line `GRUB_CMDLINE_LINUX_DEFAULT = "****"`
+            - Append the following: `btusb.enable_autosuspend=0`
+            - remake grub by: `sudo grub-mkconfig -o /boot/grub/grub.cfg`
+                - If that does not work then just go to `/etc/tlp.conf` and add the following line: `DEVICES_TO_DISABLE_ON_BAT_NOT_IN_USE="wifi wwan"`
+
+(If the above steps do not work then do the following:)
+
+- Run command `lspci | grep -iE 'blu|usb'` and see the USB controllers
+    - edit `tlp.conf` and replace the values in `RUNTIME_PM_DENYLIST`
+    - replace the one found in `/etc/tlp.conf`
+- If want to only siable autosuspend on specific device then use `lsusb` to get ID and then: `USB_DENYLIST = "****:**** ****:****"` Each successive entry is seperated by a space
