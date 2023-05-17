@@ -67,6 +67,22 @@ Login and Enjoy!
 - Enable bluetooth by running: `systenctl enable bluetooth.service` and `systemctl start bluetooth.service`
     - `blueman` is the graphical utility used for managing bluetooth devices
 
+## To get `nwgbar` powerbuttons to work:
+1. First go do `~/.config/nwg-launchers/nwgbar`
+2. Run `install.sh`
+
+
+# Software used here:
+- [hyprland-git](https://github.com/hyprwm/Hyprland) - Wayland Tiling Compositor
+- [Waybar](https://github.com/Alexays/Waybar) - Top Bar
+- [Rofi](https://github.com/davatorium/rofi) - App Launcher
+- [swww](https://github.com/Horus645/swww) - Wallpaper Daemon
+- [swaync](https://github.com/ErikReider/SwayNotificationCenter) - Notification center/Daemon and Control Center
+- [Thunar](https://gitlab.xfce.org/xfce/thunar) - File manager
+- [Visual Studio Code (microsoft propietary one)](https://code.visualstudio.com/) - Code Editor (use the [AUR](https://aur.archlinux.org/packages/visual-studio-code-bin))
+(List not complete yet)
+- [Clementine](https://www.clementine-player.org) - Music Player
+
 # Shortcuts Guide
 
 ## General Shortcuts
