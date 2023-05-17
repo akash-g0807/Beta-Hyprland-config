@@ -83,7 +83,6 @@ Login and Enjoy!
 - [swaylock-effects](https://github.com/mortie/swaylock-effects) - Lock Screen
 - [Thunar](https://gitlab.xfce.org/xfce/thunar) - File manager
 - [Visual Studio Code (microsoft propietary one)](https://code.visualstudio.com/) - Code Editor (use the [AUR](https://aur.archlinux.org/packages/visual-studio-code-bin))
-(List not complete yet)
 - [Clementine](https://www.clementine-player.org) - Music Player
 - [Snapper](https://github.com/openSUSE/snapper) - Utility for managing filesysten snapshots and allows for easy rollbacks
 - [btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant) - For helping with managing btrfs snapshots
