@@ -4,6 +4,8 @@ Dotfiles for [Hyprland Tiling Wayland Compositor](https://github.com/hyprwm/Hypr
 
 These instructions written with Arch Linux using btrfs fike system with grub-bootloader.
 
+(Note: Do not use `.install.sh` script in `Scripts` folder as it is not yet complete)
+
 # Hyprland Screenshots
 ![Hyprland Screenshot](Assets/Screenshot.png)
 
