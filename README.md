@@ -35,16 +35,19 @@ These instructions written with Arch Linux using btrfs fike system with grub-boo
 Login and Enjoy!
 
 # Post Installation (optional but reccommended)
-1. Install flatpak:
+1. Edit `~/.config/hypr/hyprland.conf` and change the screen res and other details to match your system
+    - Also go to `~/.config/hypr/sleep_monitor.sh` and do the same
+
+2. Install flatpak:
     - `sudo pacman -Syu flatpak`
     - Run `flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
     - Then `cd ~/.scripts` and run `./flatpak_file_override.sh` to give flatpaks access to `~/.themes` and `~/.icons`
 
-2. Install `auto-cpufreq`:
+3. Install `auto-cpufreq`:
     - `yay -S auto-cpufreq`
     - Enable systemd service: `systemctl enable --now auto-cpufreq.service`
 
-3. Install TLP (refer to [Arch Wiki](https://wiki.archlinux.org/title/TLP) for more info):
+4. Install TLP (refer to [Arch Wiki](https://wiki.archlinux.org/title/TLP) for more info):
     - `yay -S tlp-git tlp-rdw-git ethtool` (git version has given me a better time)
     - Enable/Start systemd service: `systemctl enable tlp.service` and `systemctl start tlp.service`
     - Mask rfkill service andd socket: `systemctl mask rfkill.service` and `systemctl mask rfkill.socket`
@@ -53,7 +56,6 @@ Login and Enjoy!
 
 - Enable bluetooth by running: `systenctl enable bluetooth.service` and `systemctl start bluetooth.service`
     - `blueman` is the graphical utility used for managing bluetooth devices
-
 
 # Shortcuts Guide
 
