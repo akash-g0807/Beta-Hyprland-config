@@ -45,7 +45,6 @@ Login and Enjoy!
     - Run `flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
     - Then `cd ~/.scripts` and run `./flatpak_file_override.sh` to give flatpaks access to `~/.themes` and `~/.icons`
 
-![Hyprland Screenshot](Assets/ScreenshotLight.png)
 3. Install `auto-cpufreq`:
     - `yay -S auto-cpufreq`
     - Enable systemd service: `systemctl enable --now auto-cpufreq.service`
