@@ -198,8 +198,8 @@ Login and Enjoy!
 |---------------------------------------------|------------------------------|
 | Move Window                                 | `SUPER + LEFT CLICK + DRAG`  |
 | Resize Window                               | `SUPER + RIGHT CLICK + DRAG` |
-| Move to next workspace                      | `SUPER + SCROLL DOWN`        |
-| Move to previous work space                 | `SUPER + SCROLL UP`          |
+| Move to next Workspace                      | `SUPER + SCROLL DOWN`        |
+| Move to previous Workspace                 | `SUPER + SCROLL UP`          |
 
 # Screenshot and Screen Recording
 
@@ -251,5 +251,5 @@ Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scrip
 - Make Light mode Colors consistent (Done)
 - Add Light Mode button (Done)
 - Make better scripts
-- replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general (Done I hope will lookout for more)
+- replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general (Done I hope, will lookout for more)
 - Make a tutorial on how to use config (Started)
