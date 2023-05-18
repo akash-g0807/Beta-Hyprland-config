@@ -58,7 +58,7 @@ Login and Enjoy!
     - `systemctl enable NetworkManager-dispatcher.service` to use `tlp-rdw`     
     (if TLP gices any trouble please see Troubleshooting section)
 
-- Enable bluetooth by running: `systenctl enable bluetooth.service` and `systemctl start bluetooth.service`
+5. Enable bluetooth by running: `systenctl enable bluetooth.service` and `systemctl start bluetooth.service`
     - `blueman` is the graphical utility used for managing bluetooth devices
 
 ## To get `nwgbar` powerbuttons to work:
