@@ -154,3 +154,16 @@ oh-my-zsh-git
 zsh-theme-powerlevel10k-git
 zsh-syntax-highlighting-git
 zsh-autosuggestions-git
+cmake
+shellcheck
+rust
+rust-analyzer
+npm
+isync
+mu
+zig
+python-isort
+python-pytest
+stylelint
+marked
+lsp-plugins
