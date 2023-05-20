@@ -85,3 +85,12 @@
         interprogram-paste-function (lambda ()
                                       (unless (and wl-copy-p (process-live-p wl-copy-p))
                                         (shell-command-to-string "wl-paste -n | tr -d '\r'")))))
+
+
+
+(defun my-dired-up-dir ()
+  "Go up a directory."
+  (interactive)
+  (let ((current-dir (dired-current-directory)))
+    (find-alternate-file "..")
+    (dired-goto-file current-dir)))
