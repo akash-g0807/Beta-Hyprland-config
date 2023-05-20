@@ -150,3 +150,7 @@ clementine
 gst-libav
 gst-plugins-base
 gst-plugins-good
+oh-my-zsh-git
+zsh-theme-powerlevel10k-git
+zsh-syntax-highlighting-git
+zsh-autosuggestions-git
