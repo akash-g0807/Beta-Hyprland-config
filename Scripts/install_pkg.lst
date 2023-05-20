@@ -168,3 +168,8 @@ stylelint
 marked
 lsp-plugins
 aspell
+haskell-language-server
+ttf-jetbrains-mono
+ttf-jetbrains-mono-nerd
+ttf-ubuntu-family
+ttf-ubuntu-mono-nerd
