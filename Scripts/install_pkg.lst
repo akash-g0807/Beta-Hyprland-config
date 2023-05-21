@@ -175,3 +175,4 @@ ttf-ubuntu-family
 ttf-ubuntu-mono-nerd
 irony-mode
 ccls
+emacs-gcc-wayland-devel-bin 
