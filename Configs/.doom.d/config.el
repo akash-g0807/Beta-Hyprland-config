@@ -574,3 +574,9 @@
   (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
   :config
   (lsp-enable-which-key-integration t))
+
+(setq ispell-program-name "aspell")
+(setq ispell-extra-args '("--sug-mode=ultra" "--lang=en_GB"))
+(setq spell-fu-directory "~/+STORE/dictionary") ;; Please create this directory manually.
+(setq ispell-personal-dictionary "~/+STORE/dictionary/.pws")
+(setq ispell-dictionary "en")
