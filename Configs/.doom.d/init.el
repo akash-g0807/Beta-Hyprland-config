@@ -93,7 +93,7 @@
        (eval +overlay)     ; run code, run (also, repls)
        ;;gist              ; interacting with github gists
        lookup              ; navigate your code and its documentation
-       ;;lsp
+       lsp
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
@@ -171,6 +171,7 @@
        ;;terra             ; Earth and Moon in alignment for performance.
        web              ; the tubes
        yaml             ; JSON, but readable
+       (cc +lsp)
 
        :email
        ;;mu4e
