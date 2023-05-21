@@ -336,7 +336,7 @@
 ;; ORG ROAM
 ;;
 (after! org
-  (setq org-roam-directory "~/nc/Org/roam/"
+  (setq org-roam-directory "~/Org/roam/"
         org-roam-graph-viewer "/usr/bin/brave"))
 
 (map! :leader
@@ -350,7 +350,7 @@
 
 ;; ORG JOURNAL
 ;;
-(setq org-journal-dir "~/nc/Org/journal/"
+(setq org-journal-dir "~/Org/journal/"
       org-journal-date-prefix "* "
       org-journal-time-prefix "** "
       org-journal-date-format "%B %d, %Y (%A) "
