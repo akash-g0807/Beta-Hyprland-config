@@ -77,3 +77,8 @@
 (package! minimap)
 (package! olivetti)
 (package! ccls)
+(package! projctile)
+(package! platformio-mode
+
+
+
