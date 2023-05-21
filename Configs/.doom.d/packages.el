@@ -76,3 +76,4 @@
 (package! clippy)
 (package! minimap)
 (package! olivetti)
+(package! ccls)
