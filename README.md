@@ -2,7 +2,7 @@
 
 Dotfiles for [Hyprland Tiling Wayland Compositor](https://github.com/hyprwm/Hyprland). This is intended for **personal use**
 
-These instructions written with Arch Linux using btrfs fike system with grub-bootloader.
+These instructions written with Arch Linux using btrfs file system with grub-bootloader.
 
 # Hyprland Screenshots
 ![Hyprland Screenshot](Assets/Screenshot.png)
@@ -38,7 +38,7 @@ These instructions written with Arch Linux using btrfs fike system with grub-boo
 
 Login and Enjoy!
 
-# Post Installation (optional but reccommended)
+# Post Installation (optional but recommended)
 1. Edit `~/.config/hypr/hyprland.conf` and change the screen res and other details to match your system
     - Also go to `~/.config/hypr/sleep_monitor.sh` and do the same
 
@@ -54,14 +54,14 @@ Login and Enjoy!
 4. Install TLP (refer to [Arch Wiki](https://wiki.archlinux.org/title/TLP) for more info):
     - `yay -S tlp-git tlp-rdw-git ethtool` (git version has given me a better time)
     - Enable/Start systemd service: `systemctl enable tlp.service` and `systemctl start tlp.service`
-    - Mask rfkill service andd socket: `systemctl mask rfkill.service` and `systemctl mask rfkill.socket`
+    - Mask rfkill service and socket: `systemctl mask rfkill.service` and `systemctl mask rfkill.socket`
     - `systemctl enable NetworkManager-dispatcher.service` to use `tlp-rdw`     
-    (if TLP gices any trouble please see Troubleshooting section)
+    (if TLP gives any trouble please see Troubleshooting section)
 
 5. Enable bluetooth by running: `systenctl enable bluetooth.service` and `systemctl start bluetooth.service`
     - `blueman` is the graphical utility used for managing bluetooth devices
 
-## To get `nwgbar` powerbuttons to work:
+## To get `nwgbar` power buttons to work:
 1. First go do `~/.config/nwg-launchers/nwgbar`
 2. Run `install.sh`
 
