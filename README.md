@@ -114,7 +114,7 @@ Login and Enjoy!
 | Move Focus Down       | `SUPER + DOWN`          |
 | Move Focus Left       | `SUPER + LEFT`          |
 | Move Focus Right      | `SUPER + RIGHT`         |
-| Fullscreen            | `SUPER + F`             |
+| Full screen            | `SUPER + F`             |
 | Move Window Up        | `SUPER + SHIFT + UP`    |
 | Move Window Down      | `SUPER + SHIFT + DOWN`  |
 | Move Window Left      | `SUPER + SHIFT + LEFT`  |
@@ -246,7 +246,7 @@ Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scrip
 - Run command `lspci | grep -iE 'blu|usb'` and see the USB controllers
     - edit `tlp.conf` and replace the values in `RUNTIME_PM_DENYLIST`
     - replace the one found in `/etc/tlp.conf`
-- If want to only siable autosuspend on specific device then use `lsusb` to get ID and then: `USB_DENYLIST = "****:**** ****:****"` Each successive entry is seperated by a space
+- If want to only disable autosuspend on specific device then use `lsusb` to get ID and then: `USB_DENYLIST = "****:**** ****:****"` Each successive entry is separated by a space
 
 # To Do
 - Iron out bugs in light mode (Done)
@@ -255,3 +255,4 @@ Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scrip
 - Make better scripts
 - replace any instance of `~/home/akashg` with a more general `~/` to avoid errors and make script more general (Done I hope, will lookout for more)
 - Make a tutorial on how to use config (Started)
+- Emacs config installation
