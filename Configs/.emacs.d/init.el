@@ -46,6 +46,18 @@
                 eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
+
+;;;; NATIVE COMPILE
+;; Silence compiler warnings as they can be pretty disruptive
+(if (boundp 'comp-deferred-compilation)
+    (setq comp-deferred-compilation nil)
+    (setq native-comp-deferred-compilation nil))
+;; In noninteractive sessions, prioritize non-byte-compiled source files to
+;; prevent the use of stale byte-code. Otherwise, it saves us a little IO time
+;; to skip the mtime checks on every *.elc file.
+(setq load-prefer-newer noninteractive)
+
+
 ;; Commmand Log Mode
 (use-package command-log-mode)
 
@@ -101,6 +113,21 @@
   :diminish which-key-mode
   :config
   (setq which-key-idle-delay 1))
+(use-package which-key
+  :init
+  (setq which-key-side-window-location 'bottom
+        which-key-sort-order #'which-key-key-order-alpha
+        which-key-sort-uppercase-first nil
+        which-key-add-column-padding 1
+        which-key-max-display-columns nil
+        which-key-min-display-lines 6
+        which-key-side-window-slot -10
+        which-key-side-window-max-height 0.25
+        which-key-idle-delay 0.8
+        which-key-max-description-length 25
+        which-key-allow-imprecise-window-fit t
+        which-key-separator " → " ))
+(which-key-mode)
 
 (use-package ivy-rich
   :init
@@ -220,7 +247,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
+   '(forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -243,6 +270,13 @@
        "b B"   '(ibuffer-list-buffers :which-key "Ibuffer list buffers")
        "b K"   '(kill-buffer :which-key "Kill buffer"))
 
+;; EVALUATE ELSIP COMMANDS
+(nvmap :states '(normal visual) :keymaps 'override :prefix "SPC"
+       "e b"   '(eval-buffer :which-key "Eval elisp in buffer")
+       "e d"   '(eval-defun :which-key "Eval defun")
+       "e e"   '(eval-expression :which-key "Eval elisp expression")
+       "e l"   '(eval-last-sexp :which-key "Eval last sexression")
+       "e r"   '(eval-region :which-key "Eval region"))
 
 ;; PROJECTILE
 
@@ -256,10 +290,28 @@
     (setq projectile-project-search-path '("~/Projects/Code")))
   (setq projectile-switch-project-action #'projectile-dired))
 
+(use-package projectile
+  :config
+  (projectile-global-mode 1))
+
 (use-package counsel-projectile
  :after projectile
  :config
  (counsel-projectile-mode 1))
 
 
-;
+ ;; MAGIT
+ (use-package magit
+  :commands (magit-status magit-get-current-branch)
+  :custom
+  (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
+
+;; Forge for github tokens
+(use-package forge)
+
+
+:;;;;;;;;;;;;;;;;;;;;;;;; ORG MODE STUFF ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+:;;;;;;;;;;;;;;;;;;;;;;;; ORG MODE STUFF ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
