@@ -1,6 +1,19 @@
 
 (setq inhibit-startup-message t)
 
+;;;; WAYLAND
+(when (getenv "WAYLAND_DISPLAY")
+  (setq wl-copy-p nil
+        interprogram-cut-function (lambda (text)
+                                    (setq-local process-connection-type 'pipe)
+                                    (setq wl-copy-p (start-process "wl-copy" nil "wl-copy" "-f" "-n"))
+                                    (process-send-string wl-copy-p text)
+                                    (process-send-eof wl-copy-p))
+        interprogram-paste-function (lambda ()
+                                      (unless (and wl-copy-p (process-live-p wl-copy-p))
+                                        (shell-command-to-string "wl-paste -n | tr -d '\r'")))))
+(defvar runemacs/default-font-size 120)
+
 (scroll-bar-mode -1)        ; Disable visible scrollbar
 (tool-bar-mode -1)          ; Disable the toolbar
 (tooltip-mode -1)           ; Disable tooltips
@@ -11,7 +24,18 @@
 ;; Set up the visible bell
 (setq visible-bell t)
 
+;;;;;;; FONT CONFIG
 (set-face-attribute 'default nil :font "Fira Code Retina" :height 120)
+
+(set-face-attribute 'default nil :font "Fira Code Retina" :height runemacs/default-font-size)
+
+;; Set the fixed pitch face
+(set-face-attribute 'fixed-pitch nil :font "Fira Code Retina" :height 120)
+
+;; Set the variable pitch face
+(set-face-attribute 'variable-pitch nil :font "Cantarell" :height 135 :weight 'regular)
+
+;;;;;;;; FINT CONFIG
 
 (load-theme 'wombat)
 
@@ -247,7 +271,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
+   '(dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -269,6 +293,15 @@
        "b p"   '(previous-buffer :which-key "Previous buffer")
        "b B"   '(ibuffer-list-buffers :which-key "Ibuffer list buffers")
        "b K"   '(kill-buffer :which-key "Kill buffer"))
+
+;; BOOKMARKS
+(setq bookmark-default-file "~/.emacs.d/bookmarks")
+(nvmap :prefix "SPC"
+       "b L"   '(list-bookmarks :which-key "List Bookmarks")
+       "b m"   '(bookmark-set :which-key "Set Bookmark")
+       "b M"   '(bookmark-set :which-key "Delete Bookmarks")
+       "b w"   '(bookmark-save :which-key "Save bookmark tp file"))
+      
 
 ;; EVALUATE ELSIP COMMANDS
 (nvmap :states '(normal visual) :keymaps 'override :prefix "SPC"
@@ -311,7 +344,277 @@
 
 
 :;;;;;;;;;;;;;;;;;;;;;;;; ORG MODE STUFF ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun efs/org-mode-setup ()
+  (org-indent-mode)
+  (variable-pitch-mode 1)
+  (visual-line-mode 1))
+
+;; Org Mode Configuration ------------------------------------------------------
+
+(defun efs/org-font-setup ()
+  ;; Replace list hyphen with dot
+  (font-lock-add-keywords 'org-mode
+                          '(("^ *\\([-]\\) "
+                             (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
+
+  ;; Set faces for heading levels
+  (dolist (face '((org-level-1 . 1.2)
+                  (org-level-2 . 1.1)
+                  (org-level-3 . 1.05)
+                  (org-level-4 . 1.0)
+                  (org-level-5 . 1.1)
+                  (org-level-6 . 1.1)
+                  (org-level-7 . 1.1)
+                  (org-level-8 . 1.1)))
+    (set-face-attribute (car face) nil :font "Cantarell" :weight 'regular :height (cdr face)))
+
+  ;; Ensure that anything that should be fixed-pitch in Org files appears that way
+  (set-face-attribute 'org-block nil :foreground nil :inherit 'fixed-pitch)
+  (set-face-attribute 'org-code nil   :inherit '(shadow fixed-pitch))
+  (set-face-attribute 'org-table nil   :inherit '(shadow fixed-pitch))
+  (set-face-attribute 'org-verbatim nil :inherit '(shadow fixed-pitch))
+  (set-face-attribute 'org-special-keyword nil :inherit '(font-lock-comment-face fixed-pitch))
+  (set-face-attribute 'org-meta-line nil :inherit '(font-lock-comment-face fixed-pitch))
+  (set-face-attribute 'org-checkbox nil :inherit 'fixed-pitch))
+
+(use-package org
+  :hook (org-mode . efs/org-mode-setup)
+  :config
+  (setq org-ellipsis " ▾")
+  (efs/org-font-setup))
+
+(use-package org-bullets
+  :after org
+  :hook (org-mode . org-bullets-mode)
+  :custom
+  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+
+(defun efs/org-mode-visual-fill ()
+  (setq visual-fill-column-width 100
+        visual-fill-column-center-text t)
+  (visual-fill-column-mode 1))
+
+(use-package visual-fill-column
+  :hook (org-mode . efs/org-mode-visual-fill))
 
 
 
 :;;;;;;;;;;;;;;;;;;;;;;;; ORG MODE STUFF ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;; LSP MODE
+
+(defun efs/lsp-mode-setup ()
+  (setq lsp-headerline-breadcrumb-segments '(path-up-to-project file symbols))
+  (lsp-headerline-breadcrumb-mode))
+
+(use-package lsp-mode
+  :commands (lsp lsp-deferred)
+  :hook (lsp-mode . efs/lsp-mode-setup)
+  :init
+  (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
+  :config
+  (lsp-enable-which-key-integration t))
+
+(use-package lsp-ui
+  :hook (lsp-mode . lsp-ui-mode)
+  :custom
+  (lsp-ui-doc-position 'bottom))
+
+(use-package lsp-treemacs
+  :after lsp)
+
+(use-package lsp-ivy)
+
+(use-package typescript-mode
+  :mode "\\.ts\\'"
+  :hook (typescript-mode . lsp-deferred)
+  :config
+  (setq typescript-indent-level 2))
+
+(use-package company
+  :after lsp-mode
+  :hook (lsp-mode . company-mode)
+  :bind (:map company-active-map
+         ("<tab>" . company-complete-selection))
+        (:map lsp-mode-map
+         ("<tab>" . company-indent-or-complete-common))
+  :custom
+  (company-minimum-prefix-length 1)
+  (company-idle-delay 0.0))
+
+(use-package company-box
+  :hook (company-mode . company-box-mode))
+
+;; CCLS
+(use-package ccls
+  :init (setq ccls-sem-highlight-method 'font-lock)
+  :hook ((c-mode c++-mode objc-mode) . (lambda () (require 'ccls) (lsp-deferred))))
+
+;; Brackteting in programming languages
+(setq electric-pair-preserve-balance nil)
+(electric-pair-mode 1)
+
+;; IRONY MODE
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
+
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+
+
+(use-package ccls
+  :ensure t
+  :config
+  (setq ccls-executable "ccls")
+  (setq lsp-prefer-flymake nil)
+  (setq-default flycheck-disabled-checkers '(c/c++-clang c/c++-cppcheck c/c++-gcc))
+  :hook ((c-mode c++-mode objc-mode) .
+         (lambda () (require 'ccls) (lsp))))
+  
+
+
+
+;;;;;;;;;;;;;;;;;;; LSO MODE
+(use-package evil-nerd-commenter
+  :bind ("M-/" . evilnc-comment-or-uncomment-lines))
+
+
+;; DIRED
+(use-package all-the-icons-dired)
+(use-package dired-open)
+(use-package peep-dired)
+
+(nvmap :states '(normal visual) :keymaps 'override :prefix "SPC"
+               "d d" '(dired :which-key "Open dired")
+               "d j" '(dired-jump :which-key "Dired jump to current")
+               "d p" '(peep-dired :which-key "Peep-dired"))
+
+(with-eval-after-load 'dired
+  ;;(define-key dired-mode-map (kbd "M-p") 'peep-dired)
+  (evil-define-key 'normal dired-mode-map (kbd "h") 'dired-up-directory)
+  (evil-define-key 'normal dired-mode-map (kbd "l") 'dired-open-file) ; use dired-find-file instead if not using dired-open package
+  (evil-define-key 'normal peep-dired-mode-map (kbd "j") 'peep-dired-next-file)
+  (evil-define-key 'normal peep-dired-mode-map (kbd "k") 'peep-dired-prev-file))
+
+(add-hook 'peep-dired-hook 'evil-normalize-keymaps)
+;; Get file icons in dired
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+;; With dired-open plugin, you can launch external programs for certain extensions
+;; For example, I set all .png files to open in 'sxiv' and all .mp4 files to open in 'mpv'
+(setq dired-open-extensions '(("gif" . "sxiv")
+                              ("jpg" . "sxiv")
+                              ("png" . "sxiv")
+                              ("mkv" . "mpv")
+                              ("mp4" . "mpv")))
+
+(use-package dired
+  :ensure nil
+  :commands (dired dired-jump)
+  :bind (("C-x C-j" . dired-jump))
+  :config
+  (evil-collection-define-key 'normal 'dired-mode-map
+    "h" 'dired-up-directory
+    "l" 'dired-find-file))
+
+(use-package dired-single)
+
+  (evil-collection-define-key 'normal 'dired-mode-map
+      "h" 'dired-single-up-directory
+      "l" 'dired-single-buffer)
+
+;; SHOW HIDE DOTFILES
+
+(use-package dired-hide-dotfiles
+  :hook (dired-mode . dired-hide-dotfiles-mode)
+  :config
+  (evil-collection-define-key 'normal 'dired-mode-map
+    "H" 'dired-hide-dotfiles-mode))
+
+
+;; FILE RELATED KEYBINDINGS
+(nvmap :states '(normal visual) :keymaps 'override :prefix "SPC"
+       "."     '(find-file :which-key "Find file")
+       "f f"   '(find-file :which-key "Find file")
+       "f r"   '(counsel-recentf :which-key "Recent files")
+       "f s"   '(save-buffer :which-key "Save file")
+       "f u"   '(sudo-edit-find-file :which-key "Sudo find file")
+       "f y"   '(dt/show-and-copy-buffer-path :which-key "Yank file path")
+       "f C"   '(copy-file :which-key "Copy file")
+       "f D"   '(delete-file :which-key "Delete file")
+       "f R"   '(rename-file :which-key "Rename file")
+       "f S"   '(write-file :which-key "Save file as...")
+       "f U"   '(sudo-edit :which-key "Sudo edit file"))
+
+;; GENERAL COMMANDS
+(nvmap :keymaps 'override :prefix "SPC"
+       "SPC"   '(counsel-M-x :which-key "M-x")
+       "c c"   '(compile :which-key "Compile")
+       "c C"   '(recompile :which-key "Recompile")
+       "h r r" '((lambda () (interactive) (load-file "~/.emacs.d/init.el")) :which-key "Reload emacs config")
+       "t t"   '(toggle-truncate-lines :which-key "Toggle truncate lines"))
+(nvmap :keymaps 'override :prefix "SPC"
+       "m *"   '(org-ctrl-c-star :which-key "Org-ctrl-c-star")
+       "m +"   '(org-ctrl-c-minus :which-key "Org-ctrl-c-minus")
+       "m ."   '(counsel-org-goto :which-key "Counsel org goto")
+       "m e"   '(org-export-dispatch :which-key "Org export dispatch")
+       "m f"   '(org-footnote-new :which-key "Org footnote new")
+       "m h"   '(org-toggle-heading :which-key "Org toggle heading")
+       "m i"   '(org-toggle-item :which-key "Org toggle item")
+       "m n"   '(org-store-link :which-key "Org store link")
+       "m o"   '(org-set-property :which-key "Org set property")
+       "m t"   '(org-todo :which-key "Org todo")
+       "m x"   '(org-toggle-checkbox :which-key "Org toggle checkbox")
+       "m B"   '(org-babel-tangle :which-key "Org babel tangle")
+       "m I"   '(org-toggle-inline-images :which-key "Org toggle inline imager")
+       "m T"   '(org-todo-list :which-key "Org todo list")
+       "o a"   '(org-agenda :which-key "Org agenda")
+       )
+    
+
+
+;; MX Commands
+(setq ivy-initial-inputs-alist nil)
+(use-package smex)
+(smex-initialize)
+
+;; Language support syntax highlightinh
+(use-package haskell-mode)
+(use-package lua-mode)
+(use-package markdown-mode)
+
+;; NEOTREE
+;; Function for setting a fixed width for neotree.
+;; Defaults to 25 but I make it a bit longer (35) in the 'use-package neotree'.
+(defcustom neo-window-width 25
+  "*Specifies the width of the NeoTree window."
+  :type 'integer
+  :group 'neotree)
+
+(use-package neotree
+  :config
+  (setq neo-smart-open t
+        neo-window-width 30
+        neo-theme (if (display-graphic-p) 'icons 'arrow)
+        ;;neo-window-fixed-size nil
+        inhibit-compacting-font-caches t
+        projectile-switch-project-action 'neotree-projectile-action) 
+        ;; truncate long file names in neotree
+        (add-hook 'neo-after-create-hook
+           #'(lambda (_)
+               (with-current-buffer (get-buffer neo-buffer-name)
+                 (setq truncate-lines t)
+                 (setq word-wrap nil)
+                 (make-local-variable 'auto-hscroll-mode)
+                 (setq auto-hscroll-mode nil)))))
+
+;; show hidden files
+(setq-default neo-show-hidden-files t)
+
+(nvmap :prefix "SPC"
+       "t n"   '(neotree-toggle :which-key "Toggle neotree file viewer")
+       "d n"   '(neotree-dir :which-key "Open directory in neotree"))
+
+
+;; Runtime performance
+(setq gc-cons-threshold (* 2 1000 1000))
