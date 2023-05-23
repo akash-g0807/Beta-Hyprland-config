@@ -190,3 +190,5 @@
        :config
        ;;literate
        (default +bindings +smartparens))
+
+(setq pdf-view-midnight-colors '("#FFFFFF" . "#000000"))

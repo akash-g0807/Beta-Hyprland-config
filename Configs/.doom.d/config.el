@@ -614,3 +614,14 @@
 ;; Recommended keymap prefix on Windows/Linux
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
+
+(add-hook 'pdf-view-mode (lambda () (pdf-view-themed-minor-mode -1)))
+
+(add-hook 'pdf-view-mode (lambda () (pdf-view-dark-minor-mode -1)))
+
+(add-hook 'pdf-view (lambda () (pdf-view-themed-minor-mode -1)))
+
+(add-hook 'pdf-view (lambda () (pdf-view-dark-minor-mode -1)))
+
+
+(setq pdf-view-midnight-colors '("#FFFFFF" . "#000000"))
