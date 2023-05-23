@@ -76,6 +76,6 @@
 (package! clippy)
 (package! minimap)
 (package! olivetti)
-
-
-
+(package! company)
+(package! ccls)
+(package! platformio-mode)
