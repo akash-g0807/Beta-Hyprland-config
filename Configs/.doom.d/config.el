@@ -638,3 +638,14 @@
   (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
   :config
   (lsp-enable-which-key-integration t))
+
+;; HEADER BREADCRUMBS
+(defun efs/lsp-mode-setup ()
+  (setq lsp-headerline-breadcrumb-segments '(path-up-to-project file symbols))
+  (lsp-headerline-breadcrumb-mode))
+
+  :hook (lsp-mode . efs/lsp-mode-setup)
+
+;; LSP UI MODE
+;;(use-package lsp-ui
+  :hook (lsp-mode . lsp-ui-mode))
