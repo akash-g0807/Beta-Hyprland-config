@@ -78,7 +78,13 @@
 
 ;; Line Numbers and Column Numbers
 (column-number-mode)
+;; set type of line numbering (global variable)
+(setq display-line-numbers-type 'relative) 
+
+;; activate line numbering in all buffers/modes
+(global-display-line-numbers-mode)
 (global-display-line-numbers-mode t)
+(setq display-line-numbers-type 'relative)
 
 ;; Disable line numbers for some modes
 (dolist (mode '(org-mode-hook
