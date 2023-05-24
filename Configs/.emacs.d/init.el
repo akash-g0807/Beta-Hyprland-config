@@ -158,7 +158,7 @@
 
 (use-package doom-themes
   :init (load-theme 'doom-one))
-
+(doom-themes-neotree-config)
 
 
 
