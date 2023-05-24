@@ -330,7 +330,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
+   '(centaur-tabs pdf-tools dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -902,3 +902,186 @@
 (setq mouse-wheel-scroll-amount '(3 ((shift) . 3))) ;; how many lines at a time
 (setq mouse-wheel-progressive-speed t) ;; accelerate scrolling
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+
+
+;; spell check
+
+(use-package flyspell)
+(use-package flycheck-aspell)
+(dolist (hook '(text-mode-hook))
+  (add-hook hook (lambda () (flyspell-mode 1))))
+
+(dolist (hook '(change-log-mode-hook log-edit-mode-hook))
+  (add-hook hook (lambda () (flyspell-mode -1))))
+
+
+(eval-after-load "flyspell"
+  '(progn
+     (define-key flyspell-mouse-map [down-mouse-3] #'flyspell-correct-word)
+     (define-key flyspell-mouse-map [mouse-3] #'undefined)))
+
+(defun flyspell-english ()
+  (interactive)
+  (ispell-change-dictionary "default")
+  (flyspell-buffer))
+(setq ispell-program-name "aspell")
+(setq ispell-extra-args '("--sug-mode=ultra" "--lang=en_GB"))
+(setq spell-fu-directory "~/+STORE/dictionary") ;; Please create this directory manually.
+(setq ispell-personal-dictionary "~/+STORE/dictionary/.pws")
+(setq ispell-dictionary "en")
+
+;;;;;;;;;;;;;;;;;;;;;;;; LATEX ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(use-package pdf-tools
+  :ensure t
+  :config
+  (pdf-tools-install)
+  (setq-default pdf-view-display-size 'fit-page)
+  (setq pdf-annot-activate-created-annotations t)
+  (define-key pdf-view-mode-map (kbd "C-s") 'isearch-forward)
+  (define-key pdf-view-mode-map (kbd "C-r") 'isearch-backward)
+  (add-hook 'pdf-view-mode-hook (lambda ()
+				  (bms/pdf-midnite-amber))) ; automatically turns on midnight-mode for pdfs
+  )
+
+(use-package auctex-latexmk
+  :ensure t
+  :config
+  (auctex-latexmk-setup)
+  (setq auctex-latexmk-inherit-TeX-PDF-mode t))
+
+(use-package reftex
+  :ensure t
+  :defer t
+  :config
+  (setq reftex-cite-prompt-optional-args t)) ;; Prompt for empty optional arguments in cite
+
+(use-package auto-dictionary
+  :ensure t
+  :init(add-hook 'flyspell-mode-hook (lambda () (auto-dictionary-mode 1))))
+
+(use-package company-auctex
+  :ensure t
+  :init (company-auctex-init))
+
+(use-package company-math
+  :ensure t
+)
+
+(defun my-latex-mode-setup ()
+  (setq-local company-backends
+              (append '((company-math-symbols-latex company-latex-commands))
+                      company-backends)))
+
+(add-hook 'tex-mode-hook 'my-latex-mode-setup)
+(add-hook 'TeX-mode-hook 'my-latex-mode-setup)
+
+(use-package tex
+  :ensure auctex
+  :mode ("\\.tex\\'" . latex-mode)
+  :config (progn
+	    (setq TeX-source-correlate-mode t)
+	    (setq TeX-source-correlate-method 'synctex)
+	    (setq TeX-auto-save t)
+	    (setq TeX-parse-self t)
+	    (setq-default TeX-master "paper.tex")
+	    (setq reftex-plug-into-AUCTeX t)
+	    (pdf-tools-install)
+	    (setq TeX-view-program-selection '((output-pdf "PDF Tools"))
+		  TeX-source-correlate-start-server t)
+	    ;; Update PDF buffers after successful LaTeX runs
+	    (add-hook 'TeX-after-compilation-finished-functions
+		      #'TeX-revert-document-buffer)
+	    (add-hook 'LaTeX-mode-hook
+		      (lambda ()
+			(reftex-mode t)
+			(flyspell-mode t)))
+	    ))
+
+;;;;;;;;;;;;;;;;;;;;;;;; LATEX ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+;;;;;;;;;;; CENTAUR TABS ;;;;;;;;;;;;;;;;
+
+(use-package centaur-tabs
+  :init
+  (setq centaur-tabs-enable-key-bindings t)
+  :config
+  (setq centaur-tabs-style "bar"
+        centaur-tabs-height 32
+        centaur-tabs-set-icons t
+        centaur-tabs-show-new-tab-button t
+        centaur-tabs-set-modified-marker t
+        centaur-tabs-show-navigation-buttons t
+        centaur-tabs-set-bar 'under
+        centaur-tabs-show-count nil
+        ;; centaur-tabs-label-fixed-length 15
+        ;; centaur-tabs-gray-out-icons 'buffer
+        ;; centaur-tabs-plain-icons t
+        x-underline-at-descent-line t
+        centaur-tabs-left-edge-margin nil)
+  (centaur-tabs-change-fonts (face-attribute 'default :font) 110)
+  (centaur-tabs-headline-match)
+  ;; (centaur-tabs-enable-buffer-alphabetical-reordering)
+  ;; (setq centaur-tabs-adjust-buffer-order t)
+  (centaur-tabs-mode t)
+  (setq uniquify-separator "/")
+  (setq uniquify-buffer-name-style 'forward)
+  (defun centaur-tabs-buffer-groups ()
+    "`centaur-tabs-buffer-groups' control buffers' group rules.
+
+Group centaur-tabs with mode if buffer is derived from `eshell-mode' `emacs-lisp-mode' `dired-mode' `org-mode' `magit-mode'.
+All buffer name start with * will group to \"Emacs\".
+Other buffer group by `centaur-tabs-get-group-name' with project name."
+    (list
+     (cond
+      ;; ((not (eq (file-remote-p (buffer-file-name)) nil))
+      ;; "Remote")
+      ((or (string-equal "*" (substring (buffer-name) 0 1))
+           (memq major-mode '(magit-process-mode
+                              magit-status-mode
+                              magit-diff-mode
+                              magit-log-mode
+                              magit-file-mode
+                              magit-blob-mode
+                              magit-blame-mode
+                              )))
+       "Emacs")
+      ((derived-mode-p 'prog-mode)
+       "Editing")
+      ((derived-mode-p 'dired-mode)
+       "Dired")
+      ((memq major-mode '(helpful-mode
+                          help-mode))
+       "Help")
+      ((memq major-mode '(org-mode
+                          org-agenda-clockreport-mode
+                          org-src-mode
+                          org-agenda-mode
+                          org-beamer-mode
+                          org-indent-mode
+                          org-bullets-mode
+                          org-cdlatex-mode
+                          org-agenda-log-mode
+                          diary-mode))
+       "OrgMode")
+      (t
+       (centaur-tabs-get-group-name (current-buffer))))))
+  :hook
+  (dashboard-mode . centaur-tabs-local-mode)
+  (term-mode . centaur-tabs-local-mode)
+  (calendar-mode . centaur-tabs-local-mode)
+  (org-agenda-mode . centaur-tabs-local-mode)
+  :bind
+  ("C-<prior>" . centaur-tabs-backward)
+  ("C-<next>" . centaur-tabs-forward)
+  ("C-S-<prior>" . centaur-tabs-move-current-tab-to-left)
+  ("C-S-<next>" . centaur-tabs-move-current-tab-to-right)
+  (:map evil-normal-state-map
+        ("g t" . centaur-tabs-forward)
+        ("g T" . centaur-tabs-backward)))
+
+
+;;;;;;;;;;; CENTAUR TABS ;;;;;;;;;;;;;;;;
+
