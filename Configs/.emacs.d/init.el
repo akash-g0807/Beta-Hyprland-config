@@ -1029,8 +1029,44 @@
 			(flyspell-mode t)))
 	    ))
 (use-package latex-preview-pane)
-;;;;;;;;;;;;;;;;;;;;;;;; LATEX ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(require 'latex)					;(add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex --synctex=1%(mode)%' %t" TeX-run-TeX nil t))
+(add-hook 'LaTeX-mode-hook ;this are the hooks I want to enable during LaTeX-mode
+	  (lambda()
+	    (turn-on-reftex) ;enable reftex
+	   ; (turn-on-cdlatex) ; I am not using cdlatex mauch.
+	    (set (make-local-variable 'company-backends) '((separate: company-reftex-labels company-reftex-citations) (separate: company-auctex-symbols company-auctex-environments company-capf company-auctex-macros) company-math-symbols-latex
+	    company-latex-commands ))
+	    (rainbow-delimiters-mode)
+	    (setq TeX-auto-save t) ;enable autosave on during LaTeX-mode
+	    (setq TeX-parse-self t) ; enable autoparsing
+	    (setq TeX-save-query nil) ;
+	    (setq TeX-source-correlate-method 'synctex) ; enable synctex
+ 
+	    (setq TeX-source-correlate-mode t) ; enable text-source-correlate using synctex
+	    (TeX-fold-mode 1); enableing tex fold mode for better readability.
+;;	    (TeX-fold-buffer 1)
+	    (setq-default TeX-master nil) 
+	    (global-set-key (kbd "C-c C-g") 'pdf-sync-forward-search) ;sync from text to pdf
+	    (add-hook 'TeX-after-compilation-finished-functions
+		      #'TeX-revert-document-buffer) ; reload pdf buffer
+	    (setq reftex-plug-into-AUCTeX t) ; enable auctex
+	    (setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))
+	    (local-set-key [C-tab] 'TeX-complete-symbol) ;tex complete symbol
+	    ; could be ispell as well, depending on your preferences
+	    (setq ispell-program-name "aspell") 
+; this can obviously be set to any language your spell-checking program supports
+	    (setq ispell-dictionary "english") 
+	    (flyspell-mode) ; flyspell mode enable
+	    (flyspell-buffer); flyspell buffer
+	    (turn-on-auto-fill)
+	    (visual-line-mode)
+	    (LaTeX-math-mode)
+	    )
+	  )
+
+
+;;;;;;;;;;;;;;;;;;;;;;;; LATEX ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 ;;;;;;;;;;; CENTAUR TABS ;;;;;;;;;;;;;;;;
