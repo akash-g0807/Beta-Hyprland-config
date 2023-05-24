@@ -330,7 +330,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(centaur-tabs pdf-tools dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
+   '(lsp-pyright latex-preview-pane centaur-tabs pdf-tools dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -751,6 +751,35 @@
   :config
   (pyvenv-mode 1))
 
+;;; A minimal config for using lsp-mode
+
+(setq lsp-keymap-prefix "C-c l")
+
+(require 'lsp-mode)
+;; Start lsp-mode with desired languages
+(add-hook 'python-mode-hook #'lsp)
+(add-hook 'go-mode-hook     #'lsp)
+;; Add more as needed
+
+(setq lsp-eldoc-render-all t)
+
+;; Drop-down auto completion
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+
+(use-package company
+  :after lsp-mode
+  :hook (lsp-mode . company-mode)
+  :bind (:map company-active-map
+         ("<tab>" . company-complete-selection))
+        (:map lsp-mode-map
+         ("<tab>" . company-indent-or-complete-common))
+  :custom
+  (company-minimum-prefix-length 1)
+  (company-idle-delay 0.0))
+
+(use-package company-box
+  :hook (company-mode . company-box-mode))
 ;;;;;;;; PYTHON LANGUAGE SERVER ;;;;;;;;;;;;;;;;
 
 
@@ -997,7 +1026,7 @@
 			(reftex-mode t)
 			(flyspell-mode t)))
 	    ))
-
+(use-package latex-preview-pane)
 ;;;;;;;;;;;;;;;;;;;;;;;; LATEX ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
