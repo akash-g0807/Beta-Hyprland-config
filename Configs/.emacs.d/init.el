@@ -1112,5 +1112,16 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
         ("g T" . centaur-tabs-backward)))
 
 
+(nvmap :keymaps 'override :prefix "SPC"
+       "t c"   '(centaur-tabs-mode :which-key "Toggle Centaur tabs gloablly")
+       "t C"   '(centaur-tabs-local-mode :which-key "Toggle Centaur tabs locally")
+)
+
+
+(evil-define-key 'normal centaur-tabs-mode-map (kbd "g <right>") 'centaur-tabs-forward        ; default Doom binding is 'g t'
+                                               (kbd "g <left>")  'centaur-tabs-backward       ; default Doom binding is 'g T'
+                                               (kbd "g <down>")  'centaur-tabs-forward-group
+                                               (kbd "g <up>")    'centaur-tabs-backward-group)
+
 ;;;;;;;;;;; CENTAUR TABS ;;;;;;;;;;;;;;;;
 
