@@ -266,6 +266,8 @@
     "fde" '(lambda () (interactive) (find-file (expand-file-name "~/.emacs.d/Emacs.org")))))
 
 
+
+(add-hook 'after-make-frame-functions (lambda (f) (set-face-attribute 'default f :font "Fira Code Retina")))
 (use-package evil
   :init
   (setq evil-want-integration t)
