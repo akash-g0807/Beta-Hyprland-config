@@ -332,7 +332,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(yasnipper lsp-pyright latex-preview-pane centaur-tabs pdf-tools dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
+   '(lsp-latex yasnipper lsp-pyright latex-preview-pane centaur-tabs pdf-tools dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -962,6 +962,68 @@
 (setq ispell-personal-dictionary "~/+STORE/dictionary/.pws")
 (setq ispell-dictionary "en")
 
+(use-package lsp-ltex
+  :disabled
+  :custom
+  (lsp-ltex-enabled nil)
+  (lsp-ltex-mother-tongue "fr"))
+
+(use-package ispell
+  :preface
+  (defun my/switch-language ()
+    "Switch between the English and French for ispell, flyspell, and LanguageTool."
+    (interactive)
+    (let* ((current-dictionary ispell-current-dictionary)
+           (new-dictionary (if (string= current-dictionary "en_GB") "fr_BE" "en_GB")))
+      (ispell-change-dictionary new-dictionary)
+      (if (string= new-dictionary "fr_GB")
+          (progn
+            (setq lsp-ltex-language "fr"))
+        (progn
+          (setq lsp-ltex-language "en-GB")))
+      (flyspell-buffer)
+      (message "[✓] Dictionary switched to %s" new-dictionary)))
+  :custom
+  (ispell-hunspell-dict-paths-alist
+   '(("en_GB" "/usr/share/hunspell/en_GB.aff")
+     ("fr_BE" "/usr/share/hunspell/fr_BE.aff")))
+  ;; Save words in the personal dictionary without asking.
+  (ispell-silently-savep t)
+  :config
+  (setenv "LANG" "en_GB")
+  (cond ((executable-find "hunspell")
+         (setq ispell-program-name "hunspell")
+         (setq ispell-local-dictionary-alist '(("en_GB"
+                                                "[[:alpha:]]"
+                                                "[^[:alpha:]]"
+                                                "['’-]"
+                                                t
+                                                ("-d" "en_GB" )
+                                                nil
+                                                utf-8)
+                                               ("fr_BE"
+                                                "[[:alpha:]ÀÂÇÈÉÊËÎÏÔÙÛÜàâçèéêëîïôùûü]"
+                                                "[^[:alpha:]ÀÂÇÈÉÊËÎÏÔÙÛÜàâçèéêëîïôùûü]"
+                                                "['’-]"
+                                                t
+                                                ("-d" "fr_BE")
+                                                nil
+                                                utf-8))))
+        ((executable-find "aspell")
+         (setq ispell-program-name "aspell")
+         (setq ispell-extra-args '("--sug-mode=ultra"))))
+  ;; Ignore file sections for spell checking.
+  (add-to-list 'ispell-skip-region-alist '("#\\+begin_align" . "#\\+end_align"))
+  (add-to-list 'ispell-skip-region-alist '("#\\+begin_align*" . "#\\+end_align*"))
+  (add-to-list 'ispell-skip-region-alist '("#\\+begin_equation" . "#\\+end_equation"))
+  (add-to-list 'ispell-skip-region-alist '("#\\+begin_equation*" . "#\\+end_equation*"))
+  (add-to-list 'ispell-skip-region-alist '("#\\+begin_example" . "#\\+end_example"))
+  (add-to-list 'ispell-skip-region-alist '("#\\+begin_labeling" . "#\\+end_labeling"))
+  (add-to-list 'ispell-skip-region-alist '("#\\+begin_src" . "#\\+end_src"))
+  (add-to-list 'ispell-skip-region-alist '("\\$" . "\\$"))
+  (add-to-list 'ispell-skip-region-alist '(org-property-drawer-re))
+  (add-to-list 'ispell-skip-region-alist '(":\\(PROPERTIES\\|LOGBOOK\\):" . ":END:")))
+
 ;;;;;;;;;;;;;;;;;;;;;;;; LATEX ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (use-package pdf-tools
@@ -1065,6 +1127,15 @@
 	    (LaTeX-math-mode)
 	    )
 	  )
+
+
+(use-package lsp-latex
+  :if (executable-find "texlab")
+  ;; To properly load `lsp-latex', the `require' instruction is important.
+  :hook (LaTeX-mode . (lambda ()
+                        (require 'lsp-latex)
+                        (lsp-deferred)))
+  :custom (lsp-latex-build-on-save t))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;; LATEX ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
