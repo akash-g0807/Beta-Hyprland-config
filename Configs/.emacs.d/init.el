@@ -346,7 +346,7 @@
   :config
   (general-evil-setup t))
 
-(nvmap :prefix "SPC"
+(nvmap :prefix "SPC" :states '(normal visual global) :keymaps 'override
        "b b"   '(ibuffer :which-key "Ibuffer")
        "b c"   '(clone-indirect-buffer-other-window :which-key "Clone indirect buffer other window")
        "b k"   '(kill-current-buffer :which-key "Kill current buffer")
@@ -357,7 +357,7 @@
 
 ;; BOOKMARKS
 (setq bookmark-default-file "~/.emacs.d/bookmarks")
-(nvmap :prefix "SPC"
+(nvmap :prefix "SPC" :states '(normal visual global) :keymaps 'override
        "b L"   '(list-bookmarks :which-key "List Bookmarks")
        "b m"   '(bookmark-set :which-key "Set Bookmark")
        "b M"   '(bookmark-set :which-key "Delete Bookmarks")
@@ -365,7 +365,7 @@
       
 
 ;; EVALUATE ELSIP COMMANDS
-(nvmap :states '(normal visual) :keymaps 'override :prefix "SPC"
+(nvmap :states '(normal visual global) :keymaps 'override :prefix "SPC"
        "e b"   '(eval-buffer :which-key "Eval elisp in buffer")
        "e d"   '(eval-defun :which-key "Eval defun")
        "e e"   '(eval-expression :which-key "Eval elisp expression")
