@@ -361,7 +361,8 @@
        "b L"   '(list-bookmarks :which-key "List Bookmarks")
        "b m"   '(bookmark-set :which-key "Set Bookmark")
        "b M"   '(bookmark-set :which-key "Delete Bookmarks")
-       "b w"   '(bookmark-save :which-key "Save bookmark tp file"))
+       "b w"   '(bookmark-save :which-key "Save bookmark tp file")
+       "b RET" '(counsel-bookmark :which-key "Save bookmark"))
       
 
 ;; EVALUATE ELSIP COMMANDS
