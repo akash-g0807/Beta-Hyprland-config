@@ -63,6 +63,19 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+
+;; NOTE: If you want to move everything out of the ~/.emacs.d folder
+;; reliably, set `user-emacs-directory` before loading no-littering!
+;(setq user-emacs-directory "~/.cache/emacs")
+
+(use-package no-littering)
+
+;; no-littering doesn't set this by default so we must place
+;; auto save files in the same path as it uses for sessions
+(setq auto-save-file-name-transforms
+      `((".*" ,(no-littering-expand-var-file-name "auto-save/") t)))
+
+
 ;; Line Numbers and Column Numbers
 (column-number-mode)
 (global-display-line-numbers-mode t)
@@ -189,6 +202,16 @@
          :map minibuffer-local-map
          ("C-r" . 'counsel-minibuffer-history)))
 
+;;; IVY PRESICNT
+(use-package ivy-prescient
+  :after counsel
+  :custom
+  (ivy-prescient-enable-filtering nil)
+  :config
+  ;; Uncomment the following line to have sorting remembered across sessions!
+  (prescient-persist-mode 1)
+  (ivy-prescient-mode 1))
+
 (use-package helpful
   :custom
   (counsel-describe-function-function #'helpful-callable)
@@ -228,6 +251,19 @@
   (setq evil-collection-mode-list '(dashboard dired ibuffer))
   (evil-collection-init))
 (use-package evil-tutor)
+
+(use-package general
+  :after evil
+  :config
+  (general-create-definer efs/leader-keys
+    :keymaps '(normal insert visual emacs)
+    :prefix "SPC"
+    :global-prefix "C-SPC")
+
+  (efs/leader-keys
+    "t"  '(:ignore t :which-key "toggles")
+    "tt" '(counsel-load-theme :which-key "choose theme")
+    "fde" '(lambda () (interactive) (find-file (expand-file-name "~/.emacs.d/Emacs.org")))))
 
 
 (use-package evil
@@ -392,20 +428,34 @@
     (set-face-attribute (car face) nil :font "Cantarell" :weight 'regular :height (cdr face)))
 
   ;; Ensure that anything that should be fixed-pitch in Org files appears that way
-  (set-face-attribute 'org-block nil :foreground nil :inherit 'fixed-pitch)
-  (set-face-attribute 'org-code nil   :inherit '(shadow fixed-pitch))
-  (set-face-attribute 'org-table nil   :inherit '(shadow fixed-pitch))
+   (set-face-attribute 'org-block nil    :foreground nil :inherit 'fixed-pitch)
+  (set-face-attribute 'org-table nil    :inherit 'fixed-pitch)
+  (set-face-attribute 'org-formula nil  :inherit 'fixed-pitch)
+  (set-face-attribute 'org-code nil     :inherit '(shadow fixed-pitch))
+  (set-face-attribute 'org-table nil    :inherit '(shadow fixed-pitch))
   (set-face-attribute 'org-verbatim nil :inherit '(shadow fixed-pitch))
   (set-face-attribute 'org-special-keyword nil :inherit '(font-lock-comment-face fixed-pitch))
   (set-face-attribute 'org-meta-line nil :inherit '(font-lock-comment-face fixed-pitch))
-  (set-face-attribute 'org-checkbox nil :inherit 'fixed-pitch))
+  (set-face-attribute 'org-checkbox nil  :inherit 'fixed-pitch)
+  (set-face-attribute 'line-number nil :inherit 'fixed-pitch)
+  (set-face-attribute 'line-number-current-line nil :inherit 'fixed-pitch))
+
+(defun efs/org-mode-setup ()
+  (org-indent-mode)
+  (variable-pitch-mode 1)
+  (visual-line-mode 1))
+
 
 (use-package org
+  :pin org
+  :commands (org-capture org-agenda)
   :hook (org-mode . efs/org-mode-setup)
   :config
   (setq org-ellipsis " ▾")
-  (efs/org-font-setup))
 
+  (setq org-agenda-start-with-log-mode t)
+  (setq org-log-done 'time)
+  (setq org-log-into-drawer t))
 
 
 ;;;;;; ORG AGENDA ;;;;;;
@@ -544,7 +594,36 @@
 (use-package visual-fill-column
   :hook (org-mode . efs/org-mode-visual-fill))
 
+;;;;;;;;;;;;;;;;;;;;;; ORG  BABEL ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(with-eval-after-load 'org
+  (org-babel-do-load-languages
+      'org-babel-load-languages
+      '((emacs-lisp . t)
+      (python . t)))
 
+  (push '("conf-unix" . conf-unix) org-src-lang-modes))
+
+
+(with-eval-after-load 'org
+  ;; This is needed as of Org 9.2
+  (require 'org-tempo)
+
+  (add-to-list 'org-structure-template-alist '("sh" . "src shell"))
+  (add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
+  (add-to-list 'org-structure-template-alist '("py" . "src python")))
+
+  ;; Automatically tangle our Emacs.org config file when we save it
+(defun efs/org-babel-tangle-config ()
+  (when (string-equal (file-name-directory (buffer-file-name))
+                      (expand-file-name user-emacs-directory))
+    ;; Dynamic scoping to the rescue
+    (let ((org-confirm-babel-evaluate nil))
+      (org-babel-tangle))))
+
+(add-hook 'org-mode-hook (lambda () (add-hook 'after-save-hook #'efs/org-babel-tangle-config)))
+
+
+;;;;;;;;;;;;;;;;;;;;;; ORG  BABEL ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 :;;;;;;;;;;;;;;;;;;;;;;;; ORG MODE STUFF ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -580,6 +659,8 @@
   :config
   (setq typescript-indent-level 2))
 
+
+;;; COMPANY MODE
 (use-package company
   :after lsp-mode
   :hook (lsp-mode . company-mode)
@@ -626,6 +707,51 @@
 ;;;;;;;;;;;;;;;;;;; LSO MODE
 (use-package evil-nerd-commenter
   :bind ("M-/" . evilnc-comment-or-uncomment-lines))
+
+
+;;;;;;;;;; DEBUGGING DAP ;;;;;;;;;;;;
+
+(use-package dap-mode
+  ;; Uncomment the config below if you want all UI panes to be hidden by default!
+  ;; :custom
+  ;; (lsp-enable-dap-auto-configure nil)
+  ;; :config
+  ;; (dap-ui-mode 1)
+  :commands dap-debug
+  :config
+  ;; Set up Node debugging
+  (require 'dap-node)
+  (dap-node-setup) ;; Automatically installs Node debug adapter if needed
+
+  ;; Bind `C-c l d` to `dap-hydra` for easy access
+  (general-define-key
+    :keymaps 'lsp-mode-map
+    :prefix lsp-keymap-prefix
+    "d" '(dap-hydra t :wk "debugger")))
+
+
+;;;;;;;;;; DEBUGGING DAP ;;;;;;;;;;;;
+
+
+;;;;;;;; PYTHON LANGUAGE SERVER ;;;;;;;;;;;;;;;;
+
+(use-package python-mode
+  :ensure t
+  :hook (python-mode . lsp-deferred)
+  :custom
+  ;; NOTE: Set these if Python 3 is called "python3" on your system!
+  ;; (python-shell-interpreter "python3")
+  ;; (dap-python-executable "python3")
+  (dap-python-debugger 'debugpy)
+  :config
+  (require 'dap-python))
+
+(use-package pyvenv
+  :after python-mode
+  :config
+  (pyvenv-mode 1))
+
+;;;;;;;; PYTHON LANGUAGE SERVER ;;;;;;;;;;;;;;;;
 
 
 ;; DIRED
