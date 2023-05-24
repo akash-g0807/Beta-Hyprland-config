@@ -14,12 +14,35 @@
                                         (shell-command-to-string "wl-paste -n | tr -d '\r'")))))
 (defvar runemacs/default-font-size 120)
 
+
 (scroll-bar-mode -1)        ; Disable visible scrollbar
 (tool-bar-mode -1)          ; Disable the toolbar
 (tooltip-mode -1)           ; Disable tooltips
 (set-fringe-mode 10)        ; Give some breathing room
 
 (menu-bar-mode -1)            ; Disable the menu bar
+
+
+
+;;;;;;;;;;; DASHBOARD ;;;;;;;;;;;;;;;;;;
+
+(require 'dashboard)
+(dashboard-setup-startup-hook)
+;; Or if you use use-package
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook))
+
+(setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
+
+(setq dashboard-items '((recents  . 5)
+                        (bookmarks . 5)
+                        (projects . 5)
+                        (agenda . 5)
+                        (registers . 5)))
+
+;;;;;;;;;;; DASHBOARD ;;;;;;;;;;;;;;;;;
 
 ;; Set up the visible bell
 (setq visible-bell t)
@@ -607,6 +630,10 @@
                  (setq word-wrap nil)
                  (make-local-variable 'auto-hscroll-mode)
                  (setq auto-hscroll-mode nil)))))
+(defun my/disable-line-numbers (&optional dummy)
+    (display-line-numbers-mode -1))
+(add-hook 'neo-after-create-hook 'my/disable-line-numbers)
+
 
 ;; show hidden files
 (setq-default neo-show-hidden-files t)
@@ -618,3 +645,9 @@
 
 ;; Runtime performance
 (setq gc-cons-threshold (* 2 1000 1000))
+
+;; MOUSE SCROLLING
+(setq scroll-conservatively 101) ;; value greater than 100 gets rid of half page jumping
+(setq mouse-wheel-scroll-amount '(3 ((shift) . 3))) ;; how many lines at a time
+(setq mouse-wheel-progressive-speed t) ;; accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
