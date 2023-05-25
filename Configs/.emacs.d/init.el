@@ -677,7 +677,7 @@
     "Returns function that ignores its arguments and invokes FNC."
     `(lambda (&rest _rest)
        (funcall ,fnc)))
-  :hook ((after-save . my/config-tangle)
+  :hook (;; (after-save . my/config-tangle)
          (auto-save . org-save-all-org-buffers)
          (org-mode . visual-line-mode))
   :custom
