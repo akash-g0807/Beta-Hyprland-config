@@ -176,3 +176,14 @@ ttf-ubuntu-mono-nerd
 irony-mode
 ccls
 emacs-gcc-wayland-devel-bin 
+ttf-fira-code
+ttf-fira-code-nerd
+ispell
+python-pipenv
+microsoft-python-language-server 
+pyright
+python-lsp-server
+ninja
+extra-cmake-modules
+kwidgetsaddons
+xwaylandvideobridge-cursor-mode-2-git
