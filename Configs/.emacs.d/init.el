@@ -985,7 +985,7 @@
   (org-clock-in-switch-to-state "STARTED")
   (org-clock-out-remove-zero-time-clocks t)
   (org-clock-persist t)
-  (org-clock-persist-file (expand-file-name (format "%s/emacs/org-clock-save.el" xdg-cache)))
+  ;;(org-clock-persist-file (expand-file-name (format "%s/emacs/org-clock-save.el" xdg-cache)))
   (org-clock-persist-query-resume nil)
   (org-clock-report-include-clocking-task t)
   (org-show-notification-handler (lambda (msg) (alert msg))))
