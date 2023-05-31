@@ -187,3 +187,7 @@ ninja
 extra-cmake-modules
 kwidgetsaddons
 xwaylandvideobridge-cursor-mode-2-git
+fonts-et-book
+adobe-source-sans-fonts
+ttf-mac-fonts
+ttf-ms-fonts
