@@ -13,6 +13,21 @@
                                       (unless (and wl-copy-p (process-live-p wl-copy-p))
                                         (shell-command-to-string "wl-paste -n | tr -d '\r'")))))
 (defvar runemacs/default-font-size 120)
+(defvar xdg-bin (getenv "XDG_BIN_HOME")
+  "The XDG bin base directory.")
+
+(defvar xdg-cache (getenv "XDG_CACHE_HOME")
+  "The XDG cache base directory.")
+
+(defvar xdg-config (getenv "XDG_CONFIG_HOME")
+  "The XDG config base directory.")
+
+(defvar xdg-data (getenv "XDG_DATA_HOME")
+  "The XDG data base directory.")
+
+(defvar xdg-lib (getenv "XDG_LIB_HOME")
+  "The XDG lib base directory.")
+
 
 
 (scroll-bar-mode -1)        ; Disable visible scrollbar
@@ -245,7 +260,7 @@
 ;; VIM
 
 (use-package evil
-  :init (setq evil-want-C-i-jump nil)      ;; tweak evil's configuration before loading it
+  :init (setq evil-want-C-i-jump nil)     ;; tweak evil's configuration before loading it
   (setq evil-want-integration t) ;; This is optional since it's already set to t by default.
   (setq evil-want-keybinding nil)
   (setq evil-vsplit-window-right t)
@@ -319,6 +334,29 @@
 
 ;;;;;;;;;;;;;;;;;; GARBAGE COLLECTION ::::::::::::::::::::::::::::;;;
 
+;;;;;;;;;;;;;;;;;; FOCUS NEW BUFFER
+
+(use-package window
+  :ensure nil
+  :bind (("C-x 2" . vsplit-last-buffer)
+         ("C-x 3" . hsplit-last-buffer)
+         ;; Don't ask before killing a buffer.
+         ([remap kill-buffer] . kill-this-buffer))
+  :preface
+  (defun hsplit-last-buffer ()
+    "Focus to the last created horizontal window."
+    (interactive)
+    (split-window-horizontally)
+    (other-window 1))
+
+  (defun vsplit-last-buffer ()
+    "Focus to the last created vertical window."
+    (interactive)
+    (split-window-vertically)
+    (other-window 1)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
  
  ;; HYDRA
 
@@ -338,7 +376,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(platformio-mode irony-mode company-irony irony-eldoc company-math company-auctex auto-dictionary auctex-latexmk flycheck-aspell dired-single pyvenv python-mode dap-mode org-roam org-wild-notifier org-bullets lsp-latex yasnipper lsp-pyright latex-preview-pane centaur-tabs pdf-tools dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
+   '(dired-subtree irony-mode lsp-latex yasnipper lsp-pyright latex-preview-pane centaur-tabs pdf-tools dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -947,7 +985,7 @@
   (org-clock-in-switch-to-state "STARTED")
   (org-clock-out-remove-zero-time-clocks t)
   (org-clock-persist t)
-  ;;(org-clock-persist-file (expand-file-name (format "%s/emacs/org-clock-save.el" xdg-cache)))
+  (org-clock-persist-file (expand-file-name (format "%s/emacs/org-clock-save.el" xdg-cache)))
   (org-clock-persist-query-resume nil)
   (org-clock-report-include-clocking-task t)
   (org-show-notification-handler (lambda (msg) (alert msg))))
@@ -1088,7 +1126,6 @@
          (lambda () (require 'ccls) (lsp))))
   
 
-;; emacs-lisp
   (use-package platformio-mode)
   ;; edit ino files with adruino mode. 
   (add-to-list 'auto-mode-alist '("\\.ino$" . arduino-mode)) 
@@ -1282,6 +1319,18 @@
        )
     
 
+;;;;;;; DIRED SUB TREE
+(use-package dired-subtree
+  :after dired
+  :bind (:map dired-mode-map
+              ("<tab>" . dired-subtree-toggle)))
+
+
+;;;;;; DIRED NARROW
+(use-package dired-narrow
+  :ensure nil
+  :bind (("C-c C-n" . dired-narrow)
+         ("C-c C-f" . dired-narrow-fuzzy)))
 
 ;; MX Commands
 (setq ivy-initial-inputs-alist nil)
@@ -1638,14 +1687,14 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
                                                (kbd "g <up>")    'centaur-tabs-backward-group)
 
 ;;;;;;;;;;; CENTAUR TABS ;;;;;;;;;;;;;;;;
+
+
 (setq doom-font (font-spec :family "JetBrains Mono" :size 15)
       doom-variable-pitch-font (font-spec :family "Ubuntu" :size 15)
       doom-big-font (font-spec :family "JetBrains Mono" :size 24))
 
-
- (setq doom-themes-enable-bold t
-       doom-themes-enable-italic t)
-
+(setq doom-themes-enable-bold t
+      doom-themes-enable-italic t)
 
 (defun dt/org-colors-doom-one ()
   "Enable Doom One colors for Org headers."
@@ -1809,3 +1858,4 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
 
 ;; Load our desired dt/org-colors-* theme on startup
 (dt/org-colors-doom-one)
+
