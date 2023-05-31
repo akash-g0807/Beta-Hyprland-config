@@ -1643,6 +1643,9 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
       doom-big-font (font-spec :family "JetBrains Mono" :size 24))
 
 
+ (setq doom-themes-enable-bold t
+       doom-themes-enable-italic t)
+
 
 (defun dt/org-colors-doom-one ()
   "Enable Doom One colors for Org headers."
