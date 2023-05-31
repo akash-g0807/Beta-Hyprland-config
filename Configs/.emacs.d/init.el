@@ -338,7 +338,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(lsp-latex yasnipper lsp-pyright latex-preview-pane centaur-tabs pdf-tools dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
+   '(platformio-mode irony-mode company-irony irony-eldoc company-math company-auctex auto-dictionary auctex-latexmk flycheck-aspell dired-single pyvenv python-mode dap-mode org-roam org-wild-notifier org-bullets lsp-latex yasnipper lsp-pyright latex-preview-pane centaur-tabs pdf-tools dired-hide-dotfiles neotree lua-mode haskell-mode smex peep-dired dired-open all-the-icons-dired company-lsp irony ccls evil-nerd-commenter company-box company typescript-mode lsp-ivy lsp-treemacs lsp-ui lsp-mode visual-fill-column forge evil-magit magit dashboard counsel-projectile projectile hydra which-key use-package rainbow-delimiters ivy-rich helpful general evil-collection doom-themes doom-modeline counsel command-log-mode all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -947,7 +947,7 @@
   (org-clock-in-switch-to-state "STARTED")
   (org-clock-out-remove-zero-time-clocks t)
   (org-clock-persist t)
-  (org-clock-persist-file (expand-file-name (format "%s/emacs/org-clock-save.el" xdg-cache)))
+  ;;(org-clock-persist-file (expand-file-name (format "%s/emacs/org-clock-save.el" xdg-cache)))
   (org-clock-persist-query-resume nil)
   (org-clock-report-include-clocking-task t)
   (org-show-notification-handler (lambda (msg) (alert msg))))
@@ -1088,6 +1088,27 @@
          (lambda () (require 'ccls) (lsp))))
   
 
+;; emacs-lisp
+  (use-package platformio-mode)
+  ;; edit ino files with adruino mode. 
+  (add-to-list 'auto-mode-alist '("\\.ino$" . arduino-mode)) 
+  ;; Enable irony for all c++ files, and platformio-mode only
+  ;; when needed (platformio.ini present in project root).
+  (add-hook 'c++-mode-hook (lambda ()
+                             (irony-mode)
+                             (irony-eldoc)
+                             (platformio-conditionally-enable)))
+
+  ;; Use irony's completion functions.
+  (add-hook 'irony-mode-hook
+            (lambda ()
+              (define-key irony-mode-map [remap completion-at-point]
+                'irony-completion-at-point-async)
+
+              (define-key irony-mode-map [remap complete-symbol]
+                'irony-completion-at-point-async)
+
+              (irony-cdb-autosetup-compile-options)))
 
 
 ;;;;;;;;;;;;;;;;;;; LSO MODE
