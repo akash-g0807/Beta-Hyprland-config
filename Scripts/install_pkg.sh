@@ -50,7 +50,7 @@ done < $install_list
 if [ `echo $pkg_arch | wc -w` -gt 0 ]
 then
     echo "installing $pkg_arch from arch repo..."
-    sudo pacman -S $pkg_arch
+    yay -S $pkg_arch
 fi
 
 if [ `echo $pkg_aur | wc -w` -gt 0 ]
