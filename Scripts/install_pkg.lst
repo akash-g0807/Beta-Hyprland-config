@@ -60,7 +60,6 @@ bluez
 bluez-utils
 blueman
 zsh
-zsh-syntax-highlighting
 zsh-completions
 qt5-base
 qt5-wayland
