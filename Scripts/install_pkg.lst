@@ -74,7 +74,6 @@ visual-studio-code-bin
 qt5ct
 qt5-styleplugins
 xorg-xhost
-alacritty
 wdisplays
 snapper
 snap-pac
@@ -185,7 +184,3 @@ ninja
 extra-cmake-modules
 kwidgetsaddons
 xwaylandvideobridge-cursor-mode-2-git
-fonts-et-book
-adobe-source-sans-fonts
-ttf-mac-fonts
-ttf-ms-fonts
