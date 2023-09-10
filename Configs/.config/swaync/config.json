@@ -64,7 +64,7 @@
     },
     "backlight": {
       "label": "",
-      "device": "amdgpu_bl0",
+      "device": "intel-backlight",
       "min": 10
     },
     "volume": {
