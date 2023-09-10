@@ -171,9 +171,7 @@ ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-ubuntu-font-family
 ttf-ubuntu-mono-nerd
-irony-mode
 ccls
-emacs-gcc-wayland-devel-bin 
 ttf-fira-code
 ttf-firacode-nerd
 ispell
@@ -183,4 +181,3 @@ python-lsp-server
 ninja
 extra-cmake-modules
 kwidgetsaddons
-xwaylandvideobridge-cursor-mode-2-git
