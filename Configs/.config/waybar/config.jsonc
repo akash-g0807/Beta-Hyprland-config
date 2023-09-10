@@ -9,10 +9,10 @@
     "modules-left": [
         "clock",
         "custom/weather",
-	"custom/cava-internal",
+	//"custom/cava-internal",
 	"custom/mode",
 	"custom/wallchange",
-        "wlr/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-center": ["hyprland/window"],
     "modules-right": [
