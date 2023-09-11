@@ -248,6 +248,26 @@ Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scrip
     - replace the one found in `/etc/tlp.conf`
 - If want to only disable autosuspend on specific device then use `lsusb` to get ID and then: `USB_DENYLIST = "****:**** ****:****"` Each successive entry is separated by a space
 
+# Instructions for hibernation
+
+1) Make a swapfile by doing the following commands
+    `btrfs subvolume create /swap`
+    `truncate -s 0 swapfile`
+    `chattr +C swapfile`
+    `fallocate -l <RAM_SIZE>G swapfile`
+    `chmod 0600 swapfile`
+    `mkswap swapfile`
+    `swapon swapfile`
+2) edit `/etc/fstab`
+    `sudo umount /swap`
+    `echo -e "/swap/swapfile\tnone\tswap\tdefaults\t0\t0" | sudo tee -a /etc/fstab`
+    `sudo systemctl daemon-reload`
+    `sudo mount /swap`
+    `sudo swapon -a`
+    `swapon -s`
+
+OR we can do it in one line doing `btrfs subvolume create /swap && btrfs filesystem mkswapfile --size 4g --uuid clear /swap/swapfile`
+
 # To Do
 - Iron out bugs in light mode (Done)
 - Make Light mode Colors consistent (Done)
