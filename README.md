@@ -258,6 +258,7 @@ Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scrip
     - `chmod 0600 swapfile`
     - `mkswap swapfile`
     - `swapon swapfile`
+OR we can do it in one line doing btrfs subvolume create /swap && btrfs filesystem mkswapfile --size 4g --uuid clear /swap/swapfile
 2) edit `/etc/fstab`
     - `sudo umount /swap`
     - `echo -e "/swap/swapfile\tnone\tswap\tdefaults\t0\t0" | sudo tee -a /etc/fstab`
@@ -279,8 +280,6 @@ Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scrip
     - sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg 
     - reboot
 Test by `systemctl enable hibernate`
-
-OR we can do it in one line doing `btrfs subvolume create /swap && btrfs filesystem mkswapfile --size 4g --uuid clear /swap/swapfile`
 
 # To Do
 - Iron out bugs in light mode (Done)
