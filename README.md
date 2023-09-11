@@ -265,6 +265,20 @@ Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scrip
     - `sudo mount /swap`
     - `sudo swapon -a`
     - `swapon -s`
+3) Enable hibernation
+    - export swp_uuid=$(findmnt -no UUID -T /swap/swapfile) && echo $swp_uuid
+    - curl -s "https://raw.githubusercontent.com/osandov/osandov-linux/master/scripts/btrfs_map_physical.c" > bmp.c
+    - gcc -O2 -o bmp bmp.c
+    - swp_offset=$(echo "$(sudo ./bmp /swap/swapfile | egrep "^0\s+" | cut -f9) / $(getconf PAGESIZE)" | bc) && echo $swp_offset
+    - echo -e "GRUB_CMDLINE_LINUX_DEFAULT+=\" resume=UUID=$swp_uuid resume_offset=$swp_offset \"" | sudo tee -a /etc/default/grub
+    - Add resume to `/etc/mkinitcpio.conf` in `HOOKS` after `filesystems`
+    - `sudo mkdir -pv /etc/systemd/system/{systemd-logind.service.d,systemd-hibernate.service.d}`
+    - `echo -e "[Service]\nEnvironment=SYSTEMD_BYPASS_HIBERNATION_MEMORY_CHECK=1" | sudo tee /etc/systemd/system/systemd-logind.service.d/override.conf`
+    - `echo -e "[Service]\nEnvironment=SYSTEMD_BYPASS_HIBERNATION_MEMORY_CHECK=1" | sudo tee /etc/systemd/system/systemd-hibernate.service.d/override.conf`
+4) Update grub and mkinitcpio
+    - sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg 
+    - reboot
+Test by `systemctl enable hibernate`
 
 OR we can do it in one line doing `btrfs subvolume create /swap && btrfs filesystem mkswapfile --size 4g --uuid clear /swap/swapfile`
 
