@@ -251,14 +251,7 @@ Thank you [prashanthrangan](https://github.com/prasanthrangan) for install scrip
 # Instructions for hibernation
 
 1) Make a swapfile by doing the following commands
-    - `btrfs subvolume create /swap`
-    - `truncate -s 0 swapfile`
-    - `chattr +C swapfile`
-    - `fallocate -l <RAM_SIZE>G swapfile`
-    - `chmod 0600 swapfile`
-    - `mkswap swapfile`
-    - `swapon swapfile`
-    - OR we can do it in one line doing `btrfs subvolume create /swap && btrfs filesystem mkswapfile --size <RAM_SIZE>g --uuid clear /swap/swapfile`
+    - `btrfs subvolume create /swap && btrfs filesystem mkswapfile --size <RAM_SIZE>g --uuid clear /swap/swapfile`
 2) edit `/etc/fstab`
     - `sudo umount /swap`
     - `echo -e "/swap/swapfile\tnone\tswap\tdefaults\t0\t0" | sudo tee -a /etc/fstab`
