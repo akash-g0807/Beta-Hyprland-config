@@ -170,6 +170,8 @@ key[Control-Right]="${terminfo[kRIT5]}"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="$HOME/.emacs.d/bin:$PATH" 
+export PATH="$HOME/.cargo/bin:$PATH"
+export SUDO_EDITOR="/usr/bin/nvim"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
