@@ -7,7 +7,7 @@ gst-plugin-pipewire
 wireplumber
 networkmanager
 network-manager-applet
-hyprland
+hyprland-nvidia-hidpi-git
 xorg-xwayland
 polkit-gnome
 ffmpeg
@@ -26,7 +26,7 @@ tumbler
 playerctl
 noise-suppression-for-voice
 thunar-archive-plugin
-waybar-hyprland-git
+waybar
 wlogout
 swaylock-effects
 sddm-git
