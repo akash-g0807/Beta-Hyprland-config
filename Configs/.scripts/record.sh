@@ -1,6 +1,6 @@
 #!/bin/sh
 
-active=$(pactl list short sinks | cut -f2)
+active=$(pactl list sources | grep "Name" |grep "alsa_input" | cut -d ' ' -f2)
 
 filename=$(date +%F_%T.mkv)
 
