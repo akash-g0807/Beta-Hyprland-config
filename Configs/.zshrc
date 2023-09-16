@@ -175,3 +175,10 @@ export SUDO_EDITOR="/usr/bin/nvim"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+
+# Created by `pipx` on 2023-09-16 21:37:06
+export PATH="$PATH:/home/akashg/.local/bin"
+
+
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.platformio/penv/bin
