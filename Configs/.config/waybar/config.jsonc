@@ -1,226 +1,222 @@
 {
-    "layer": "top",
-    "position": "top",
-    "mod": "dock",
-    "exclusive": true,
-    "passthrough": false,
-    "gtk-layer-shell": true,
-    "height": 0,
-    "modules-left": [
-        "clock",
-        "custom/weather",
-	//"custom/cava-internal",
-	"custom/mode",
-	"custom/wallchange",
-        "hyprland/workspaces"
-    ],
-    "modules-center": ["hyprland/window"],
-    "modules-right": [
-	"custom/recorder",
-	"custom/waybar-mpris",
-        "tray",
-        "custom/updates",
-        "custom/language",
-        "battery",
-        "backlight",
-        "pulseaudio",
-        "pulseaudio#microphone",
-	"custom/power",
-	"custom/notifications"
-    ],
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "height": 0,
+  "modules-left": [
+    "clock",
+    "custom/weather",
+    //"custom/cava-internal",
+    "custom/mode",
+    "custom/wallchange",
+    "hyprland/workspaces"
+  ],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "custom/recorder",
+    "custom/waybar-mpris",
+    "tray",
+    "custom/updates",
+    "custom/language",
+    "battery",
+    "backlight",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "custom/power",
+    "custom/notifications"
+  ],
 
-    "hyprland/window": {
-        "format": "{}",
-	"rewrite": {
-        "": "<span color='#6a92d7'> Desktop</span>"
-      }
+  "hyprland/window": {
+    "format": "{}",
+    "rewrite": {
+      "": "<span color='#6a92d7'> Desktop</span>"
+    }
+  },
+  "wlr/workspaces": {
+    "disable-scroll": true,
+    "sort-by-number": true, //It did not have an effect
+    //"sort-by-name": true,
+    "all-outputs": false,
+    "on-click": "activate",
+    "format": "{icon}",
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": []
+    }
+  },
+  "custom/updates": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+      "has-updates": "󱍷",
+      "updated": "󰂪"
     },
-    "wlr/workspaces": {
-        "disable-scroll": true,
-	"sort-by-number": true, //It did not have an effect
-        //"sort-by-name": true,
-        "all-outputs": true,
-        "on-click": "activate",
-        "format": "{icon}",
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
-        }
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates"
+  },
+  "custom/weather": {
+    "tooltip": true,
+    "format": "{}",
+    "interval": 30,
+    "exec": "wttrbar",
+    "return-type": "json"
+  },
+  "tray": {
+    "icon-size": 13,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{: %R   %d/%m}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["", "", ""],
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "min-length": 6
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
     },
-    "custom/updates": {
-       "format": "{} {icon}",
-       "return-type": "json",
-       "format-icons": {
-           "has-updates": "󱍷",
-           "updated": "󰂪"
-       },
-       "exec-if": "which waybar-module-pacman-updates",
-       "exec": "waybar-module-pacman-updates"
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "tooltip": false,
+    "format-muted": " Muted",
+    "on-click": "pamixer -t",
+    "on-scroll-up": "pamixer -i 5",
+    "on-scroll-down": "pamixer -d 5",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    }
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " Muted",
+    "on-click": "pamixer --default-source -t",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "scroll-step": 5
+  },
+  "custom/notifications": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂚",
+      "dnd-notification": "󱅫",
+      "dnd-none": "󰂛",
+      "inhibited-notification": "󱅫",
+      "inhibited-none": "󰂚",
+      "dnd-inhibited-notification": "󱅫",
+      "dnd-inhibited-none": "󰂛"
     },
-   "custom/weather" : {
-        "tooltip" : true,
-        "format" : "{}",
-        "interval" : 30,
-        "exec" : "wttrbar",
-        "return-type" : "json"
-    },
-    "tray": {
-        "icon-size": 13,
-        "spacing": 10
-    },
-    "clock": {
-        "format": "{: %R   %d/%m}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon} {percent}%",
-        "format-icons": ["", "", ""],
-        "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-",
-        "min-length": 6
-    },
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "tooltip": false,
-        "format-muted": " Muted",
-        "on-click": "pamixer -t",
-        "on-scroll-up": "pamixer -i 5",
-        "on-scroll-down": "pamixer -d 5",
-        "scroll-step": 5,
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        }
-    },
-    "pulseaudio#microphone": {
-        "format": "{format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": " Muted",
-        "on-click": "pamixer --default-source -t",
-        "on-scroll-up": "pamixer --default-source -i 5",
-        "on-scroll-down": "pamixer --default-source -d 5",
-        "scroll-step": 5
-    },
-    "custom/notifications": {
-        "tooltip": false,
-        "format": "{icon}",
-        "format-icons": {
-          "notification": "󱅫",
-          "none": "󰂚",
-          "dnd-notification": "󱅫",
-          "dnd-none": "󰂛",
-          "inhibited-notification": "󱅫",
-          "inhibited-none": "󰂚",
-          "dnd-inhibited-notification": "󱅫",
-          "dnd-inhibited-none": "󰂛"
-        },
-        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "on-click": "sleep 0.1; swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw",
-        "escape": true
-    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1; swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
 
-    "custom/recorder": {
-		"format": "Rec {}",
-		"interval": "once",
-		"exec": "echo ''",
-		"tooltip": "false",
-		"exec-if": "pgrep wf-recorder",
-		"on-click": "~/.scripts/record.sh",
-		"signal": 8
-	},
+  "custom/recorder": {
+    "format": "Rec {}",
+    "interval": "once",
+    "exec": "echo ''",
+    "tooltip": "false",
+    "exec-if": "pgrep wf-recorder",
+    "on-click": "~/.scripts/record.sh",
+    "signal": 8
+  },
 
-	
-	"custom/cava-internal": {
-        "exec": "sh ~/.scripts/Cava.sh",
-        "format": "{}",
-        "tooltip": false,
-        // "on-click": "hyprctl reload & pkill waybar & waybar",
-        "layer": "below",
-        "output": "all"
-    },
+  "custom/cava-internal": {
+    "exec": "sh ~/.scripts/Cava.sh",
+    "format": "{}",
+    "tooltip": false,
+    // "on-click": "hyprctl reload & pkill waybar & waybar",
+    "layer": "below",
+    "output": "all"
+  },
 
   "custom/power": {
-      	"format":"⏻",
-       	"on-click": "nwgbar",
-      	"tooltip": false
-   },
+    "format": "⏻",
+    "on-click": "nwgbar",
+    "tooltip": false
+  },
 
-   "custom/waybar-mpris": {
+  "custom/waybar-mpris": {
     "return-type": "json",
     "exec": "waybar-mpris --position --autofocus",
     "on-click": "waybar-mpris --send toggle",
     // This option will switch between players on right click.
-        "on-click-right": "waybar-mpris --send player-next",
+    "on-click-right": "waybar-mpris --send player-next",
     // The options below will switch the selected player on scroll
-        // "on-scroll-up": "waybar-mpris --send player-next",
-        // "on-scroll-down": "waybar-mpris --send player-prev",
+    // "on-scroll-up": "waybar-mpris --send player-next",
+    // "on-scroll-down": "waybar-mpris --send player-prev",
     // The options below will go to next/previous track on scroll
-        "on-scroll-up": "waybar-mpris --send next",
-        "on-scroll-down": "waybar-mpris --send prev",
+    "on-scroll-up": "waybar-mpris --send next",
+    "on-scroll-down": "waybar-mpris --send prev",
     "escape": true
-},
+  },
 
-"mpris": {
-        "format": "{player_icon} <span foreground=\"#9E7D9Aff\"></span> {title} <span foreground=\"#9E7D9Aff\"></span> ",
-        "format-paused": "{player_icon} <span foreground=\"#9E7D9Aff\"></span> {status_icon} <span foreground=\"#9E7D9Aff\"></span> ",
-        "format-stopped": "{player_icon} <span foreground=\"#9E7D9Aff\"></span> {status_icon} <span foreground=\"#9E7D9Aff\"></span> ",
-        "format-noActivePlayer": "Test",
-        "player-icons": {
-            "default": "",
-            "spotify": "",
-            "firefox": ""
-        },
-        "status-icons": {
-            "paused": "󰏦",
-            "stopped": ""
-        }
+  "mpris": {
+    "format": "{player_icon} <span foreground=\"#9E7D9Aff\"></span> {title} <span foreground=\"#9E7D9Aff\"></span> ",
+    "format-paused": "{player_icon} <span foreground=\"#9E7D9Aff\"></span> {status_icon} <span foreground=\"#9E7D9Aff\"></span> ",
+    "format-stopped": "{player_icon} <span foreground=\"#9E7D9Aff\"></span> {status_icon} <span foreground=\"#9E7D9Aff\"></span> ",
+    "format-noActivePlayer": "Test",
+    "player-icons": {
+      "default": "",
+      "spotify": "",
+      "firefox": ""
     },
-
-    "custom/wallchange": {
-        "format": "{}",
-        "exec": "~/.config/swww/swwwallpaper.sh -t",
-        "on-click": "~/.config/swww/swwwallpaper.sh -n",
-        "interval" : 86400, // once every day
-        "tooltip": true
-    },
-
-    "custom/mode": {
-        "format": "{}",
-        "exec": "echo ; echo 󰟡 switch mode",
-        "on-click": "~/.config/hypr/scripts/modeswitch.sh switch",
-        "interval" : 86400, // once every day
-        "tooltip": true
+    "status-icons": {
+      "paused": "󰏦",
+      "stopped": ""
     }
+  },
 
+  "custom/wallchange": {
+    "format": "{}",
+    "exec": "~/.config/swww/swwwallpaper.sh -t",
+    "on-click": "~/.config/swww/swwwallpaper.sh -n",
+    "interval": 86400, // once every day
+    "tooltip": true
+  },
 
+  "custom/mode": {
+    "format": "{}",
+    "exec": "echo ; echo 󰟡 switch mode",
+    "on-click": "~/.config/hypr/scripts/modeswitch.sh switch",
+    "interval": 86400, // once every day
+    "tooltip": true
+  }
 }
-
