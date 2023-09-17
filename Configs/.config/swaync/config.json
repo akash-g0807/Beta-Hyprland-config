@@ -64,7 +64,7 @@
     },
     "backlight": {
       "label": "",
-      "device": "intel-backlight",
+      "device": "intel_backlight",
       "min": 10
     },
     "volume": {
@@ -72,9 +72,9 @@
     },
     "menubar": {
       "menu#power-buttons": {
-        "label": "", 
+        "label": "",
         "position": "right",
-        "actions": [ 
+        "actions": [
           {
             "label": "   Reboot",
             "command": "systemctl reboot"
@@ -94,9 +94,9 @@
         ]
       },
       "menu#powermode-buttons": {
-        "label": "", 
+        "label": "",
         "position": "right",
-        "actions": [ 
+        "actions": [
           {
             "label": "Performance",
             "command": "powerprofilesctl set performance"
