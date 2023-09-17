@@ -199,6 +199,9 @@ return packer.startup(function(use)
 		requires = "nvim-lua/plenary.nvim",
 	})
 
+	-- Copilot
+	use("github/copilot.vim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

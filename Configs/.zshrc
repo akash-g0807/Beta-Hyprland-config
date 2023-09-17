@@ -182,3 +182,4 @@ export PATH="$PATH:/home/akashg/.local/bin"
 
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.platformio/penv/bin
+alias vim="nvim"
