@@ -7,7 +7,7 @@ gst-plugin-pipewire
 wireplumber
 networkmanager
 network-manager-applet
-hyprland-nvidia-hidpi-git
+hyprland
 xorg-xwayland
 polkit-gnome
 ffmpeg
@@ -31,7 +31,7 @@ wlogout
 swaylock-effects
 sddm-git
 pamixer
-nwg-look-bin
+nwg-look
 nordic-theme
 papirus-icon-theme
 dunst
@@ -41,7 +41,7 @@ xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 xdg-desktop-portal
 swayidle
-nerd-fonts-meta
+# nerd-fonts
 ttf-mplus
 linux-headers
 linux-zen-headers
@@ -98,7 +98,7 @@ github-cli
 libxcrypt-compat
 curl
 unzip
-hyprpicker-git
+hyprpicker
 lsd
 bat
 cliphist
@@ -111,8 +111,8 @@ fwupd
 reflector
 rsync
 wttrbar
-nwg-drawer-bin
-nwg-dock-hyprland-bin
+nwg-drawer
+nwg-dock-hyprland
 wlr-randr
 jaq
 zenity
@@ -121,12 +121,12 @@ slurp
 workstyle-git
 find-unicode-git
 ttf-font-awesome
-hyprland-autoname-workspaces-git
+ #hyprland-autoname-workspaces-git
 nwg-launchers
 cava
 btrfs-assistant
 cpupower-gui
-sddm-config-editor-git
+sddm-conf
 waybar-mpris-git
 qt5-quickcontrols
 qt5-quickcontrols2
