@@ -10,7 +10,9 @@ sed -ri 's|Net/ThemeName.*|Net/ThemeName "Catppuccin-Latte-Standard-Blue-Light"|
 sed -ri 's|Net/IconThemeName.*|Net/IconThemeName "ePapirus-Light"|g' ~/.config/xsettingsd/xsettingsd.conf
 sed -ri 's|Gtk/CursorThemeName.*|Gtk/CursorThemeName "Nordzy-cursors-white"|g' ~/.config/xsettingsd/xsettingsd.conf
 
+flatpak override --filesystem=~/.themes:ro --filesystem=~/.icons:ro --user
 flatpak --user override --env=GTK_THEME=Catppuccin-Latte-Standard-Blue-Light
 flatpak --user override --env=ICON_THEME=Papirus-Light
 flatpak --user override --env=XCURSOR_PATH=/home/$USER/.icons
 flatpak --user override --env=XCURSOR_THEME=Nordzy-cursors-white
+flatpak --user override --env=XCURSOR_SIZE=28
