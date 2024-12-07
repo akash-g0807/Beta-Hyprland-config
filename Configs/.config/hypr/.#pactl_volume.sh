@@ -1,1 +1,1 @@
-akashg@akash-linux.2107:1685108727
+/home/akashg/.config/akashg@akash-linux.2107:1685108727

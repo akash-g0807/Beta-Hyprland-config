@@ -9,7 +9,7 @@
   "modules-left": [
     "clock",
     "custom/weather",
-    //"custom/cava-internal",
+    "custom/cava-internal",
     "custom/mode",
     "custom/wallchange",
     "hyprland/workspaces"
@@ -77,7 +77,7 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{: %R   %d/%m}",
+    "format": " {:%R   %d/%m}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "backlight": {
