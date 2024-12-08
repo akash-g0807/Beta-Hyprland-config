@@ -17,7 +17,7 @@
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "custom/recorder",
-    "custom/waybar-mpris",
+    "mpris",
     "tray",
     "custom/updates",
     "custom/language",
@@ -185,7 +185,8 @@
     // The options below will go to next/previous track on scroll
     "on-scroll-up": "waybar-mpris --send next",
     "on-scroll-down": "waybar-mpris --send prev",
-    "escape": true
+    "escape": true,
+    "max-length": 20,
   },
 
   "mpris": {
@@ -193,6 +194,7 @@
     "format-paused": "{player_icon} <span foreground=\"#9E7D9Aff\"></span> {status_icon} <span foreground=\"#9E7D9Aff\"></span> ",
     "format-stopped": "{player_icon} <span foreground=\"#9E7D9Aff\"></span> {status_icon} <span foreground=\"#9E7D9Aff\"></span> ",
     "format-noActivePlayer": "Test",
+    "max-length": 30,
     "player-icons": {
       "default": "",
       "spotify": "",

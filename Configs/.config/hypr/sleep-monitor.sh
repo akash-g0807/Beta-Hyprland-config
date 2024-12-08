@@ -1,5 +1,5 @@
 if grep open /proc/acpi/button/lid/LID0/state; then
-    hyprctl keyword monitor "eDP-1, 3480x2400, 0x0, 2"
+    hyprctl keyword monitor ", highres, auto, 1.56666666666"
 else
     if [[ `hyprctl monitors | grep "Monitor" | wc -l` != 1 ]]; then
         hyprctl keyword monitor "eDP-1, disable"
