@@ -8,6 +8,9 @@ wireplumber
 networkmanager
 network-manager-applet
 hyprland
+hyprland-workspaces
+hyprland-plugin-hyprexpo
+hyprdwl-git
 xorg-xwayland
 polkit-gnome
 ffmpeg
@@ -164,7 +167,6 @@ python-isort
 python-pytest
 stylelint
 marked
-lsp-plugins
 aspell
 haskell-language-server
 ttf-jetbrains-mono
@@ -181,3 +183,4 @@ python-lsp-server
 ninja
 extra-cmake-modules
 kwidgetsaddons
+brightnessctl

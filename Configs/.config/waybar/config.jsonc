@@ -35,7 +35,7 @@
       "": "<span color='#6a92d7'> Desktop</span>"
     }
   },
-  "wlr/workspaces": {
+  "hyprland/workspaces": {
     "disable-scroll": true,
     "sort-by-number": true, //It did not have an effect
     //"sort-by-name": true,
