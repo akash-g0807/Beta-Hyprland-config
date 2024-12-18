@@ -162,7 +162,7 @@
     "exec": "sh ~/.scripts/Cava.sh",
     "format": "{}",
     "tooltip": false,
-    // "on-click": "hyprctl reload & pkill waybar & waybar",
+    "on-click": "hyprctl reload & pkill waybar & waybar",
     "layer": "below",
     "output": "all"
   },

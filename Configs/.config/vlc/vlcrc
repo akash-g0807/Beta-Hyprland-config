@@ -1,5 +1,5 @@
 ﻿###
-###  vlc 3.0.18
+###  vlc 3.0.21
 ###
 
 ###
@@ -260,42 +260,6 @@
 
 # Open GL/GLES hardware converter (string)
 #glconv=
-
-# Rendering intent for color conversion (integer)
-#rendering-intent=1
-
-# Display primaries (integer)
-#target-prim=0
-
-# Display gamma / transfer function (integer)
-#target-trc=0
-
-# Tone-mapping algorithm (integer)
-#tone-mapping=3
-
-# Tone-mapping parameter (float)
-#tone-mapping-param=0.000000
-
-# Highlight clipped pixels (boolean)
-#tone-mapping-warn=0
-
-# Dithering algorithm (integer)
-#dither-algo=-1
-
-# Dither depth override (0 = framebuffer depth) (integer)
-#dither-depth=0
-
-# Desaturation strength (float)
-#desat-strength=0.000000
-
-# Desaturation exponent (float)
-#desat-exponent=0.000000
-
-# Desaturation base (float)
-#desat-base=0.000000
-
-# Maximum brightness boost (float)
-#max-boost=0.000000
 
 [flaschen] # Flaschen-Taschen video output
 
@@ -1431,7 +1395,7 @@
 #sout-avi-subject=
 
 # Encoder (string)
-#sout-avi-encoder=VLC Media Player - 3.0.18 Vetinari
+#sout-avi-encoder=VLC Media Player - 3.0.21 Vetinari
 
 # Keywords (string)
 #sout-avi-keywords=
@@ -1673,6 +1637,47 @@ qt-privacy-ask=0
 # Frames per Second (float)
 #vc1-fps=25.000000
 
+[ts] # MPEG Transport Stream demuxer
+
+# Digital TV Standard (string)
+#ts-standard=auto
+
+# Extra PMT (string)
+#ts-extra-pmt=
+
+# Trust in-stream PCR (boolean)
+#ts-trust-pcr=1
+
+# Set id of ES to PID (boolean)
+#ts-es-id-pid=1
+
+# CSA Key (string)
+#ts-csa-ck=
+
+# Second CSA Key (string)
+#ts-csa2-ck=
+
+# Packet size in bytes to decrypt (integer)
+#ts-csa-pkt=188
+
+# Separate sub-streams (boolean)
+#ts-split-es=1
+
+# Seek based on percent not time (boolean)
+#ts-seek-percent=0
+
+# Check packets continuity counter (boolean)
+#ts-cc-check=1
+
+# Only create ES on program sending data (boolean)
+#ts-pmtfix-waitdata=1
+
+# Try to generate PAT/PMT if missing (boolean)
+#ts-patfix=1
+
+# Try to fix too early PCR (or late DTS) (boolean)
+#ts-pcr-offsetfix=1
+
 [subtitle] # Text subtitle parser
 
 # Frames per Second (float)
@@ -1873,7 +1878,7 @@ qt-privacy-ask=0
 #sout-avformat-options=
 
 # Reset timestamps (boolean)
-#sout-avformat-reset-ts=0
+#sout-avformat-reset-ts=1
 
 [adaptive] # Unified adaptive streaming for DASH/HLS
 
@@ -2587,6 +2592,26 @@ qt-privacy-ask=0
 # Use DecodeBin (boolean)
 #use-decodebin=1
 
+[fluidsynth] # FluidSynth MIDI synthesizer
+
+# SoundFont file (string)
+#soundfont=
+
+# Chorus (boolean)
+#synth-chorus=1
+
+# Synthesis gain (float)
+#synth-gain=0.500000
+
+# Polyphony (integer)
+#synth-polyphony=256
+
+# Reverb (boolean)
+#synth-reverb=1
+
+# Sample rate (integer)
+#synth-sample-rate=44100
+
 [dvbsub] # DVB subtitles decoder
 
 # Subpicture position (integer)
@@ -2748,6 +2773,14 @@ qt-privacy-ask=0
 
 # Advanced options (string)
 #sout-avcodec-options=
+
+[aribsub] # ARIB subtitles decoder
+
+# Ignore ruby (furigana) (boolean)
+#aribsub-ignore-ruby=0
+
+# Use Core Text renderer (boolean)
+#aribsub-use-coretext=0
 
 [a52] # ATSC A/52 (AC-3) audio decoder
 
@@ -4079,7 +4112,7 @@ qt-privacy-ask=0
 #repeat=0
 
 # Play and exit (boolean)
-#play-and-exit=0
+play-and-exit=1
 
 # Play and stop (boolean)
 #play-and-stop=0

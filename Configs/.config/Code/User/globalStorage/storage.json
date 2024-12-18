@@ -8,7 +8,9 @@
             "file:///home/akashg/.config/waybar/waybar": "__default__profile__",
             "file:///home/akashg/.config/waybar": "__default__profile__",
             "file:///home/akashg/Documents/Beta-Hyprland-config/Configs/.scripts": "__default__profile__",
-            "file:///home/akashg/.scripts": "__default__profile__"
+            "file:///home/akashg/.scripts": "__default__profile__",
+            "file:///home/akashg/Downloads/Hyprland-Dotfiles/Configs": "__default__profile__",
+            "file:///home/akashg/Downloads/Hyprland-Dotfiles": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -18,7 +20,7 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/akashg/.scripts"
+                "folderUri": "file:///home/akashg/Downloads/Hyprland-Dotfiles"
             }
         ],
         "emptyWindows": []
@@ -78,6 +80,28 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/akashg/Downloads/Hyprland-Dotfiles",
+                                        "path": "/home/akashg/Downloads/Hyprland-Dotfiles",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/Hyprland-Dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/akashg/Downloads/Hyprland-Dotfiles/Configs",
+                                        "path": "/home/akashg/Downloads/Hyprland-Dotfiles/Configs",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/Hyprland-Dotfiles/Configs"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -237,6 +261,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -735,6 +766,13 @@
                                 {
                                     "id": "workbench.action.splitEditorRight",
                                     "label": "Split &&Right"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorInGroup",
+                                    "label": "Split in &&Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1531,6 +1569,11 @@
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+\\"
             },
+            "workbench.action.splitEditorInGroup": {
+                "label": "Ctrl+K Ctrl+Shift+\\",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
+            },
             "workbench.action.copyEditorToNewWindow": {
                 "label": "Ctrl+K O",
                 "isNative": false,
@@ -1782,8 +1825,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/akashg/.scripts",
-            "backupPath": "/home/akashg/.config/Code/Backups/6d9694fd374c021ab6d27d453ab78071",
+            "folder": "file:///home/akashg/Downloads/Hyprland-Dotfiles",
+            "backupPath": "/home/akashg/.config/Code/Backups/c80bb19afc23819115d353776f6aa21c",
             "uiState": {
                 "mode": 0,
                 "x": 0,
@@ -1795,5 +1838,5 @@
         "openedWindows": []
     },
     "telemetry.sqmId": "",
-    "telemetry.devDeviceId": "3380323e-3c73-49fe-a9e4-08c2f568b14f"
+    "telemetry.devDeviceId": "d7f33ab3-126e-430e-8061-b2091a804ae4"
 }
