@@ -217,7 +217,7 @@
   "custom/mode": {
     "format": "{}",
     "exec": "echo ; echo 󰟡 switch mode",
-    "on-click": "~/.config/hypr/scripts/modeswitch.sh switch",
+    "on-click": "~/.scripts/modeswitch.sh switch",
     "interval": 86400, // once every day
     "tooltip": true
   }
