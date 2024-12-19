@@ -41,6 +41,10 @@ ln -fs $CFGDIR/qt5ct/colors/${S_MODE}.conf $CFGDIR/qt5ct/colors/theme.conf
 
 ### rofi ###
 #ln -fs $CFGDIR/rofi/${S_MODE}.rasi $CFGDIR/rofi/theme.rasi
+ln -fs ~/.config/wallust/templates/colors-rofi-${S_MODE}.rasi ~/.config/wallust/templates/colors-rofi.rasi
+sh ~/.scripts/WallustColors.sh
+
+echo ${S_MODE}
 
 ### kitty ###
 ln -fs $CFGDIR/kitty/${S_MODE}.conf $CFGDIR/kitty/theme.conf
