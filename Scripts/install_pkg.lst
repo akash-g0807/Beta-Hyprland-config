@@ -12,6 +12,7 @@ hyprland-workspaces
 hyprland-plugin-hyprexpo
 hyprdwl-git
 wallust
+ripgrep
 xorg-xwayland
 polkit-gnome
 ffmpeg
