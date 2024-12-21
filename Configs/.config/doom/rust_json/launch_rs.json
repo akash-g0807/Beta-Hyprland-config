@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Part A Debug (input.txt)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/hello",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "miDebuggerPath": "rust-lldb",
+            "dap-compilation": "cargo build",
+            "dap-compilation-dir": "${workspaceFolder}"
+        }
+    ]
+}

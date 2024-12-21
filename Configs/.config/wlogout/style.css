@@ -1,56 +1,86 @@
-/** ********** Fonts ********** **/
-* {
-  font-family: "CaskaydiaCove Nerd Font", "Lato", sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-}
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+/* wallust-wlogout */
 
-/** ********** Main Window ********** **/
+/* Importing wallust colors */
+@import '../../.config/waybar/wallust/colors-waybar.css';
+
 window {
-  background-color: transparent;
+    font-family: Fira Code Medium;
+    font-size: 16pt;
+    color: #cdd6f4; /* text */
+    background-color: rgba(30, 30, 46, 0.6);
 }
 
-/** ********** Buttons ********** **/
 button {
-  background-color: #161925;
-  color: #cdd6f4;
-  border: 2px solid #282838;
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 35%;
-  transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-color: rgba(200, 220, 255, 0);
+    animation: gradient_f 20s ease-in infinite;
+    border-radius: 80px; /* Increased border radius for a more rounded look */
 }
 
-button:focus,
-button:active,
+button:focus {
+    background-size: 25%;
+	border: 0px;
+
+}
+
 button:hover {
-  color: #FFFFFF;
-  background-color: #b4befe;
-  outline-style: none;
+    background-color: @color12; 
+    color: #1e1e2e;
+    background-size: 50%;
+    margin: 30px;
+    border-radius: 80px; 
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-shadow: 0 0 50px @color7; 
+	
 }
 
-/** ********** Icons ********** **/
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1.2em; /* Increase the font size */
+}
+
+
 #lock {
-  background-image: image(url("icons/lock.png"), url("/usr/share/wlogout/icons/lock.png"));
+    background-image: image(url("./icons/lock.png"));
+}
+#lock:hover {
+    background-image: image(url("./icons/lock-hover.png"));
 }
 
 #logout {
-  background-image: image(url("icons/logout.png"), url("/usr/share/wlogout/icons/logout.png"));
+    background-image: image(url("./icons/logout.png"));
+}
+#logout:hover {
+    background-image: image(url("./icons/logout-hover.png"));
 }
 
 #suspend {
-  background-image: image(url("icons/suspend.png"), url("/usr/share/wlogout/icons/suspend.png"));
+    background-image: image(url("./icons/sleep.png"));
 }
-
-#hibernate {
-  background-image: image(url("icons/hibernate.png"), url("/usr/share/wlogout/icons/hibernate.png"));
+#suspend:hover {
+    background-image: image(url("./icons/sleep-hover.png"));
 }
 
 #shutdown {
-  background-image: image(url("icons/shutdown.png"), url("/usr/share/wlogout/icons/shutdown.png"));
+    background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover {
+    background-image: image(url("./icons/power-hover.png"));
 }
 
 #reboot {
-  background-image: image(url("icons/reboot.png"), url("/usr/share/wlogout/icons/reboot.png"));
+    background-image: image(url("./icons/restart.png"));
+}
+#reboot:hover {
+    background-image: image(url("./icons/restart-hover.png"));
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
+#hibernate:hover {
+    background-image: image(url("./icons/hibernate-hover.png"));
 }

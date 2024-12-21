@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Part A Debug (input.txt)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.out",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "miDebuggerPath": "lldb",
+        }
+    ]
+}

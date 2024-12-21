@@ -12,7 +12,9 @@
             "file:///home/akashg/Downloads/Hyprland-Dotfiles/Configs": "__default__profile__",
             "file:///home/akashg/Downloads/Hyprland-Dotfiles": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1734702122679": "__default__profile__"
+        }
     },
     "profileAssociationsMigration": true,
     "telemetry.machineId": "beb3c4133e05aab84556cf14a4af5c18a6c2ff934a2084f81b0034d421a05abd",
@@ -23,7 +25,11 @@
                 "folderUri": "file:///home/akashg/Downloads/Hyprland-Dotfiles"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1734702122679"
+            }
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -771,13 +777,6 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.action.splitEditorInGroup",
-                                    "label": "Split in &&Group"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.action.moveEditorToNewWindow",
                                     "label": "&&Move Editor into New Window"
                                 },
@@ -886,7 +885,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1568,11 +1568,6 @@
                 "label": "Ctrl+K Ctrl+\\",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+\\"
-            },
-            "workbench.action.splitEditorInGroup": {
-                "label": "Ctrl+K Ctrl+Shift+\\",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
             },
             "workbench.action.copyEditorToNewWindow": {
                 "label": "Ctrl+K O",
