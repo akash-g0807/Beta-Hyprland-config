@@ -1,0 +1,24 @@
+2024-12-22 00:16:21.481 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
+2024-12-22 00:16:21.481 [info] Auto Sync is enabled.
+2024-12-22 00:16:21.481 [info] Auto Sync: Suspended until auth token is available.
+2024-12-22 00:16:22.336 [info] Auto Sync: Triggered by Interval
+2024-12-22 00:16:22.336 [info] Sync started.
+2024-12-22 00:16:22.750 [info] Settings: No changes found during synchronizing settings.
+2024-12-22 00:16:22.757 [info] Keybindings: No changes found during synchronizing keybindings.
+2024-12-22 00:16:22.760 [info] Snippets: No changes found during synchronizing snippets.
+2024-12-22 00:16:22.762 [info] Tasks: No changes found during synchronizing tasks.
+2024-12-22 00:16:23.272 [info] GlobalState: Updated remote ui state. Updated: java.2.lastSessionDate,java.2.sessionCount,javascript.1.lastSessionDate,javascript.1.sessionCount,typescript.1.lastSessionDate,typescript.1.sessionCount,csharp.1.lastSessionDate,csharp.1.sessionCount.
+2024-12-22 00:16:23.286 [info] GlobalState: Updated last synchronized ui state
+2024-12-22 00:16:23.324 [info] Extensions: No changes found during synchronizing extensions.
+2024-12-22 00:16:23.327 [info] Profiles: No changes found during synchronizing profiles.
+2024-12-22 00:16:23.329 [info] Sync done. Took 994ms
+2024-12-22 00:17:42.111 [info] Auto Sync: Triggered by Activity
+2024-12-22 00:17:42.112 [info] Sync started.
+2024-12-22 00:17:42.208 [info] Settings: No changes found during synchronizing settings.
+2024-12-22 00:17:42.213 [info] Keybindings: No changes found during synchronizing keybindings.
+2024-12-22 00:17:42.218 [info] Snippets: No changes found during synchronizing snippets.
+2024-12-22 00:17:42.223 [info] Tasks: No changes found during synchronizing tasks.
+2024-12-22 00:17:42.231 [info] GlobalState: No changes found during synchronizing ui state.
+2024-12-22 00:17:42.368 [info] Extensions: No changes found during synchronizing extensions.
+2024-12-22 00:17:42.370 [info] Profiles: No changes found during synchronizing profiles.
+2024-12-22 00:17:42.372 [info] Sync done. Took 263ms

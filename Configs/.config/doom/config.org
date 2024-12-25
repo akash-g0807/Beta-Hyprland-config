@@ -78,6 +78,7 @@
 - [[#fast-scroll][FAST SCROLL]]
 - [[#copilot][COPILOT]]
 - [[#elpy][ELPY]]
+- [[#locale-settings][LOCALE SETTINGS]]
 
 * ABOUT THIS CONFIG
 This is my personal Doom Emacs config.  Doom Emacs is a distribution of Emacs that uses the "evil" keybindings (Vim keybindings) and includes a number of nice extensions and a bit of configuration out of the box.  I am maintaining this config not just for myself, but also for those that want to explore some of what is possible with Emacs.  I will add a lot of examples of plugins and settings, some of them I may not even use personally.
@@ -101,24 +102,24 @@ To make emacs work with wl-clipboard
 * DASHBOARD
 
 #+begin_src emacs-lisp
-(use-package dashboard
-  :ensure t
-  :config
-  (dashboard-setup-startup-hook))
+;;(use-package dashboard
+;;  :ensure t
+;;  :config
+;;  (dashboard-setup-startup-hook))
 
-(setq dashboard-startup-banner  2)
+;;(setq dashboard-startup-banner  2)
 
-(setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
+;;(setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
 
-(setq dashboard-items '((recents  . 5)
-                        (bookmarks . 5)
-                        (projects . 5)
-                        (agenda . 5)
-                        (registers . 5)))
+;;(setq dashboard-items '((recents  . 5)
+;;                        (bookmarks . 5)
+;;                        (projects . 5)
+;;                        (agenda . 5)
+;;                        (registers . 5)))
 
-(setq dashboard-center-content t)
+;;(setq dashboard-center-content t)
 
-(setq doom-fallback-buffer "*dashboard*")
+;;(setq doom-fallback-buffer "*dashboard*")
 #+end_src
 
 * BEACON
@@ -387,27 +388,6 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
   ; ("g T" . centaur-tabs-backward))
  )
 (add-hook 'server-after-make-frame-hook 'centaur-tabs-mode)
-
-;; Enable centaur-tabs without faulty theming in daemon mode.
-(if (not (daemonp))
-	 (centaur-tabs-mode)
-
-  (defun centaur-tabs-daemon-mode (frame)
-	 (unless (and (featurep 'centaur-tabs) (centaur-tabs-mode-on-p))
-		(run-at-time nil nil (lambda () (centaur-tabs-mode)))))
-  (add-hook 'after-make-frame-functions #'centaur-tabs-daemon-mode))
-
-
-;;(use-package centaur-tabs
-;;  :custom
-;;  (centaur-tabs-style "bar")
-;;  (centaur-tabs-set-bar 'left)
-  ;; other settings here
-;;  :init
- ;; (if (daemonp)
- ;;     (add-hook 'server-after-make-frame-hook 'centaur-tabs-mode)
-;;    (add-hook 'after-init-hook 'centaur-tabs-mode))
-;;  )
 #+END_SRC
 
 * CLIPPY
@@ -1993,7 +1973,7 @@ Settings for the various shells and terminal emulators within Emacs.
 	    (setq TeX-source-correlate-method 'synctex)
 	    (setq TeX-auto-save t)
 	    (setq TeX-parse-self t)
-	    (setq-default TeX-master "paper.tex")
+	    (setq-default TeX-master "main.tex")
 	    (setq reftex-plug-into-AUCTeX t)
 	    (pdf-tools-install)
 	    (setq TeX-view-program-selection '((output-pdf "PDF Tools"))
@@ -2125,8 +2105,8 @@ Rust Debugger
   :ensure
   :config
   (dap-ui-mode)
-  (dap-ui-controls-mode 1)
-  (dap-auto-configure-mode t)
+  (dap-ui-controls-mode -1)
+  (dap-auto-configure-mode -1)
 
   (require 'dap-lldb)
   (require 'dap-codelldb)
@@ -2147,17 +2127,44 @@ Rust Debugger
          :dap-compilation-dir "${workspaceFolder}"
          :target nil
          :cwd nil)))
+(after! dap-mode
+  ;; Disable dap-ui-controls-mode
+  (dap-ui-controls-mode -1)
+
+  ;; Ensure it’s removed from all hooks
+  (remove-hook 'dap-stopped-hook #'dap-ui-controls-mode)
+  (remove-hook 'dap-terminated-hook #'dap-ui-controls-mode)
+  (remove-hook 'dap-disconnected-hook #'dap-ui-controls-mode)
+  (remove-hook 'dap-continue-hook #'dap-ui-controls-mode)
+
+  ;; Prevent its function from being called by overriding
+  (advice-add 'dap-ui-controls-mode :override #'ignore))
+
+
 
   (with-eval-after-load 'dap-mode
     (setq dap-default-terminal-kind "integrated") ;; Make sure that terminal programs open a term for I/O in an Emacs buffer
-    (dap-auto-configure-mode +1))
+    (dap-auto-configure-mode -1))
 
   (with-eval-after-load 'lsp-rust
     (require 'dap-cpptools))
 
   (with-eval-after-load 'dap-mode
     (setq dap-default-terminal-kind "integrated") ;; Make sure that terminal programs open a term for I/O in an Emacs buffer
-    (dap-auto-configure-mode +1))
+    (dap-auto-configure-mode -1))
+
+(map! :leader
+      (:prefix ("d" . "debug")
+       :desc "Start Debugging" "b" #'dap-debug              ;; Start a new debug session
+       :desc "Toggle Breakpoint" "t" #'dap-breakpoint-toggle ;; Toggle breakpoint at the current line
+       :desc "Continue" "c" #'dap-continue                  ;; Continue running the program
+       :desc "Step Over" "o" #'dap-next                     ;; Step Over the current line
+       :desc "Step Into" "i" #'dap-step-in                  ;; Step Into a function call
+       :desc "Step Out" "u" #'dap-step-out                  ;; Step Out of the current function
+       :desc "Restart" "r" #'dap-debug-restart             ;; Restart the debug session
+       :desc "Terminate" "t" #'dap-disconnect))             ;; Terminate the debug session
+
+
 #+end_src
 
 * LAUNCH JSON
@@ -2573,4 +2580,11 @@ This is for Discord rich presence
   :ensure t
   :init
   (elpy-enable))
+#+end_src
+
+* LOCALE SETTINGS
+
+#+begin_src emacs-lisp
+(setenv "LANG" "en_US.UTF-8")
+(setenv "LC_ALL" "en_US.UTF-8")
 #+end_src

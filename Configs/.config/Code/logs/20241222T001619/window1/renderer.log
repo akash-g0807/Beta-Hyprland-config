@@ -1,0 +1,62 @@
+2024-12-22 00:16:20.585 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2024-12-22 00:16:20.585 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2024-12-22 00:16:20.586 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2024-12-22 00:16:21.038 [info] Started local extension host with pid 454507.
+2024-12-22 00:16:22.327 [info] Settings Sync: Token updated for the account akash-g0807
+2024-12-22 00:16:22.343 [info] Settings Sync: Account status changed from uninitialized to available
+2024-12-22 00:16:23.402 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.armToolchainPath.linux as cortex-debug.armToolchainPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.armToolchainPath.osx as cortex-debug.armToolchainPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.armToolchainPath.windows as cortex-debug.armToolchainPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.JLinkGDBServerPath.linux as cortex-debug.JLinkGDBServerPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.JLinkGDBServerPath.osx as cortex-debug.JLinkGDBServerPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.JLinkGDBServerPath.windows as cortex-debug.JLinkGDBServerPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.openocdPath.linux as cortex-debug.openocdPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.openocdPath.osx as cortex-debug.openocdPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.openocdPath.windows as cortex-debug.openocdPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.pyocdPath.linux as cortex-debug.pyocdPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.pyocdPath.osx as cortex-debug.pyocdPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.pyocdPath.windows as cortex-debug.pyocdPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.PEGDBServerPath.linux as cortex-debug.PEGDBServerPath is null
+2024-12-22 00:16:23.406 [error] Ignoring cortex-debug.PEGDBServerPath.osx as cortex-debug.PEGDBServerPath is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.PEGDBServerPath.windows as cortex-debug.PEGDBServerPath is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.stutilPath.linux as cortex-debug.stutilPath is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.stutilPath.osx as cortex-debug.stutilPath is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.stutilPath.windows as cortex-debug.stutilPath is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.stlinkPath.linux as cortex-debug.stlinkPath is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.stlinkPath.osx as cortex-debug.stlinkPath is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.stlinkPath.windows as cortex-debug.stlinkPath is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.stm32cubeprogrammer.linux as cortex-debug.stm32cubeprogrammer is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.stm32cubeprogrammer.osx as cortex-debug.stm32cubeprogrammer is null
+2024-12-22 00:16:23.407 [error] Ignoring cortex-debug.stm32cubeprogrammer.windows as cortex-debug.stm32cubeprogrammer is null
+2024-12-22 00:16:23.743 [error] Ignoring cortex-debug.armToolchainPath.linux as cortex-debug.armToolchainPath is null
+2024-12-22 00:16:23.744 [error] Ignoring cortex-debug.armToolchainPath.osx as cortex-debug.armToolchainPath is null
+2024-12-22 00:16:23.744 [error] Ignoring cortex-debug.armToolchainPath.windows as cortex-debug.armToolchainPath is null
+2024-12-22 00:16:23.744 [error] Ignoring cortex-debug.JLinkGDBServerPath.linux as cortex-debug.JLinkGDBServerPath is null
+2024-12-22 00:16:23.744 [error] Ignoring cortex-debug.JLinkGDBServerPath.osx as cortex-debug.JLinkGDBServerPath is null
+2024-12-22 00:16:23.744 [error] Ignoring cortex-debug.JLinkGDBServerPath.windows as cortex-debug.JLinkGDBServerPath is null
+2024-12-22 00:16:23.745 [error] Ignoring cortex-debug.openocdPath.linux as cortex-debug.openocdPath is null
+2024-12-22 00:16:23.745 [error] Ignoring cortex-debug.openocdPath.osx as cortex-debug.openocdPath is null
+2024-12-22 00:16:23.745 [error] Ignoring cortex-debug.openocdPath.windows as cortex-debug.openocdPath is null
+2024-12-22 00:16:23.745 [error] Ignoring cortex-debug.pyocdPath.linux as cortex-debug.pyocdPath is null
+2024-12-22 00:16:23.745 [error] Ignoring cortex-debug.pyocdPath.osx as cortex-debug.pyocdPath is null
+2024-12-22 00:16:23.746 [error] Ignoring cortex-debug.pyocdPath.windows as cortex-debug.pyocdPath is null
+2024-12-22 00:16:23.746 [error] Ignoring cortex-debug.PEGDBServerPath.linux as cortex-debug.PEGDBServerPath is null
+2024-12-22 00:16:23.746 [error] Ignoring cortex-debug.PEGDBServerPath.osx as cortex-debug.PEGDBServerPath is null
+2024-12-22 00:16:23.746 [error] Ignoring cortex-debug.PEGDBServerPath.windows as cortex-debug.PEGDBServerPath is null
+2024-12-22 00:16:23.746 [error] Ignoring cortex-debug.stutilPath.linux as cortex-debug.stutilPath is null
+2024-12-22 00:16:23.746 [error] Ignoring cortex-debug.stutilPath.osx as cortex-debug.stutilPath is null
+2024-12-22 00:16:23.747 [error] Ignoring cortex-debug.stutilPath.windows as cortex-debug.stutilPath is null
+2024-12-22 00:16:23.747 [error] Ignoring cortex-debug.stlinkPath.linux as cortex-debug.stlinkPath is null
+2024-12-22 00:16:23.747 [error] Ignoring cortex-debug.stlinkPath.osx as cortex-debug.stlinkPath is null
+2024-12-22 00:16:23.747 [error] Ignoring cortex-debug.stlinkPath.windows as cortex-debug.stlinkPath is null
+2024-12-22 00:16:23.748 [error] Ignoring cortex-debug.stm32cubeprogrammer.linux as cortex-debug.stm32cubeprogrammer is null
+2024-12-22 00:16:23.748 [error] Ignoring cortex-debug.stm32cubeprogrammer.osx as cortex-debug.stm32cubeprogrammer is null
+2024-12-22 00:16:23.748 [error] Ignoring cortex-debug.stm32cubeprogrammer.windows as cortex-debug.stm32cubeprogrammer is null
+2024-12-22 00:16:23.957 [info] [perf] Render performance baseline is 14ms
+2024-12-22 00:16:26.135 [error] cannot open file:///home/akashg/Downloads/Doom-Emacs-Config/vcpkg-configuration.json. Detail: Unable to read file '/home/akashg/Downloads/Doom-Emacs-Config/vcpkg-configuration.json' (Error: Unable to resolve nonexistent file '/home/akashg/Downloads/Doom-Emacs-Config/vcpkg-configuration.json'): CodeExpectedError: cannot open file:///home/akashg/Downloads/Doom-Emacs-Config/vcpkg-configuration.json. Detail: Unable to read file '/home/akashg/Downloads/Doom-Emacs-Config/vcpkg-configuration.json' (Error: Unable to resolve nonexistent file '/home/akashg/Downloads/Doom-Emacs-Config/vcpkg-configuration.json')
+    at hVe.$tryOpenDocument (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:748:8481)
+2024-12-22 00:16:26.859 [error] No registered selector for ID: copilot-chat.fixWithCopilot
+2024-12-22 00:16:26.859 [error] No registered selector for ID: copilot-chat.generateCommitMessage
+2024-12-22 00:16:26.869 [error] No registered selector for ID: copilot-chat.terminalToDebugging
+2024-12-22 00:16:26.869 [error] No registered selector for ID: copilot-chat.terminalToDebuggingSuccess

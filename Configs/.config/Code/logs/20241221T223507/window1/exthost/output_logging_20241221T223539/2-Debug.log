@@ -1,0 +1,288 @@
+warning: unused import: `std::io`
+ --> src/main.rs:1:5
+  |
+1 | use std::io;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused variable: `c`
+ --> src/main.rs:6:9
+  |
+6 |     let c = a + b;
+  |         ^ help: if this is intentional, prefix it with an underscore: `_c`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+Launching debug configuration:
+{
+  "type": "lldb",
+  "request": "launch",
+  "name": "run rust-test",
+  "cwd": "${workspaceFolder}",
+  "program": "${workspaceFolder}/target/debug/rust-test",
+  "env": {
+    "RUST_BACKTRACE": "short",
+    "CHROME_DESKTOP": "code.desktop",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "DEBUGINFOD_URLS": "https://debuginfod.archlinux.org ",
+    "DESKTOP_SESSION": "hyprland",
+    "DISPLAY": ":1",
+    "ELECTRON_NO_ATTACH_CONSOLE": "1",
+    "GDK_BACKEND": "wayland",
+    "GDK_SCALE": "2",
+    "HL_INITIAL_WORKSPACE_TOKEN": "56219c49-0a30-4328-89d3-9f2f0f52c59a",
+    "HOME": "/home/akashg",
+    "HYPRLAND_CMD": "Hyprland",
+    "HYPRLAND_INSTANCE_SIGNATURE": "0bd541f2fd902dbfa04c3ea2ccf679395e316887_1734813845_1352534230",
+    "LANG": "en_US.UTF-8",
+    "LOGNAME": "akashg",
+    "MAIL": "/var/spool/mail/akashg",
+    "MOTD_SHOWN": "pam",
+    "MOZ_ENABLE_WAYLAND": "1",
+    "NO_AT_BRIDGE": "1",
+    "OLDPWD": "/home/akashg",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "Hyprland",
+    "PATH": "/home/akashg/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+    "PWD": "/home/akashg",
+    "QT_QPA_PLATFORM": "wayland;xcb",
+    "QT_QPA_PLATFORMTHEME": "qt5ct",
+    "QT_SCALE_FACTOR": "1.5",
+    "QT_WAYLAND_DISABLE_WINDOWDECORATION": "1",
+    "SDL_VIDEODRIVER": "wayland",
+    "SHELL": "/usr/bin/zsh",
+    "SHLVL": "1",
+    "USER": "akashg",
+    "VSCODE_CLI": "1",
+    "VSCODE_CODE_CACHE_PATH": "/home/akashg/.config/Code/CachedData/fabdb6a30b49f79a7aba0f2ad9df9b399473380f",
+    "VSCODE_CRASH_REPORTER_PROCESS_TYPE": "extensionHost",
+    "VSCODE_CWD": "/home/akashg",
+    "VSCODE_ESM_ENTRYPOINT": "vs/workbench/api/node/extensionHostProcess",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "/run/user/1000/vscode-7a04d047-1.96-main.sock",
+    "VSCODE_NLS_CONFIG": "{\"userLocale\":\"en-us\",\"osLocale\":\"en-us\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/opt/visual-studio-code/resources/app/out/nls.messages.json\",\"locale\":\"en-us\",\"availableLanguages\":{}}",
+    "VSCODE_PID": "319285",
+    "WAYLAND_DISPLAY": "wayland-1",
+    "WLR_NO_HARDWARE_CURSORS": "1",
+    "XCURSOR_SIZE": "24",
+    "XCURSOR_THEME": "Nordzy-cursors",
+    "XCUSOR_THEME": "Nordzy-cursors",
+    "XDG_BACKEND": "wayland",
+    "XDG_CURRENT_DESKTOP": "Hyprland",
+    "XDG_DATA_DIRS": "/home/akashg/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XDG_SEAT": "seat0",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "XDG_SESSION_CLASS": "user",
+    "XDG_SESSION_DESKTOP": "Hyprland",
+    "XDG_SESSION_ID": "22",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session21",
+    "XDG_SESSION_TYPE": "wayland",
+    "XDG_VTNR": "3",
+    "_": "/opt/visual-studio-code/bin/../code",
+    "_JAVA_AWT_WM_NONREPARENTING": "1",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "VSCODE_L10N_BUNDLE_LOCATION": "",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "1",
+    "APPLICATIONINSIGHTS_CONFIGURATION_CONTENT": "{}",
+    "RUSTC_TOOLCHAIN": "/home/akashg/.rustup/toolchains/stable-x86_64-unknown-linux-gnu"
+  },
+  "args": [],
+  "sourceMap": {},
+  "sourceLanguages": [
+    "rust"
+  ]
+}
+warning: unused import: `std::io`
+ --> src/main.rs:1:5
+  |
+1 | use std::io;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused variable: `c`
+ --> src/main.rs:6:9
+  |
+6 |     let c = a + b;
+  |         ^ help: if this is intentional, prefix it with an underscore: `_c`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+Launching debug configuration:
+{
+  "type": "lldb",
+  "request": "launch",
+  "name": "run rust-test",
+  "cwd": "${workspaceFolder}",
+  "program": "${workspaceFolder}/target/debug/rust-test",
+  "env": {
+    "RUST_BACKTRACE": "short",
+    "CHROME_DESKTOP": "code.desktop",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "DEBUGINFOD_URLS": "https://debuginfod.archlinux.org ",
+    "DESKTOP_SESSION": "hyprland",
+    "DISPLAY": ":1",
+    "ELECTRON_NO_ATTACH_CONSOLE": "1",
+    "GDK_BACKEND": "wayland",
+    "GDK_SCALE": "2",
+    "HL_INITIAL_WORKSPACE_TOKEN": "56219c49-0a30-4328-89d3-9f2f0f52c59a",
+    "HOME": "/home/akashg",
+    "HYPRLAND_CMD": "Hyprland",
+    "HYPRLAND_INSTANCE_SIGNATURE": "0bd541f2fd902dbfa04c3ea2ccf679395e316887_1734813845_1352534230",
+    "LANG": "en_US.UTF-8",
+    "LOGNAME": "akashg",
+    "MAIL": "/var/spool/mail/akashg",
+    "MOTD_SHOWN": "pam",
+    "MOZ_ENABLE_WAYLAND": "1",
+    "NO_AT_BRIDGE": "1",
+    "OLDPWD": "/home/akashg",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "Hyprland",
+    "PATH": "/home/akashg/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+    "PWD": "/home/akashg",
+    "QT_QPA_PLATFORM": "wayland;xcb",
+    "QT_QPA_PLATFORMTHEME": "qt5ct",
+    "QT_SCALE_FACTOR": "1.5",
+    "QT_WAYLAND_DISABLE_WINDOWDECORATION": "1",
+    "SDL_VIDEODRIVER": "wayland",
+    "SHELL": "/usr/bin/zsh",
+    "SHLVL": "1",
+    "USER": "akashg",
+    "VSCODE_CLI": "1",
+    "VSCODE_CODE_CACHE_PATH": "/home/akashg/.config/Code/CachedData/fabdb6a30b49f79a7aba0f2ad9df9b399473380f",
+    "VSCODE_CRASH_REPORTER_PROCESS_TYPE": "extensionHost",
+    "VSCODE_CWD": "/home/akashg",
+    "VSCODE_ESM_ENTRYPOINT": "vs/workbench/api/node/extensionHostProcess",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "/run/user/1000/vscode-7a04d047-1.96-main.sock",
+    "VSCODE_NLS_CONFIG": "{\"userLocale\":\"en-us\",\"osLocale\":\"en-us\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/opt/visual-studio-code/resources/app/out/nls.messages.json\",\"locale\":\"en-us\",\"availableLanguages\":{}}",
+    "VSCODE_PID": "319285",
+    "WAYLAND_DISPLAY": "wayland-1",
+    "WLR_NO_HARDWARE_CURSORS": "1",
+    "XCURSOR_SIZE": "24",
+    "XCURSOR_THEME": "Nordzy-cursors",
+    "XCUSOR_THEME": "Nordzy-cursors",
+    "XDG_BACKEND": "wayland",
+    "XDG_CURRENT_DESKTOP": "Hyprland",
+    "XDG_DATA_DIRS": "/home/akashg/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XDG_SEAT": "seat0",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "XDG_SESSION_CLASS": "user",
+    "XDG_SESSION_DESKTOP": "Hyprland",
+    "XDG_SESSION_ID": "22",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session21",
+    "XDG_SESSION_TYPE": "wayland",
+    "XDG_VTNR": "3",
+    "_": "/opt/visual-studio-code/bin/../code",
+    "_JAVA_AWT_WM_NONREPARENTING": "1",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "VSCODE_L10N_BUNDLE_LOCATION": "",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "1",
+    "APPLICATIONINSIGHTS_CONFIGURATION_CONTENT": "{}",
+    "RUSTC_TOOLCHAIN": "/home/akashg/.rustup/toolchains/stable-x86_64-unknown-linux-gnu"
+  },
+  "args": [],
+  "sourceMap": {},
+  "sourceLanguages": [
+    "rust"
+  ]
+}
+warning: unused import: `std::io`
+ --> src/main.rs:1:5
+  |
+1 | use std::io;
+  |     ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused variable: `c`
+ --> src/main.rs:6:9
+  |
+6 |     let c = a + b;
+  |         ^ help: if this is intentional, prefix it with an underscore: `_c`
+  |
+  = note: `#[warn(unused_variables)]` on by default
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+Launching debug configuration:
+{
+  "type": "lldb",
+  "request": "launch",
+  "name": "run rust-test",
+  "cwd": "${workspaceFolder}",
+  "program": "${workspaceFolder}/target/debug/rust-test",
+  "env": {
+    "RUST_BACKTRACE": "short",
+    "CHROME_DESKTOP": "code.desktop",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "DEBUGINFOD_URLS": "https://debuginfod.archlinux.org ",
+    "DESKTOP_SESSION": "hyprland",
+    "DISPLAY": ":1",
+    "ELECTRON_NO_ATTACH_CONSOLE": "1",
+    "GDK_BACKEND": "wayland",
+    "GDK_SCALE": "2",
+    "HL_INITIAL_WORKSPACE_TOKEN": "56219c49-0a30-4328-89d3-9f2f0f52c59a",
+    "HOME": "/home/akashg",
+    "HYPRLAND_CMD": "Hyprland",
+    "HYPRLAND_INSTANCE_SIGNATURE": "0bd541f2fd902dbfa04c3ea2ccf679395e316887_1734813845_1352534230",
+    "LANG": "en_US.UTF-8",
+    "LOGNAME": "akashg",
+    "MAIL": "/var/spool/mail/akashg",
+    "MOTD_SHOWN": "pam",
+    "MOZ_ENABLE_WAYLAND": "1",
+    "NO_AT_BRIDGE": "1",
+    "OLDPWD": "/home/akashg",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "Hyprland",
+    "PATH": "/home/akashg/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+    "PWD": "/home/akashg",
+    "QT_QPA_PLATFORM": "wayland;xcb",
+    "QT_QPA_PLATFORMTHEME": "qt5ct",
+    "QT_SCALE_FACTOR": "1.5",
+    "QT_WAYLAND_DISABLE_WINDOWDECORATION": "1",
+    "SDL_VIDEODRIVER": "wayland",
+    "SHELL": "/usr/bin/zsh",
+    "SHLVL": "1",
+    "USER": "akashg",
+    "VSCODE_CLI": "1",
+    "VSCODE_CODE_CACHE_PATH": "/home/akashg/.config/Code/CachedData/fabdb6a30b49f79a7aba0f2ad9df9b399473380f",
+    "VSCODE_CRASH_REPORTER_PROCESS_TYPE": "extensionHost",
+    "VSCODE_CWD": "/home/akashg",
+    "VSCODE_ESM_ENTRYPOINT": "vs/workbench/api/node/extensionHostProcess",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "/run/user/1000/vscode-7a04d047-1.96-main.sock",
+    "VSCODE_NLS_CONFIG": "{\"userLocale\":\"en-us\",\"osLocale\":\"en-us\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/opt/visual-studio-code/resources/app/out/nls.messages.json\",\"locale\":\"en-us\",\"availableLanguages\":{}}",
+    "VSCODE_PID": "319285",
+    "WAYLAND_DISPLAY": "wayland-1",
+    "WLR_NO_HARDWARE_CURSORS": "1",
+    "XCURSOR_SIZE": "24",
+    "XCURSOR_THEME": "Nordzy-cursors",
+    "XCUSOR_THEME": "Nordzy-cursors",
+    "XDG_BACKEND": "wayland",
+    "XDG_CURRENT_DESKTOP": "Hyprland",
+    "XDG_DATA_DIRS": "/home/akashg/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XDG_SEAT": "seat0",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "XDG_SESSION_CLASS": "user",
+    "XDG_SESSION_DESKTOP": "Hyprland",
+    "XDG_SESSION_ID": "22",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session21",
+    "XDG_SESSION_TYPE": "wayland",
+    "XDG_VTNR": "3",
+    "_": "/opt/visual-studio-code/bin/../code",
+    "_JAVA_AWT_WM_NONREPARENTING": "1",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "VSCODE_L10N_BUNDLE_LOCATION": "",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "1",
+    "APPLICATIONINSIGHTS_CONFIGURATION_CONTENT": "{}",
+    "RUSTC_TOOLCHAIN": "/home/akashg/.rustup/toolchains/stable-x86_64-unknown-linux-gnu"
+  },
+  "args": [],
+  "sourceMap": {},
+  "sourceLanguages": [
+    "rust"
+  ]
+}

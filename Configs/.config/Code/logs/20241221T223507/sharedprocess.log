@@ -1,0 +1,720 @@
+2024-12-21 22:36:09.970 [info] Getting Manifest... james-yu.latex-workshop
+2024-12-21 22:36:09.971 [info] Getting Manifest... jeffersonqin.latex-snippets-jeff
+2024-12-21 22:36:09.971 [info] Getting Manifest... mathematic.vscode-latex
+2024-12-21 22:36:09.972 [info] Getting Manifest... hars.cppsnippets
+2024-12-21 22:36:09.972 [info] Getting Manifest... ms-vscode-remote.vscode-remote-extensionpack
+2024-12-21 22:36:09.973 [info] Getting Manifest... github.copilot
+2024-12-21 22:36:09.973 [info] Getting Manifest... ms-vscode.cpptools-extension-pack
+2024-12-21 22:36:09.973 [info] Getting Manifest... romanrei.material-dark
+2024-12-21 22:36:09.974 [info] Getting Manifest... arm.virtual-hardware
+2024-12-21 22:36:09.974 [info] Getting Manifest... ms-vscode.cpptools
+2024-12-21 22:36:09.974 [info] Getting Manifest... mcu-debug.debug-tracker-vscode
+2024-12-21 22:36:09.975 [info] Getting Manifest... mcu-debug.peripheral-viewer
+2024-12-21 22:36:09.975 [info] Getting Manifest... fill-labs.dependi
+2024-12-21 22:36:09.975 [info] Getting Manifest... dustypomerleau.rust-syntax
+2024-12-21 22:36:09.975 [info] Getting Manifest... oijaz.unicode-latex
+2024-12-21 22:36:09.976 [info] Getting Manifest... ms-vscode.cpptools-themes
+2024-12-21 22:36:09.976 [info] Getting Manifest... tialki.tex-preview
+2024-12-21 22:36:09.976 [info] Getting Manifest... zixuanwang.linkerscript
+2024-12-21 22:36:09.976 [info] Getting Manifest... platformio.platformio-ide
+2024-12-21 22:36:09.976 [info] Getting Manifest... dan-c-underwood.arm
+2024-12-21 22:36:09.977 [info] Getting Manifest... mcu-debug.memory-view
+2024-12-21 22:36:09.977 [info] Getting Manifest... tamasfe.even-better-toml
+2024-12-21 22:36:09.977 [info] Getting Manifest... slevesque.shader
+2024-12-21 22:36:09.977 [info] Getting Manifest... nickfode.latex-formatter
+2024-12-21 22:36:09.977 [info] Getting Manifest... swellaby.rust-pack
+2024-12-21 22:36:09.977 [info] Getting Manifest... vscodevim.vim
+2024-12-21 22:36:09.977 [info] Getting Manifest... arm.arm-debugger
+2024-12-21 22:36:09.977 [info] Getting Manifest... 1yib.rust-bundle
+2024-12-21 22:36:09.977 [info] Getting Manifest... eclipse-cdt.peripheral-inspector
+2024-12-21 22:36:09.977 [info] Getting Manifest... arm.device-manager
+2024-12-21 22:36:09.977 [info] Getting Manifest... marus25.cortex-debug
+2024-12-21 22:36:09.977 [info] Getting Manifest... arm.keil-studio-pack
+2024-12-21 22:36:09.978 [info] Getting Manifest... twxs.cmake
+2024-12-21 22:36:09.978 [info] Getting Manifest... arm.cmsis-csolution
+2024-12-21 22:36:09.978 [info] Getting Manifest... davidanson.vscode-markdownlint
+2024-12-21 22:36:09.978 [info] Getting Manifest... redhat.vscode-yaml
+2024-12-21 22:36:09.978 [info] Getting Manifest... arm.embedded-debug
+2024-12-21 22:36:09.978 [info] Getting Manifest... bencoleman.armview
+2024-12-21 22:36:09.978 [info] Getting Manifest... vadimcn.vscode-lldb
+2024-12-21 22:36:09.978 [info] Getting Manifest... mcu-debug.rtos-views
+2024-12-21 22:36:09.978 [info] Getting Manifest... llvm-vs-code-extensions.vscode-clangd
+2024-12-21 22:36:09.979 [info] Getting Manifest... eclipse-cdt.memory-inspector
+2024-12-21 22:36:09.979 [info] Getting Manifest... wayou.vscode-todo-highlight
+2024-12-21 22:36:09.979 [info] Getting Manifest... arm.environment-manager
+2024-12-21 22:36:09.979 [info] Getting Manifest... trond-snekvik.gnu-mapfiles
+2024-12-21 22:36:09.979 [info] Getting Manifest... ms-vscode-remote.remote-ssh-edit
+2024-12-21 22:36:09.979 [info] Getting Manifest... ms-vscode.remote-explorer
+2024-12-21 22:36:09.979 [info] Getting Manifest... ms-vscode.remote-server
+2024-12-21 22:36:09.979 [info] Getting Manifest... ms-vscode.makefile-tools
+2024-12-21 22:36:09.979 [info] Getting Manifest... ms-vscode-remote.remote-ssh
+2024-12-21 22:36:09.979 [info] Getting Manifest... ms-vscode.vscode-serial-monitor
+2024-12-21 22:36:09.979 [info] Getting Manifest... ms-python.vscode-pylance
+2024-12-21 22:36:09.979 [info] Getting Manifest... ms-vscode-remote.remote-containers
+2024-12-21 22:36:09.980 [info] Getting Manifest... ms-vscode.cmake-tools
+2024-12-21 22:36:09.980 [info] Getting Manifest... ms-python.debugpy
+2024-12-21 22:36:09.980 [info] Getting Manifest... github.copilot-chat
+2024-12-21 22:36:09.980 [info] Getting Manifest... ms-python.python
+2024-12-21 22:36:09.980 [info] Getting Manifest... rust-lang.rust-analyzer
+2024-12-21 22:36:10.168 [info] Getting Manifest... torn4dom4n.latex-support
+2024-12-21 22:36:26.426 [info] Installing extension: github.copilot {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.426 [info] Installing extension: github.copilot-chat {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.426 [info] Installing extension: arm.keil-studio-pack {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.426 [info] Installing extension: arm.cmsis-csolution {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: arm.environment-manager {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: ms-vscode.cpptools-extension-pack {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: ms-vscode.cpptools-themes {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: ms-vscode.vscode-serial-monitor {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: arm.embedded-debug {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: arm.virtual-hardware {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: arm.device-manager {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: arm.arm-debugger {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: ms-vscode-remote.vscode-remote-extensionpack {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: ms-vscode-remote.remote-ssh-edit {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: ms-vscode-remote.remote-ssh {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: ms-vscode-remote.remote-containers {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: llvm-vs-code-extensions.vscode-clangd {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: nickfode.latex-formatter {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: twxs.cmake {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.427 [info] Installing extension: ms-vscode.remote-server {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.428 [info] Installing extension: ms-vscode.remote-explorer {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.428 [info] Installing extension: james-yu.latex-workshop {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.428 [info] Installing extension: ms-vscode.makefile-tools {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.428 [info] Installing extension: rust-lang.rust-analyzer {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.428 [info] Installing extension: ms-vscode.cpptools {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":true,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.428 [info] Installing extension: ms-vscode.cmake-tools {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.428 [info] Installing extension: eclipse-cdt.memory-inspector {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.430 [info] Installing extension: eclipse-cdt.peripheral-inspector {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.430 [info] Installing extension: ms-python.python {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.431 [info] Installing extension: ms-python.vscode-pylance {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.431 [info] Installing extension: vscodevim.vim {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.431 [info] Installing extension: tamasfe.even-better-toml {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.431 [info] Installing extension: davidanson.vscode-markdownlint {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.432 [info] Installing extension: redhat.vscode-yaml {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.432 [info] Installing extension: wayou.vscode-todo-highlight {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.432 [info] Installing extension: tialki.tex-preview {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.432 [info] Installing extension: bencoleman.armview {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.432 [info] Installing extension: fill-labs.dependi {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.433 [info] Installing extension: hars.cppsnippets {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.433 [info] Installing extension: jeffersonqin.latex-snippets-jeff {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.433 [info] Installing extension: mathematic.vscode-latex {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.433 [info] Installing extension: mcu-debug.rtos-views {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.433 [info] Installing extension: mcu-debug.debug-tracker-vscode {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.433 [info] Installing extension: mcu-debug.peripheral-viewer {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.433 [info] Installing extension: dan-c-underwood.arm {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.433 [info] Installing extension: vadimcn.vscode-lldb {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.434 [info] Installing extension: ms-python.debugpy {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.434 [info] Installing extension: oijaz.unicode-latex {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.434 [info] Installing extension: romanrei.material-dark {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.434 [info] Installing extension: swellaby.rust-pack {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.434 [info] Installing extension: platformio.platformio-ide {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.434 [info] Installing extension: slevesque.shader {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.434 [info] Installing extension: trond-snekvik.gnu-mapfiles {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.435 [info] Installing extension: mcu-debug.memory-view {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.435 [info] Installing extension: 1yib.rust-bundle {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.435 [info] Installing extension: marus25.cortex-debug {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.435 [info] Installing extension: torn4dom4n.latex-support {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.435 [info] Installing extension: zixuanwang.linkerscript {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.435 [info] Installing extension: dustypomerleau.rust-syntax {"isMachineScoped":false,"donotIncludePackAndDependencies":true,"installGivenVersion":false,"pinned":false,"installPreReleaseVersion":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/akashg/.vscode/extensions/extensions.json","path":"/home/akashg/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"context":{"skipWalkthrough":true,"extensionInstallSource":"settingsSync"},"installOnlyNewlyAddedFromExtensionPack":true,"productVersion":{"version":"1.96.2","date":"2024-12-19T10:22:47.216Z"}}
+2024-12-21 22:36:26.435 [info] Installing the extension without checking dependencies and pack github.copilot
+2024-12-21 22:36:26.435 [info] Installing the extension without checking dependencies and pack github.copilot-chat
+2024-12-21 22:36:26.436 [info] Installing the extension without checking dependencies and pack arm.keil-studio-pack
+2024-12-21 22:36:26.436 [info] Installing the extension without checking dependencies and pack arm.cmsis-csolution
+2024-12-21 22:36:26.436 [info] Installing the extension without checking dependencies and pack arm.environment-manager
+2024-12-21 22:36:26.436 [info] Installing the extension without checking dependencies and pack ms-vscode.cpptools-extension-pack
+2024-12-21 22:36:26.436 [info] Installing the extension without checking dependencies and pack ms-vscode.cpptools-themes
+2024-12-21 22:36:26.436 [info] Installing the extension without checking dependencies and pack ms-vscode.vscode-serial-monitor
+2024-12-21 22:36:26.436 [info] Installing the extension without checking dependencies and pack arm.embedded-debug
+2024-12-21 22:36:26.436 [info] Installing the extension without checking dependencies and pack arm.virtual-hardware
+2024-12-21 22:36:26.437 [info] Installing the extension without checking dependencies and pack arm.device-manager
+2024-12-21 22:36:26.437 [info] Installing the extension without checking dependencies and pack arm.arm-debugger
+2024-12-21 22:36:26.437 [info] Installing the extension without checking dependencies and pack ms-vscode-remote.vscode-remote-extensionpack
+2024-12-21 22:36:26.437 [info] Installing the extension without checking dependencies and pack ms-vscode-remote.remote-ssh-edit
+2024-12-21 22:36:26.437 [info] Installing the extension without checking dependencies and pack ms-vscode-remote.remote-ssh
+2024-12-21 22:36:26.437 [info] Installing the extension without checking dependencies and pack ms-vscode-remote.remote-containers
+2024-12-21 22:36:26.437 [info] Installing the extension without checking dependencies and pack llvm-vs-code-extensions.vscode-clangd
+2024-12-21 22:36:26.438 [info] Installing the extension without checking dependencies and pack nickfode.latex-formatter
+2024-12-21 22:36:26.438 [info] Installing the extension without checking dependencies and pack twxs.cmake
+2024-12-21 22:36:26.438 [info] Installing the extension without checking dependencies and pack ms-vscode.remote-server
+2024-12-21 22:36:26.438 [info] Installing the extension without checking dependencies and pack ms-vscode.remote-explorer
+2024-12-21 22:36:26.438 [info] Installing the extension without checking dependencies and pack james-yu.latex-workshop
+2024-12-21 22:36:26.438 [info] Installing the extension without checking dependencies and pack ms-vscode.makefile-tools
+2024-12-21 22:36:26.438 [info] Installing the extension without checking dependencies and pack rust-lang.rust-analyzer
+2024-12-21 22:36:26.438 [info] Installing the extension without checking dependencies and pack ms-vscode.cpptools
+2024-12-21 22:36:26.438 [info] Installing the extension without checking dependencies and pack ms-vscode.cmake-tools
+2024-12-21 22:36:26.439 [info] Installing the extension without checking dependencies and pack eclipse-cdt.memory-inspector
+2024-12-21 22:36:26.439 [info] Installing the extension without checking dependencies and pack eclipse-cdt.peripheral-inspector
+2024-12-21 22:36:26.439 [info] Installing the extension without checking dependencies and pack ms-python.python
+2024-12-21 22:36:26.439 [info] Installing the extension without checking dependencies and pack ms-python.vscode-pylance
+2024-12-21 22:36:26.440 [info] Installing the extension without checking dependencies and pack vscodevim.vim
+2024-12-21 22:36:26.440 [info] Installing the extension without checking dependencies and pack tamasfe.even-better-toml
+2024-12-21 22:36:26.440 [info] Installing the extension without checking dependencies and pack davidanson.vscode-markdownlint
+2024-12-21 22:36:26.440 [info] Installing the extension without checking dependencies and pack redhat.vscode-yaml
+2024-12-21 22:36:26.440 [info] Installing the extension without checking dependencies and pack wayou.vscode-todo-highlight
+2024-12-21 22:36:26.440 [info] Installing the extension without checking dependencies and pack tialki.tex-preview
+2024-12-21 22:36:26.440 [info] Installing the extension without checking dependencies and pack bencoleman.armview
+2024-12-21 22:36:26.440 [info] Installing the extension without checking dependencies and pack fill-labs.dependi
+2024-12-21 22:36:26.440 [info] Installing the extension without checking dependencies and pack hars.cppsnippets
+2024-12-21 22:36:26.441 [info] Installing the extension without checking dependencies and pack jeffersonqin.latex-snippets-jeff
+2024-12-21 22:36:26.441 [info] Installing the extension without checking dependencies and pack mathematic.vscode-latex
+2024-12-21 22:36:26.441 [info] Installing the extension without checking dependencies and pack mcu-debug.rtos-views
+2024-12-21 22:36:26.441 [info] Installing the extension without checking dependencies and pack mcu-debug.debug-tracker-vscode
+2024-12-21 22:36:26.441 [info] Installing the extension without checking dependencies and pack mcu-debug.peripheral-viewer
+2024-12-21 22:36:26.441 [info] Installing the extension without checking dependencies and pack dan-c-underwood.arm
+2024-12-21 22:36:26.441 [info] Installing the extension without checking dependencies and pack vadimcn.vscode-lldb
+2024-12-21 22:36:26.441 [info] Installing the extension without checking dependencies and pack ms-python.debugpy
+2024-12-21 22:36:26.442 [info] Installing the extension without checking dependencies and pack oijaz.unicode-latex
+2024-12-21 22:36:26.442 [info] Installing the extension without checking dependencies and pack romanrei.material-dark
+2024-12-21 22:36:26.442 [info] Installing the extension without checking dependencies and pack swellaby.rust-pack
+2024-12-21 22:36:26.442 [info] Installing the extension without checking dependencies and pack platformio.platformio-ide
+2024-12-21 22:36:26.442 [info] Installing the extension without checking dependencies and pack slevesque.shader
+2024-12-21 22:36:26.442 [info] Installing the extension without checking dependencies and pack trond-snekvik.gnu-mapfiles
+2024-12-21 22:36:26.442 [info] Installing the extension without checking dependencies and pack mcu-debug.memory-view
+2024-12-21 22:36:26.442 [info] Installing the extension without checking dependencies and pack 1yib.rust-bundle
+2024-12-21 22:36:26.442 [info] Installing the extension without checking dependencies and pack marus25.cortex-debug
+2024-12-21 22:36:26.443 [info] Installing the extension without checking dependencies and pack torn4dom4n.latex-support
+2024-12-21 22:36:26.443 [info] Installing the extension without checking dependencies and pack zixuanwang.linkerscript
+2024-12-21 22:36:26.443 [info] Installing the extension without checking dependencies and pack dustypomerleau.rust-syntax
+2024-12-21 22:36:27.847 [info] Extension signature verification result for ms-vscode.cpptools-themes: UnknownError. Executed: true. Duration: 13ms.
+2024-12-21 22:36:27.865 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode.cpptools-themes-2.0.0: ms-vscode.cpptools-themes
+2024-12-21 22:36:27.867 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode.cpptools-themes-2.0.0
+2024-12-21 22:36:27.909 [info] Extension signature verification result for vadimcn.vscode-lldb: UnknownError. Executed: true. Duration: 6ms.
+2024-12-21 22:36:27.918 [info] Extracted extension to file:///home/akashg/.vscode/extensions/vadimcn.vscode-lldb-1.11.1: vadimcn.vscode-lldb
+2024-12-21 22:36:27.921 [info] Renamed to /home/akashg/.vscode/extensions/vadimcn.vscode-lldb-1.11.1
+2024-12-21 22:36:27.950 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:28.038 [info] Extension signature verification result for 1yib.rust-bundle: UnknownError. Executed: true. Duration: 10ms.
+2024-12-21 22:36:28.039 [info] Extension signature verification result for romanrei.material-dark: UnknownError. Executed: true. Duration: 6ms.
+2024-12-21 22:36:28.049 [info] Extracted extension to file:///home/akashg/.vscode/extensions/1yib.rust-bundle-1.0.0: 1yib.rust-bundle
+2024-12-21 22:36:28.051 [info] Extracted extension to file:///home/akashg/.vscode/extensions/romanrei.material-dark-1.1.0: romanrei.material-dark
+2024-12-21 22:36:28.051 [info] Renamed to /home/akashg/.vscode/extensions/1yib.rust-bundle-1.0.0
+2024-12-21 22:36:28.053 [info] Renamed to /home/akashg/.vscode/extensions/romanrei.material-dark-1.1.0
+2024-12-21 22:36:28.132 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:28.662 [info] Extension signature verification result for nickfode.latex-formatter: UnknownError. Executed: true. Duration: 7ms.
+2024-12-21 22:36:28.681 [info] Extracted extension to file:///home/akashg/.vscode/extensions/nickfode.latex-formatter-1.0.5: nickfode.latex-formatter
+2024-12-21 22:36:28.685 [info] Renamed to /home/akashg/.vscode/extensions/nickfode.latex-formatter-1.0.5
+2024-12-21 22:36:28.766 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:28.856 [info] Extension signature verification result for fill-labs.dependi: UnknownError. Executed: true. Duration: 8ms.
+2024-12-21 22:36:28.873 [info] Extracted extension to file:///home/akashg/.vscode/extensions/fill-labs.dependi-0.7.13: fill-labs.dependi
+2024-12-21 22:36:28.876 [info] Renamed to /home/akashg/.vscode/extensions/fill-labs.dependi-0.7.13
+2024-12-21 22:36:28.960 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:29.086 [info] Extension signature verification result for hars.cppsnippets: UnknownError. Executed: true. Duration: 9ms.
+2024-12-21 22:36:29.088 [info] Extension signature verification result for swellaby.rust-pack: UnknownError. Executed: true. Duration: 6ms.
+2024-12-21 22:36:29.098 [info] Extracted extension to file:///home/akashg/.vscode/extensions/swellaby.rust-pack-0.3.38: swellaby.rust-pack
+2024-12-21 22:36:29.099 [info] Extracted extension to file:///home/akashg/.vscode/extensions/hars.cppsnippets-0.0.15: hars.cppsnippets
+2024-12-21 22:36:29.100 [info] Renamed to /home/akashg/.vscode/extensions/swellaby.rust-pack-0.3.38
+2024-12-21 22:36:29.101 [info] Renamed to /home/akashg/.vscode/extensions/hars.cppsnippets-0.0.15
+2024-12-21 22:36:29.181 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:29.192 [info] Extension signature verification result for oijaz.unicode-latex: UnknownError. Executed: true. Duration: 5ms.
+2024-12-21 22:36:29.200 [info] Extracted extension to file:///home/akashg/.vscode/extensions/oijaz.unicode-latex-1.2.0: oijaz.unicode-latex
+2024-12-21 22:36:29.202 [info] Renamed to /home/akashg/.vscode/extensions/oijaz.unicode-latex-1.2.0
+2024-12-21 22:36:29.692 [info] Extension signature verification result for zixuanwang.linkerscript: UnknownError. Executed: true. Duration: 7ms.
+2024-12-21 22:36:29.711 [info] Extracted extension to file:///home/akashg/.vscode/extensions/zixuanwang.linkerscript-1.0.4: zixuanwang.linkerscript
+2024-12-21 22:36:29.714 [info] Renamed to /home/akashg/.vscode/extensions/zixuanwang.linkerscript-1.0.4
+2024-12-21 22:36:29.740 [info] Extension signature verification result for tialki.tex-preview: UnknownError. Executed: true. Duration: 6ms.
+2024-12-21 22:36:29.770 [info] Extracted extension to file:///home/akashg/.vscode/extensions/tialki.tex-preview-0.0.4: tialki.tex-preview
+2024-12-21 22:36:29.772 [info] Renamed to /home/akashg/.vscode/extensions/tialki.tex-preview-0.0.4
+2024-12-21 22:36:29.796 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:29.909 [info] Extracted extension to file:///home/akashg/.vscode/extensions/torn4dom4n.latex-support-3.10.0: torn4dom4n.latex-support
+2024-12-21 22:36:29.911 [info] Renamed to /home/akashg/.vscode/extensions/torn4dom4n.latex-support-3.10.0
+2024-12-21 22:36:29.991 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:31.447 [info] Extension signature verification result for arm.keil-studio-pack: UnknownError. Executed: true. Duration: 6ms.
+2024-12-21 22:36:31.475 [info] Extracted extension to file:///home/akashg/.vscode/extensions/arm.keil-studio-pack-1.18.4: arm.keil-studio-pack
+2024-12-21 22:36:31.478 [info] Renamed to /home/akashg/.vscode/extensions/arm.keil-studio-pack-1.18.4
+2024-12-21 22:36:31.563 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:31.748 [info] Extension signature verification result for vscodevim.vim: UnknownError. Executed: true. Duration: 6ms.
+2024-12-21 22:36:31.774 [info] Extracted extension to file:///home/akashg/.vscode/extensions/vscodevim.vim-1.29.0: vscodevim.vim
+2024-12-21 22:36:31.778 [info] Renamed to /home/akashg/.vscode/extensions/vscodevim.vim-1.29.0
+2024-12-21 22:36:31.864 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:32.820 [info] Extension signature verification result for dan-c-underwood.arm: UnknownError. Executed: true. Duration: 5ms.
+2024-12-21 22:36:32.834 [info] Extracted extension to file:///home/akashg/.vscode/extensions/dan-c-underwood.arm-1.7.4: dan-c-underwood.arm
+2024-12-21 22:36:32.838 [info] Renamed to /home/akashg/.vscode/extensions/dan-c-underwood.arm-1.7.4
+2024-12-21 22:36:32.920 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:33.403 [info] Extension signature verification result for trond-snekvik.gnu-mapfiles: UnknownError. Executed: true. Duration: 6ms.
+2024-12-21 22:36:33.412 [info] Extracted extension to file:///home/akashg/.vscode/extensions/trond-snekvik.gnu-mapfiles-1.1.0: trond-snekvik.gnu-mapfiles
+2024-12-21 22:36:33.415 [info] Renamed to /home/akashg/.vscode/extensions/trond-snekvik.gnu-mapfiles-1.1.0
+2024-12-21 22:36:33.496 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:34.220 [info] Extension signature verification result for ms-vscode.remote-explorer: UnknownError. Executed: true. Duration: 23ms.
+2024-12-21 22:36:34.223 [info] Extension signature verification result for ms-vscode.vscode-serial-monitor: UnknownError. Executed: true. Duration: 10ms.
+2024-12-21 22:36:34.223 [info] Extension signature verification result for ms-vscode.cpptools-extension-pack: UnknownError. Executed: true. Duration: 18ms.
+2024-12-21 22:36:34.257 [info] Extension signature verification result for ms-vscode.makefile-tools: UnknownError. Executed: true. Duration: 9ms.
+2024-12-21 22:36:34.272 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode.cpptools-extension-pack-1.3.0: ms-vscode.cpptools-extension-pack
+2024-12-21 22:36:34.277 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode.cpptools-extension-pack-1.3.0
+2024-12-21 22:36:34.327 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode.remote-explorer-0.4.3: ms-vscode.remote-explorer
+2024-12-21 22:36:34.332 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode.remote-explorer-0.4.3
+2024-12-21 22:36:34.364 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:34.392 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode.makefile-tools-0.11.13: ms-vscode.makefile-tools
+2024-12-21 22:36:34.403 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode.makefile-tools-0.11.13
+2024-12-21 22:36:34.556 [info] Extension signature verification result for bencoleman.armview: UnknownError. Executed: true. Duration: 11ms.
+2024-12-21 22:36:34.584 [info] Extension signature verification result for mcu-debug.debug-tracker-vscode: UnknownError. Executed: true. Duration: 10ms.
+2024-12-21 22:36:34.605 [info] Extension signature verification result for mcu-debug.peripheral-viewer: UnknownError. Executed: true. Duration: 11ms.
+2024-12-21 22:36:34.606 [info] Extension signature verification result for mcu-debug.rtos-views: UnknownError. Executed: true. Duration: 19ms.
+2024-12-21 22:36:34.655 [info] Extracted extension to file:///home/akashg/.vscode/extensions/mcu-debug.debug-tracker-vscode-0.0.15: mcu-debug.debug-tracker-vscode
+2024-12-21 22:36:34.661 [info] Renamed to /home/akashg/.vscode/extensions/mcu-debug.debug-tracker-vscode-0.0.15
+2024-12-21 22:36:34.751 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:34.758 [info] Extracted extension to file:///home/akashg/.vscode/extensions/mcu-debug.peripheral-viewer-1.4.6: mcu-debug.peripheral-viewer
+2024-12-21 22:36:34.765 [info] Renamed to /home/akashg/.vscode/extensions/mcu-debug.peripheral-viewer-1.4.6
+2024-12-21 22:36:34.909 [info] Extracted extension to file:///home/akashg/.vscode/extensions/mcu-debug.rtos-views-0.0.7: mcu-debug.rtos-views
+2024-12-21 22:36:34.938 [info] Renamed to /home/akashg/.vscode/extensions/mcu-debug.rtos-views-0.0.7
+2024-12-21 22:36:35.033 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:35.166 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode.vscode-serial-monitor-0.13.1: ms-vscode.vscode-serial-monitor
+2024-12-21 22:36:35.194 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode.vscode-serial-monitor-0.13.1
+2024-12-21 22:36:35.280 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:35.387 [info] Extension signature verification result for llvm-vs-code-extensions.vscode-clangd: UnknownError. Executed: true. Duration: 9ms.
+2024-12-21 22:36:35.417 [info] Extracted extension to file:///home/akashg/.vscode/extensions/llvm-vs-code-extensions.vscode-clangd-0.1.33: llvm-vs-code-extensions.vscode-clangd
+2024-12-21 22:36:35.421 [info] Renamed to /home/akashg/.vscode/extensions/llvm-vs-code-extensions.vscode-clangd-0.1.33
+2024-12-21 22:36:35.506 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:35.564 [info] Extracted extension to file:///home/akashg/.vscode/extensions/bencoleman.armview-0.4.6: bencoleman.armview
+2024-12-21 22:36:35.603 [info] Renamed to /home/akashg/.vscode/extensions/bencoleman.armview-0.4.6
+2024-12-21 22:36:35.687 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:35.715 [info] Extension signature verification result for arm.arm-debugger: UnknownError. Executed: true. Duration: 15ms.
+2024-12-21 22:36:35.717 [info] Extension signature verification result for arm.virtual-hardware: UnknownError. Executed: true. Duration: 11ms.
+2024-12-21 22:36:35.813 [info] Extracted extension to file:///home/akashg/.vscode/extensions/arm.virtual-hardware-0.6.2: arm.virtual-hardware
+2024-12-21 22:36:35.832 [info] Renamed to /home/akashg/.vscode/extensions/arm.virtual-hardware-0.6.2
+2024-12-21 22:36:35.891 [info] Extension signature verification result for mcu-debug.memory-view: UnknownError. Executed: true. Duration: 11ms.
+2024-12-21 22:36:35.900 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:35.968 [info] Extracted extension to file:///home/akashg/.vscode/extensions/mcu-debug.memory-view-0.0.25: mcu-debug.memory-view
+2024-12-21 22:36:35.974 [info] Renamed to /home/akashg/.vscode/extensions/mcu-debug.memory-view-0.0.25
+2024-12-21 22:36:36.090 [info] Extension signature verification result for platformio.platformio-ide: UnknownError. Executed: true. Duration: 12ms.
+2024-12-21 22:36:36.123 [info] Extracted extension to file:///home/akashg/.vscode/extensions/arm.arm-debugger-1.4.4: arm.arm-debugger
+2024-12-21 22:36:36.137 [info] Renamed to /home/akashg/.vscode/extensions/arm.arm-debugger-1.4.4
+2024-12-21 22:36:36.765 [info] Extracted extension to file:///home/akashg/.vscode/extensions/platformio.platformio-ide-3.3.3-linux-x64: platformio.platformio-ide
+2024-12-21 22:36:36.810 [info] Renamed to /home/akashg/.vscode/extensions/platformio.platformio-ide-3.3.3-linux-x64
+2024-12-21 22:36:36.812 [info] Extension signature verification result for davidanson.vscode-markdownlint: UnknownError. Executed: true. Duration: 10ms.
+2024-12-21 22:36:36.859 [info] Extracted extension to file:///home/akashg/.vscode/extensions/davidanson.vscode-markdownlint-0.57.0: davidanson.vscode-markdownlint
+2024-12-21 22:36:36.864 [info] Renamed to /home/akashg/.vscode/extensions/davidanson.vscode-markdownlint-0.57.0
+2024-12-21 22:36:36.895 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:37.162 [info] Extension signature verification result for twxs.cmake: UnknownError. Executed: true. Duration: 9ms.
+2024-12-21 22:36:37.336 [info] Extracted extension to file:///home/akashg/.vscode/extensions/twxs.cmake-0.0.17: twxs.cmake
+2024-12-21 22:36:37.350 [info] Renamed to /home/akashg/.vscode/extensions/twxs.cmake-0.0.17
+2024-12-21 22:36:37.434 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:37.694 [info] Extension signature verification result for james-yu.latex-workshop: UnknownError. Executed: true. Duration: 14ms.
+2024-12-21 22:36:37.697 [info] Extension signature verification result for ms-vscode.remote-server: UnknownError. Executed: true. Duration: 9ms.
+2024-12-21 22:36:37.794 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode.remote-server-1.5.2: ms-vscode.remote-server
+2024-12-21 22:36:37.809 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode.remote-server-1.5.2
+2024-12-21 22:36:37.881 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:38.616 [info] Extension signature verification result for ms-vscode.cmake-tools: UnknownError. Executed: true. Duration: 12ms.
+2024-12-21 22:36:38.729 [info] Extracted extension to file:///home/akashg/.vscode/extensions/james-yu.latex-workshop-10.7.0: james-yu.latex-workshop
+2024-12-21 22:36:38.807 [info] Renamed to /home/akashg/.vscode/extensions/james-yu.latex-workshop-10.7.0
+2024-12-21 22:36:38.897 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:39.049 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode.cmake-tools-1.19.52: ms-vscode.cmake-tools
+2024-12-21 22:36:39.074 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode.cmake-tools-1.19.52
+2024-12-21 22:36:39.166 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:39.284 [info] Extension signature verification result for marus25.cortex-debug: UnknownError. Executed: true. Duration: 11ms.
+2024-12-21 22:36:39.391 [info] Extracted extension to file:///home/akashg/.vscode/extensions/marus25.cortex-debug-1.12.1: marus25.cortex-debug
+2024-12-21 22:36:39.415 [info] Renamed to /home/akashg/.vscode/extensions/marus25.cortex-debug-1.12.1
+2024-12-21 22:36:39.472 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:39.532 [info] Extension signature verification result for slevesque.shader: UnknownError. Executed: true. Duration: 13ms.
+2024-12-21 22:36:40.856 [info] Extracted extension to file:///home/akashg/.vscode/extensions/slevesque.shader-1.1.5: slevesque.shader
+2024-12-21 22:36:40.942 [info] Renamed to /home/akashg/.vscode/extensions/slevesque.shader-1.1.5
+2024-12-21 22:36:41.026 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:41.188 [info] Extension signature verification result for github.copilot-chat: UnknownError. Executed: true. Duration: 15ms.
+2024-12-21 22:36:41.244 [info] Extension signature verification result for eclipse-cdt.peripheral-inspector: UnknownError. Executed: true. Duration: 12ms.
+2024-12-21 22:36:41.299 [info] Extracted extension to file:///home/akashg/.vscode/extensions/eclipse-cdt.peripheral-inspector-1.5.1: eclipse-cdt.peripheral-inspector
+2024-12-21 22:36:41.304 [info] Renamed to /home/akashg/.vscode/extensions/eclipse-cdt.peripheral-inspector-1.5.1
+2024-12-21 22:36:41.376 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:41.566 [info] Extension signature verification result for eclipse-cdt.memory-inspector: UnknownError. Executed: true. Duration: 10ms.
+2024-12-21 22:36:41.643 [info] Extracted extension to file:///home/akashg/.vscode/extensions/eclipse-cdt.memory-inspector-1.1.0: eclipse-cdt.memory-inspector
+2024-12-21 22:36:41.651 [info] Renamed to /home/akashg/.vscode/extensions/eclipse-cdt.memory-inspector-1.1.0
+2024-12-21 22:36:41.741 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:41.758 [info] Extracted extension to file:///home/akashg/.vscode/extensions/github.copilot-chat-0.23.2: github.copilot-chat
+2024-12-21 22:36:41.765 [info] Renamed to /home/akashg/.vscode/extensions/github.copilot-chat-0.23.2
+2024-12-21 22:36:41.837 [info] Extension signature verification result for arm.device-manager: UnknownError. Executed: true. Duration: 11ms.
+2024-12-21 22:36:42.172 [info] Extracted extension to file:///home/akashg/.vscode/extensions/arm.device-manager-1.13.1: arm.device-manager
+2024-12-21 22:36:42.197 [info] Renamed to /home/akashg/.vscode/extensions/arm.device-manager-1.13.1
+2024-12-21 22:36:42.254 [info] Extension signature verification result for jeffersonqin.latex-snippets-jeff: UnknownError. Executed: true. Duration: 11ms.
+2024-12-21 22:36:42.278 [info] Extracted extension to file:///home/akashg/.vscode/extensions/jeffersonqin.latex-snippets-jeff-1.2.3: jeffersonqin.latex-snippets-jeff
+2024-12-21 22:36:42.282 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:42.283 [info] Renamed to /home/akashg/.vscode/extensions/jeffersonqin.latex-snippets-jeff-1.2.3
+2024-12-21 22:36:44.049 [info] Extension signature verification result for redhat.vscode-yaml: UnknownError. Executed: true. Duration: 7ms.
+2024-12-21 22:36:44.091 [info] Extracted extension to file:///home/akashg/.vscode/extensions/redhat.vscode-yaml-1.15.0: redhat.vscode-yaml
+2024-12-21 22:36:44.092 [info] Extension signature verification result for github.copilot: UnknownError. Executed: true. Duration: 6ms.
+2024-12-21 22:36:44.094 [info] Renamed to /home/akashg/.vscode/extensions/redhat.vscode-yaml-1.15.0
+2024-12-21 22:36:44.175 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:44.461 [info] Extracted extension to file:///home/akashg/.vscode/extensions/github.copilot-1.254.0: github.copilot
+2024-12-21 22:36:44.469 [info] Renamed to /home/akashg/.vscode/extensions/github.copilot-1.254.0
+2024-12-21 22:36:44.549 [info] Extension signature verification result for wayou.vscode-todo-highlight: UnknownError. Executed: true. Duration: 5ms.
+2024-12-21 22:36:44.549 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:44.571 [info] Extracted extension to file:///home/akashg/.vscode/extensions/wayou.vscode-todo-highlight-1.0.5: wayou.vscode-todo-highlight
+2024-12-21 22:36:44.573 [info] Renamed to /home/akashg/.vscode/extensions/wayou.vscode-todo-highlight-1.0.5
+2024-12-21 22:36:44.772 [info] Extension signature verification result for arm.embedded-debug: UnknownError. Executed: true. Duration: 5ms.
+2024-12-21 22:36:44.911 [info] Extracted extension to file:///home/akashg/.vscode/extensions/arm.embedded-debug-1.2.2: arm.embedded-debug
+2024-12-21 22:36:44.928 [info] Renamed to /home/akashg/.vscode/extensions/arm.embedded-debug-1.2.2
+2024-12-21 22:36:44.953 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:45.502 [info] Extension signature verification result for ms-vscode-remote.remote-ssh-edit: UnknownError. Executed: true. Duration: 6ms.
+2024-12-21 22:36:45.516 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode-remote.remote-ssh-edit-0.87.0: ms-vscode-remote.remote-ssh-edit
+2024-12-21 22:36:45.518 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode-remote.remote-ssh-edit-0.87.0
+2024-12-21 22:36:45.598 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:47.143 [info] Extension signature verification result for ms-vscode-remote.vscode-remote-extensionpack: UnknownError. Executed: true. Duration: 13ms.
+2024-12-21 22:36:47.169 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode-remote.vscode-remote-extensionpack-0.26.0: ms-vscode-remote.vscode-remote-extensionpack
+2024-12-21 22:36:47.172 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode-remote.vscode-remote-extensionpack-0.26.0
+2024-12-21 22:36:47.256 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:47.545 [info] Extension signature verification result for arm.environment-manager: UnknownError. Executed: true. Duration: 10ms.
+2024-12-21 22:36:48.084 [info] Extracted extension to file:///home/akashg/.vscode/extensions/arm.environment-manager-1.8.0-linux-x64: arm.environment-manager
+2024-12-21 22:36:48.093 [info] Renamed to /home/akashg/.vscode/extensions/arm.environment-manager-1.8.0-linux-x64
+2024-12-21 22:36:48.179 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:49.384 [info] Extension signature verification result for arm.cmsis-csolution: UnknownError. Executed: true. Duration: 12ms.
+2024-12-21 22:36:50.091 [info] Extension signature verification result for ms-vscode-remote.remote-ssh: UnknownError. Executed: true. Duration: 12ms.
+2024-12-21 22:36:50.252 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode-remote.remote-ssh-0.116.1: ms-vscode-remote.remote-ssh
+2024-12-21 22:36:50.272 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode-remote.remote-ssh-0.116.1
+2024-12-21 22:36:50.362 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:50.387 [info] Extension signature verification result for ms-vscode-remote.remote-containers: UnknownError. Executed: true. Duration: 12ms.
+2024-12-21 22:36:50.578 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode-remote.remote-containers-0.394.0: ms-vscode-remote.remote-containers
+2024-12-21 22:36:50.595 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode-remote.remote-containers-0.394.0
+2024-12-21 22:36:50.595 [info] Extracted extension to file:///home/akashg/.vscode/extensions/arm.cmsis-csolution-1.46.0-linux-x64: arm.cmsis-csolution
+2024-12-21 22:36:50.602 [info] Renamed to /home/akashg/.vscode/extensions/arm.cmsis-csolution-1.46.0-linux-x64
+2024-12-21 22:36:50.681 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:50.892 [info] Extension signature verification result for dustypomerleau.rust-syntax: UnknownError. Executed: true. Duration: 7ms.
+2024-12-21 22:36:50.911 [info] Extracted extension to file:///home/akashg/.vscode/extensions/dustypomerleau.rust-syntax-0.6.1: dustypomerleau.rust-syntax
+2024-12-21 22:36:50.915 [info] Renamed to /home/akashg/.vscode/extensions/dustypomerleau.rust-syntax-0.6.1
+2024-12-21 22:36:50.997 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:36:57.317 [info] Extension signature verification result for tamasfe.even-better-toml: UnknownError. Executed: true. Duration: 13ms.
+2024-12-21 22:36:58.168 [info] Extracted extension to file:///home/akashg/.vscode/extensions/tamasfe.even-better-toml-0.21.2: tamasfe.even-better-toml
+2024-12-21 22:36:58.184 [info] Renamed to /home/akashg/.vscode/extensions/tamasfe.even-better-toml-0.21.2
+2024-12-21 22:36:58.277 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:37:02.112 [info] Extension signature verification result for ms-vscode.cpptools: UnknownError. Executed: true. Duration: 14ms.
+2024-12-21 22:37:04.844 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-vscode.cpptools-1.23.2-linux-x64: ms-vscode.cpptools
+2024-12-21 22:37:04.868 [info] Renamed to /home/akashg/.vscode/extensions/ms-vscode.cpptools-1.23.2-linux-x64
+2024-12-21 22:37:04.954 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:37:07.431 [info] Extension signature verification result for rust-lang.rust-analyzer: UnknownError. Executed: true. Duration: 14ms.
+2024-12-21 22:37:08.068 [info] Extracted extension to file:///home/akashg/.vscode/extensions/rust-lang.rust-analyzer-0.3.2220-linux-x64: rust-lang.rust-analyzer
+2024-12-21 22:37:08.085 [info] Renamed to /home/akashg/.vscode/extensions/rust-lang.rust-analyzer-0.3.2220-linux-x64
+2024-12-21 22:37:08.172 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:37:09.439 [info] Extension signature verification result for mathematic.vscode-latex: UnknownError. Executed: true. Duration: 10ms.
+2024-12-21 22:37:09.723 [info] Extension signature verification result for ms-python.debugpy: UnknownError. Executed: true. Duration: 12ms.
+2024-12-21 22:37:10.102 [info] Extension signature verification result for ms-python.python: UnknownError. Executed: true. Duration: 11ms.
+2024-12-21 22:37:10.137 [info] Extracted extension to file:///home/akashg/.vscode/extensions/mathematic.vscode-latex-1.3.0: mathematic.vscode-latex
+2024-12-21 22:37:10.150 [info] Renamed to /home/akashg/.vscode/extensions/mathematic.vscode-latex-1.3.0
+2024-12-21 22:37:10.235 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:37:10.540 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-python.debugpy-2024.14.0-linux-x64: ms-python.debugpy
+2024-12-21 22:37:10.556 [info] Renamed to /home/akashg/.vscode/extensions/ms-python.debugpy-2024.14.0-linux-x64
+2024-12-21 22:37:10.639 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:37:11.381 [info] Extension signature verification result for ms-python.vscode-pylance: UnknownError. Executed: true. Duration: 11ms.
+2024-12-21 22:37:11.851 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-python.python-2024.22.0-linux-x64: ms-python.python
+2024-12-21 22:37:11.941 [info] Renamed to /home/akashg/.vscode/extensions/ms-python.python-2024.22.0-linux-x64
+2024-12-21 22:37:12.033 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)
+2024-12-21 22:37:15.458 [info] Extracted extension to file:///home/akashg/.vscode/extensions/ms-python.vscode-pylance-2024.12.1: ms-python.vscode-pylance
+2024-12-21 22:37:15.723 [info] Renamed to /home/akashg/.vscode/extensions/ms-python.vscode-pylance-2024.12.1
+2024-12-21 22:37:15.773 [info] Extension installed successfully: ms-vscode.cpptools-themes vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.773 [info] Extension installed successfully: vadimcn.vscode-lldb vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.774 [info] Extension installed successfully: 1yib.rust-bundle vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.774 [info] Extension installed successfully: romanrei.material-dark vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.774 [info] Extension installed successfully: nickfode.latex-formatter vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.774 [info] Extension installed successfully: fill-labs.dependi vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.774 [info] Extension installed successfully: swellaby.rust-pack vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.774 [info] Extension installed successfully: hars.cppsnippets vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.774 [info] Extension installed successfully: oijaz.unicode-latex vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.775 [info] Extension installed successfully: zixuanwang.linkerscript vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.775 [info] Extension installed successfully: tialki.tex-preview vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.775 [info] Extension installed successfully: torn4dom4n.latex-support vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.775 [info] Extension installed successfully: arm.keil-studio-pack vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.775 [info] Extension installed successfully: vscodevim.vim vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.775 [info] Extension installed successfully: dan-c-underwood.arm vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.775 [info] Extension installed successfully: trond-snekvik.gnu-mapfiles vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.776 [info] Extension installed successfully: ms-vscode.cpptools-extension-pack vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.776 [info] Extension installed successfully: ms-vscode.remote-explorer vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.776 [info] Extension installed successfully: ms-vscode.makefile-tools vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.776 [info] Extension installed successfully: mcu-debug.debug-tracker-vscode vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.776 [info] Extension installed successfully: mcu-debug.peripheral-viewer vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.777 [info] Extension installed successfully: mcu-debug.rtos-views vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.777 [info] Extension installed successfully: ms-vscode.vscode-serial-monitor vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.777 [info] Extension installed successfully: llvm-vs-code-extensions.vscode-clangd vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.777 [info] Extension installed successfully: bencoleman.armview vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.777 [info] Extension installed successfully: arm.virtual-hardware vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.777 [info] Extension installed successfully: mcu-debug.memory-view vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.777 [info] Extension installed successfully: arm.arm-debugger vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.778 [info] Extension installed successfully: platformio.platformio-ide vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.778 [info] Extension installed successfully: davidanson.vscode-markdownlint vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.778 [info] Extension installed successfully: twxs.cmake vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.779 [info] Extension installed successfully: ms-vscode.remote-server vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.779 [info] Extension installed successfully: james-yu.latex-workshop vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.779 [info] Extension installed successfully: ms-vscode.cmake-tools vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.779 [info] Extension installed successfully: marus25.cortex-debug vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.779 [info] Extension installed successfully: slevesque.shader vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.779 [info] Extension installed successfully: eclipse-cdt.peripheral-inspector vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.779 [info] Extension installed successfully: eclipse-cdt.memory-inspector vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.780 [info] Extension installed successfully: github.copilot-chat vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.780 [info] Extension installed successfully: arm.device-manager vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.780 [info] Extension installed successfully: jeffersonqin.latex-snippets-jeff vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.780 [info] Extension installed successfully: redhat.vscode-yaml vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.780 [info] Extension installed successfully: github.copilot vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.780 [info] Extension installed successfully: wayou.vscode-todo-highlight vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.781 [info] Extension installed successfully: arm.embedded-debug vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.781 [info] Extension installed successfully: ms-vscode-remote.remote-ssh-edit vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.781 [info] Extension installed successfully: ms-vscode-remote.vscode-remote-extensionpack vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.781 [info] Extension installed successfully: arm.environment-manager vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.782 [info] Extension installed successfully: ms-vscode-remote.remote-ssh vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.782 [info] Extension installed successfully: ms-vscode-remote.remote-containers vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.782 [info] Extension installed successfully: arm.cmsis-csolution vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.782 [info] Extension installed successfully: dustypomerleau.rust-syntax vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.782 [info] Extension installed successfully: tamasfe.even-better-toml vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.782 [info] Extension installed successfully: ms-vscode.cpptools vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.782 [info] Extension installed successfully: rust-lang.rust-analyzer vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.783 [info] Extension installed successfully: mathematic.vscode-latex vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.783 [info] Extension installed successfully: ms-python.debugpy vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.783 [info] Extension installed successfully: ms-python.python vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.783 [info] Extension installed successfully: ms-python.vscode-pylance vscode-userdata:/home/akashg/.vscode/extensions/extensions.json
+2024-12-21 22:37:15.816 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/akashg/.vscode/extensions/extensions.json.vsctmp'
+    at Gm.create (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39624)
+    at xs (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39731)
+    at Vr.ib (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:22778)
+    at Vr.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:78:16010)
+    at async wh.stat (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:85488)
+    at async fh.Ab (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:77:67180)

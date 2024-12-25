@@ -10,11 +10,11 @@
             "file:///home/akashg/Documents/Beta-Hyprland-config/Configs/.scripts": "__default__profile__",
             "file:///home/akashg/.scripts": "__default__profile__",
             "file:///home/akashg/Downloads/Hyprland-Dotfiles/Configs": "__default__profile__",
-            "file:///home/akashg/Downloads/Hyprland-Dotfiles": "__default__profile__"
+            "file:///home/akashg/Downloads/Hyprland-Dotfiles": "__default__profile__",
+            "file:///home/akashg/Documents/rust-test": "__default__profile__",
+            "file:///home/akashg/Downloads/Doom-Emacs-Config": "__default__profile__"
         },
-        "emptyWindows": {
-            "1734702122679": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "telemetry.machineId": "beb3c4133e05aab84556cf14a4af5c18a6c2ff934a2084f81b0034d421a05abd",
@@ -22,14 +22,10 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/akashg/Downloads/Hyprland-Dotfiles"
+                "folderUri": "file:///home/akashg/Downloads/Doom-Emacs-Config"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1734702122679"
-            }
-        ]
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -81,11 +77,21 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/akashg/Documents/rust-test",
+                                        "path": "/home/akashg/Documents/rust-test",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/rust-test"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -268,13 +274,6 @@
                         "submenu": {
                             "items": [
                                 {
-                                    "id": "github.copyVscodeDevLinkFile",
-                                    "label": "Copy vscode.dev Link"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
                                 }
@@ -341,8 +340,9 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.userDataSync.actions.turnOn",
-                                    "label": "Backup and Sync Settings..."
+                                    "id": "workbench.userDataSync.actions.manage",
+                                    "label": "Settings Sync is On",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -579,10 +579,6 @@
                                     "label": "&&Panel"
                                 },
                                 {
-                                    "id": "toggle.toggleCustomTitleBar",
-                                    "label": "Custom Title Bar"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -777,6 +773,13 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "workbench.action.splitEditorInGroup",
+                                    "label": "Split in &&Group"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.moveEditorToNewWindow",
                                     "label": "&&Move Editor into New Window"
                                 },
@@ -853,6 +856,21 @@
                         "label": "E&&xtensions"
                     },
                     {
+                        "id": "workbench.view.extension.test",
+                        "label": "T&&esting"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.panel.chat",
+                        "label": "&&Chat"
+                    },
+                    {
+                        "id": "workbench.panel.chatEditing",
+                        "label": "Copilot Ed&&its"
+                    },
+                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -876,8 +894,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap",
-                        "enabled": false
+                        "label": "&&Word Wrap"
                     }
                 ]
             },
@@ -885,8 +902,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1115,8 +1131,7 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations",
-                        "enabled": false
+                        "label": "Open &&Configurations"
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1216,8 +1231,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1430,10 +1444,6 @@
                 "label": "Ctrl+Q",
                 "userSettingsLabel": "ctrl+q"
             },
-            "undo": {
-                "label": "Ctrl+Z",
-                "userSettingsLabel": "ctrl+z"
-            },
             "redo": {
                 "label": "Ctrl+Y",
                 "userSettingsLabel": "ctrl+y"
@@ -1569,6 +1579,11 @@
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+\\"
             },
+            "workbench.action.splitEditorInGroup": {
+                "label": "Ctrl+K Ctrl+Shift+\\",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
+            },
             "workbench.action.copyEditorToNewWindow": {
                 "label": "Ctrl+K O",
                 "isNative": false,
@@ -1593,6 +1608,14 @@
             "workbench.view.debug": {
                 "label": "Ctrl+Shift+D",
                 "userSettingsLabel": "ctrl+shift+d"
+            },
+            "workbench.panel.chat": {
+                "label": "Ctrl+Alt+I",
+                "userSettingsLabel": "ctrl+alt+i"
+            },
+            "workbench.panel.chatEditing": {
+                "label": "Ctrl+Shift+Alt+I",
+                "userSettingsLabel": "ctrl+shift+alt+i"
             },
             "workbench.actions.view.problems": {
                 "label": "Ctrl+Shift+M",
@@ -1811,7 +1834,7 @@
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
-            "titleBarHeight": 0,
+            "titleBarHeight": 35,
             "activityBarWidth": 48,
             "sideBarWidth": 170,
             "statusBarHeight": 22,
@@ -1820,8 +1843,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/akashg/Downloads/Hyprland-Dotfiles",
-            "backupPath": "/home/akashg/.config/Code/Backups/c80bb19afc23819115d353776f6aa21c",
+            "folder": "file:///home/akashg/Downloads/Doom-Emacs-Config",
+            "backupPath": "/home/akashg/.config/Code/Backups/5145cd42501bdcf60d8185a9bde928ce",
             "uiState": {
                 "mode": 0,
                 "x": 0,
@@ -1833,5 +1856,6 @@
         "openedWindows": []
     },
     "telemetry.sqmId": "",
-    "telemetry.devDeviceId": "d7f33ab3-126e-430e-8061-b2091a804ae4"
+    "telemetry.devDeviceId": "d7f33ab3-126e-430e-8061-b2091a804ae4",
+    "windowControlHeight": 35
 }

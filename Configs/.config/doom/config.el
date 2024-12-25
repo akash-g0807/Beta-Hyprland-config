@@ -9,24 +9,24 @@
 ;;                                       (unless (and wl-copy-p (process-live-p wl-copy-p))
 ;;                                         (shell-command-to-string "wl-paste -n | tr -d '\r'")))))
 
-(use-package dashboard
-  :ensure t
-  :config
-  (dashboard-setup-startup-hook))
+;;(use-package dashboard
+;;  :ensure t
+;;  :config
+;;  (dashboard-setup-startup-hook))
 
-(setq dashboard-startup-banner  2)
+;;(setq dashboard-startup-banner  2)
 
-(setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
+;;(setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
 
-(setq dashboard-items '((recents  . 5)
-                        (bookmarks . 5)
-                        (projects . 5)
-                        (agenda . 5)
-                        (registers . 5)))
+;;(setq dashboard-items '((recents  . 5)
+;;                        (bookmarks . 5)
+;;                        (projects . 5)
+;;                        (agenda . 5)
+;;                        (registers . 5)))
 
-(setq dashboard-center-content t)
+;;(setq dashboard-center-content t)
 
-(setq doom-fallback-buffer "*dashboard*")
+;;(setq doom-fallback-buffer "*dashboard*")
 
 ;;(beacon-mode 1)
 
@@ -212,27 +212,6 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
   ; ("g T" . centaur-tabs-backward))
  )
 (add-hook 'server-after-make-frame-hook 'centaur-tabs-mode)
-
-;; Enable centaur-tabs without faulty theming in daemon mode.
-(if (not (daemonp))
-	 (centaur-tabs-mode)
-
-  (defun centaur-tabs-daemon-mode (frame)
-	 (unless (and (featurep 'centaur-tabs) (centaur-tabs-mode-on-p))
-		(run-at-time nil nil (lambda () (centaur-tabs-mode)))))
-  (add-hook 'after-make-frame-functions #'centaur-tabs-daemon-mode))
-
-
-;;(use-package centaur-tabs
-;;  :custom
-;;  (centaur-tabs-style "bar")
-;;  (centaur-tabs-set-bar 'left)
-  ;; other settings here
-;;  :init
- ;; (if (daemonp)
- ;;     (add-hook 'server-after-make-frame-hook 'centaur-tabs-mode)
-;;    (add-hook 'after-init-hook 'centaur-tabs-mode))
-;;  )
 
 (map! :leader
       (:prefix ("c h" . "Help info from Clippy")
@@ -1454,7 +1433,7 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
 	    (setq TeX-source-correlate-method 'synctex)
 	    (setq TeX-auto-save t)
 	    (setq TeX-parse-self t)
-	    (setq-default TeX-master "paper.tex")
+	    (setq-default TeX-master "main.tex")
 	    (setq reftex-plug-into-AUCTeX t)
 	    (pdf-tools-install)
 	    (setq TeX-view-program-selection '((output-pdf "PDF Tools"))
@@ -1551,8 +1530,8 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
   :ensure
   :config
   (dap-ui-mode)
-  (dap-ui-controls-mode 1)
-  (dap-auto-configure-mode t)
+  (dap-ui-controls-mode -1)
+  (dap-auto-configure-mode -1)
 
   (require 'dap-lldb)
   (require 'dap-codelldb)
@@ -1573,17 +1552,42 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
          :dap-compilation-dir "${workspaceFolder}"
          :target nil
          :cwd nil)))
+(after! dap-mode
+  ;; Disable dap-ui-controls-mode
+  (dap-ui-controls-mode -1)
+
+  ;; Ensure it’s removed from all hooks
+  (remove-hook 'dap-stopped-hook #'dap-ui-controls-mode)
+  (remove-hook 'dap-terminated-hook #'dap-ui-controls-mode)
+  (remove-hook 'dap-disconnected-hook #'dap-ui-controls-mode)
+  (remove-hook 'dap-continue-hook #'dap-ui-controls-mode)
+
+  ;; Prevent its function from being called by overriding
+  (advice-add 'dap-ui-controls-mode :override #'ignore))
+
+
 
   (with-eval-after-load 'dap-mode
     (setq dap-default-terminal-kind "integrated") ;; Make sure that terminal programs open a term for I/O in an Emacs buffer
-    (dap-auto-configure-mode +1))
+    (dap-auto-configure-mode -1))
 
   (with-eval-after-load 'lsp-rust
     (require 'dap-cpptools))
 
   (with-eval-after-load 'dap-mode
     (setq dap-default-terminal-kind "integrated") ;; Make sure that terminal programs open a term for I/O in an Emacs buffer
-    (dap-auto-configure-mode +1))
+    (dap-auto-configure-mode -1))
+
+(map! :leader
+      (:prefix ("d" . "debug")
+       :desc "Start Debugging" "b" #'dap-debug              ;; Start a new debug session
+       :desc "Toggle Breakpoint" "t" #'dap-breakpoint-toggle ;; Toggle breakpoint at the current line
+       :desc "Continue" "c" #'dap-continue                  ;; Continue running the program
+       :desc "Step Over" "o" #'dap-next                     ;; Step Over the current line
+       :desc "Step Into" "i" #'dap-step-in                  ;; Step Into a function call
+       :desc "Step Out" "u" #'dap-step-out                  ;; Step Out of the current function
+       :desc "Restart" "r" #'dap-debug-restart             ;; Restart the debug session
+       :desc "Terminate" "t" #'dap-disconnect))             ;; Terminate the debug session
 
 ;; dap-mode-launch-json.el --- support launch.json -*- lexical-binding: t -*-
 
@@ -1954,3 +1958,6 @@ CONF is regular dap-mode launch configuration. Return the result."
   :ensure t
   :init
   (elpy-enable))
+
+(setenv "LANG" "en_US.UTF-8")
+(setenv "LC_ALL" "en_US.UTF-8")
