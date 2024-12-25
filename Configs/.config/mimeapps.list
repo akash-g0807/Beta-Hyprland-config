@@ -28,4 +28,4 @@ text/x-python=code.desktop;
 application/x-7z-compressed=org.gnome.FileRoller.desktop;org.kde.ark.desktop;
 application/x-shellscript=code.desktop;
 video/mp4=vlc.desktop;
-application/pdf=firefox.desktop;
+application/pdf=org.gnome.Evince.desktop;firefox.desktop;
