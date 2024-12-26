@@ -39,6 +39,9 @@ $CFGDIR/swww/swwwallpaper.sh -$x
 ### qt5ct ###
 ln -fs $CFGDIR/qt5ct/colors/${S_MODE}.conf $CFGDIR/qt5ct/colors/theme.conf
 
+### qt6ct ###
+ln -fs $CFGDIR/qt6ct/colors/${S_MODE}.conf $CFGDIR/qt6ct/colors/theme.conf
+
 ### rofi ###
 #ln -fs $CFGDIR/rofi/${S_MODE}.rasi $CFGDIR/rofi/theme.rasi
 ln -fs ~/.config/wallust/templates/colors-rofi-${S_MODE}.rasi ~/.config/wallust/templates/colors-rofi.rasi
