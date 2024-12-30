@@ -1,3 +1,0 @@
-return {
-	"normen/vim-pio",
-}

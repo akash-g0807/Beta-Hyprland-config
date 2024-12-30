@@ -107,3 +107,4 @@
 (package! elpy)
 (package! org-html-themify :recipe (:host github :repo "DogLooksGood/org-html-themify" :files ("*.el" "*.js" "*.css")))
 (package! ein)
+(package! mixed-pitch)

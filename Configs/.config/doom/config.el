@@ -9,24 +9,24 @@
 ;;                                       (unless (and wl-copy-p (process-live-p wl-copy-p))
 ;;                                         (shell-command-to-string "wl-paste -n | tr -d '\r'")))))
 
-;;(use-package dashboard
-;;  :ensure t
-;;  :config
-;;  (dashboard-setup-startup-hook))
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook))
 
-;;(setq dashboard-startup-banner  2)
+(setq dashboard-startup-banner  2)
 
-;;(setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
+(setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
 
-;;(setq dashboard-items '((recents  . 5)
-;;                        (bookmarks . 5)
-;;                        (projects . 5)
-;;                        (agenda . 5)
-;;                        (registers . 5)))
+(setq dashboard-items '((recents  . 5)
+                        (bookmarks . 5)
+                        (projects . 5)
+                        (agenda . 5)
+                        (registers . 5)))
 
-;;(setq dashboard-center-content t)
+(setq dashboard-center-content t)
 
-;;(setq doom-fallback-buffer "*dashboard*")
+(setq doom-fallback-buffer "*dashboard*")
 
 ;;(beacon-mode 1)
 
@@ -296,9 +296,20 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
        :desc "Evaluate last sexpression" "l" #'eval-last-sexp
        :desc "Evaluate elisp in region"  "r" #'eval-region))
 
+(use-package! mixed-pitch
+  :hook (org-mode . mixed-pitch-mode)
+  :config
+  (setq mixed-pitch-set-heigth t)
+  (set-face-attribute 'variable-pitch nil :height 110))
 (setq doom-font (font-spec :family "JetBrains Mono" :size 12)
-      doom-variable-pitch-font (font-spec :family "Cantarell" :size 15)
-      doom-big-font (font-spec :family "JetBrains Mono" :size 18))
+      doom-variable-pitch-font (font-spec :family "Cantarell" :size 16 :height 1.3)
+      doom-big-font (font-spec :family "JetBrains Mono" :size 15))
+
+(after! mixed-pitch
+ (setq mixed-pitch-set-height t)
+  (setq variable-pitch-serif-font doom-variable-pitch-font)
+  (set-face-attribute 'variable-pitch nil :height 1.3)
+)
 (after! doom-themes
   (setq doom-themes-enable-bold t
         doom-themes-enable-italic t))
@@ -1946,13 +1957,13 @@ CONF is regular dap-mode launch configuration. Return the result."
   (map-delete sp-pairs 'plain-tex-mode))
 
 ;; accept completion from copilot and fallback to company
-(use-package! copilot
-  :hook (prog-mode . copilot-mode)
-  :bind (:map copilot-completion-map
-              ("<tab>" . 'copilot-accept-completion)
-              ("TAB" . 'copilot-accept-completion)
-              ("C-TAB" . 'copilot-accept-completion-by-word)
-              ("C-<tab>" . 'copilot-accept-completion-by-word)))
+;;(use-package! copilot
+;;  :hook (prog-mode . copilot-mode)
+ ;; :bind (:map copilot-completion-map
+ ;;             ("<tab>" . 'copilot-accept-completion)
+ ;;             ("TAB" . 'copilot-accept-completion)
+ ;;             ("C-TAB" . 'copilot-accept-completion-by-word)
+  ;;            ("C-<tab>" . 'copilot-accept-completion-by-word)))
 
 (use-package elpy
   :ensure t
