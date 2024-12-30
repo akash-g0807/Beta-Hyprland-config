@@ -193,3 +193,4 @@ extra-cmake-modules
 kwidgetsaddons
 brightnessctl
 hyprdwl-git
+lazygit
