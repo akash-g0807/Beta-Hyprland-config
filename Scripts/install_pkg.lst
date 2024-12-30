@@ -198,3 +198,5 @@ texlab
 python-pynvim
 lldb
 lldb_mi
+hunspell
+hunspell-en_gb
