@@ -1,4 +1,14 @@
--- import lspsaga safely
+return{
+  'nvimdev/lspsaga.nvim',
+
+  dependencies = {
+        'nvim-treesitter/nvim-treesitter', -- optional
+        'nvim-tree/nvim-web-devicons',     -- optional
+    },
+
+  config = function()
+
+    -- import lspsaga safely
 local saga_status, saga = pcall(require, "lspsaga")
 if not saga_status then
   return
@@ -17,3 +27,6 @@ saga.setup({
     },
   },
 })
+
+    end,
+}
