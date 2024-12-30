@@ -196,3 +196,5 @@ hyprdwl-git
 lazygit
 texlab
 python-pynvim
+lldb
+lldb_mi
