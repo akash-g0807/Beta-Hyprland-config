@@ -65,6 +65,14 @@ Login and Enjoy!
 1. First go do `~/.config/nwg-launchers/nwgbar`
 2. Run `install.sh`
 
+## Install Doom Emacs ##
+I use a config on top of [Doom Emacs](https://github.com/doomemacs/doomemacs) and my editor of choice for coding or otherwise
+
+``` sh
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
+```
+
 
 # Software used here:
 - [hyprland-git](https://github.com/hyprwm/Hyprland) - Wayland Tiling Compositor
@@ -76,7 +84,8 @@ Login and Enjoy!
 - [swaync](https://github.com/ErikReider/SwayNotificationCenter) - Notification center/Daemon and Control Center
 - [swaylock-effects](https://github.com/mortie/swaylock-effects) - Lock Screen
 - [Thunar](https://gitlab.xfce.org/xfce/thunar) - File manager
-- [GNU Emacs (Using Wayland Version)](https://www.gnu.org/software/emacs/) - Text Editor (use the [AUR](https://aur.archlinux.org/packages/emacs-gcc-wayland-devel-bin))
+- [Doom Emacs (Using Wayland Version)](https://www.gnu.org/software/emacs/) - Text Editor (use the [Wayland]()Error: target STRING not available
+ version)
 - [Clementine](https://www.clementine-player.org) - Music Player
 - [Snapper](https://github.com/openSUSE/snapper) - Utility for managing filesystem snapshots and allows for easy rollbacks
 - [btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant) - GUI for helping with managing btrfs snapshots
