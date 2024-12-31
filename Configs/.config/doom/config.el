@@ -54,65 +54,6 @@
   (kbd "g h") 'ibuffer-do-kill-lines
   (kbd "g H") 'ibuffer-update)
 
-;; https://stackoverflow.com/questions/9547912/emacs-calendar-show-more-than-3-months
-(defun dt/year-calendar (&optional year)
-  (interactive)
-  (require 'calendar)
-  (let* (
-      (current-year (number-to-string (nth 5 (decode-time (current-time)))))
-      (month 0)
-      (year (if year year (string-to-number (format-time-string "%Y" (current-time))))))
-    (switch-to-buffer (get-buffer-create calendar-buffer))
-    (when (not (eq major-mode 'calendar-mode))
-      (calendar-mode))
-    (setq displayed-month month)
-    (setq displayed-year year)
-    (setq buffer-read-only nil)
-    (erase-buffer)
-    ;; horizontal rows
-    (dotimes (j 4)
-      ;; vertical columns
-      (dotimes (i 3)
-        (calendar-generate-month
-          (setq month (+ month 1))
-          year
-          ;; indentation / spacing between months
-          (+ 5 (* 25 i))))
-      (goto-char (point-max))
-      (insert (make-string (- 10 (count-lines (point-min) (point-max))) ?\n))
-      (widen)
-      (goto-char (point-max))
-      (narrow-to-region (point-max) (point-max)))
-    (widen)
-    (goto-char (point-min))
-    (setq buffer-read-only t)))
-
-(defun dt/scroll-year-calendar-forward (&optional arg event)
-  "Scroll the yearly calendar by year in a forward direction."
-  (interactive (list (prefix-numeric-value current-prefix-arg)
-                     last-nonmenu-event))
-  (unless arg (setq arg 0))
-  (save-selected-window
-    (if (setq event (event-start event)) (select-window (posn-window event)))
-    (unless (zerop arg)
-      (let* (
-              (year (+ displayed-year arg)))
-        (dt/year-calendar year)))
-    (goto-char (point-min))
-    (run-hooks 'calendar-move-hook)))
-
-(defun dt/scroll-year-calendar-backward (&optional arg event)
-  "Scroll the yearly calendar by year in a backward direction."
-  (interactive (list (prefix-numeric-value current-prefix-arg)
-                     last-nonmenu-event))
-  (dt/scroll-year-calendar-forward (- (or arg 1)) event))
-
-(map! :leader
-      :desc "Scroll year calendar backward" "<left>" #'dt/scroll-year-calendar-backward
-      :desc "Scroll year calendar forward" "<right>" #'dt/scroll-year-calendar-forward)
-
-(defalias 'year-calendar 'dt/year-calendar)
-
 ;; (use-package! calfw)
 ;; (use-package! calfw-org)
 
@@ -827,124 +768,6 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
       org-journal-date-format "%B %d, %Y (%A) "
       org-journal-file-format "%Y-%m-%d.org")
 
-(setq org-publish-use-timestamps-flag nil)
-(setq org-export-with-broken-links t)
-(setq org-publish-project-alist
-      '(("distro.tube without manpages"
-         :base-directory "~/nc/gitlab-repos/distro.tube/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/"
-         :recursive t
-         :exclude "org-html-themes/.*\\|man-org/man*"
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man0p"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man0p/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man0p/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man1"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man1/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man1/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man1p"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man1p/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man1p/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man2"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man2/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man2/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man3"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man3/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man3/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man3p"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man3p/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man3p/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man4"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man4/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man4/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man5"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man5/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man5/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man6"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man6/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man6/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man7"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man7/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man7/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("man8"
-         :base-directory "~/nc/gitlab-repos/distro.tube/man-org/man8/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/distro.tube/html/man-org/man8/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-         ("org-static"
-         :base-directory "~/Org/website"
-         :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-         :publishing-directory "~/public_html/"
-         :recursive t
-         :exclude ".*/org-html-themes/.*"
-         :publishing-function org-publish-attachment)
-         ("dtos.dev"
-         :base-directory "~/nc/gitlab-repos/dtos.dev/"
-         :base-extension "org"
-         :publishing-directory "~/nc/gitlab-repos/dtos.dev/html/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t)
-
-      ))
-
 (after! org
   (setq org-roam-directory "~/Org/roam"
         org-roam-graph-viewer "/usr/bin/firefox"))
@@ -1336,61 +1159,61 @@ Other buffer group by `centaur-tabs-get-group-name' with project name."
   (lsp-ltex-enabled nil)
   (lsp-ltex-mother-tongue "fr"))
 
-(use-package ispell
-  :preface
-  (defun my/switch-language ()
-    "Switch between the English and French for ispell, flyspell, and LanguageTool."
-    (interactive)
-    (let* ((current-dictionary ispell-current-dictionary)
-           (new-dictionary (if (string= current-dictionary "en_GB") "fr_BE" "en_GB")))
-      (ispell-change-dictionary new-dictionary)
-      (if (string= new-dictionary "fr_GB")
-          (progn
-            (setq lsp-ltex-language "fr"))
-        (progn
-          (setq lsp-ltex-language "en-GB")))
-      (flyspell-buffer)
-      (message "[✓] Dictionary switched to %s" new-dictionary)))
-  :custom
-  (ispell-hunspell-dict-paths-alist
-   '(("en_GB" "/usr/share/hunspell/en_GB.aff")
-     ("fr_BE" "/usr/share/hunspell/fr_BE.aff")))
-  ;; Save words in the personal dictionary without asking.
-  (ispell-silently-savep t)
-  :config
-  (setenv "LANG" "en_GB")
-  (cond ((executable-find "hunspell")
-         (setq ispell-program-name "hunspell")
-         (setq ispell-local-dictionary-alist '(("en_GB"
-                                                "[[:alpha:]]"
-                                                "[^[:alpha:]]"
-                                                "['’-]"
-                                                t
-                                                ("-d" "en_GB" )
-                                                nil
-                                                utf-8)
-                                               ("fr_BE"
-                                                "[[:alpha:]ÀÂÇÈÉÊËÎÏÔÙÛÜàâçèéêëîïôùûü]"
-                                                "[^[:alpha:]ÀÂÇÈÉÊËÎÏÔÙÛÜàâçèéêëîïôùûü]"
-                                                "['’-]"
-                                                t
-                                                ("-d" "fr_BE")
-                                                nil
-                                                utf-8))))
-        ((executable-find "aspell")
-         (setq ispell-program-name "aspell")
-         (setq ispell-extra-args '("--sug-mode=ultra"))))
-  ;; Ignore file sections for spell checking.
-  (add-to-list 'ispell-skip-region-alist '("#\\+begin_align" . "#\\+end_align"))
-  (add-to-list 'ispell-skip-region-alist '("#\\+begin_align*" . "#\\+end_align*"))
-  (add-to-list 'ispell-skip-region-alist '("#\\+begin_equation" . "#\\+end_equation"))
-  (add-to-list 'ispell-skip-region-alist '("#\\+begin_equation*" . "#\\+end_equation*"))
-  (add-to-list 'ispell-skip-region-alist '("#\\+begin_example" . "#\\+end_example"))
-  (add-to-list 'ispell-skip-region-alist '("#\\+begin_labeling" . "#\\+end_labeling"))
-  (add-to-list 'ispell-skip-region-alist '("#\\+begin_src" . "#\\+end_src"))
-  (add-to-list 'ispell-skip-region-alist '("\\$" . "\\$"))
-  (add-to-list 'ispell-skip-region-alist '(org-property-drawer-re))
-  (add-to-list 'ispell-skip-region-alist '(":\\(PROPERTIES\\|LOGBOOK\\):" . ":END:")))
+;; (use-package ispell
+;;   :preface
+;;   (defun my/switch-language ()
+;;     "Switch between the English and French for ispell, flyspell, and LanguageTool."
+;;     (interactive)
+;;     (let* ((current-dictionary ispell-current-dictionary)
+;;            (new-dictionary (if (string= current-dictionary "en_GB") "fr_BE" "en_GB")))
+;;       (ispell-change-dictionary new-dictionary)
+;;       (if (string= new-dictionary "fr_GB")
+;;           (progn
+;;             (setq lsp-ltex-language "fr"))
+;;         (progn
+;;           (setq lsp-ltex-language "en-GB")))
+;;       (flyspell-buffer)
+;;       (message "[✓] Dictionary switched to %s" new-dictionary)))
+;;   :custom
+;;   (ispell-hunspell-dict-paths-alist
+;;    '(("en_GB" "/usr/share/hunspell/en_GB.aff")
+;;      ("fr_BE" "/usr/share/hunspell/fr_BE.aff")))
+;;   ;; Save words in the personal dictionary without asking.
+;;   (ispell-silently-savep t)
+;;   :config
+;;   (setenv "LANG" "en_GB")
+;;   (cond ((executable-find "hunspell")
+;;          (setq ispell-program-name "hunspell")
+;;          (setq ispell-local-dictionary-alist '(("en_GB"
+;;                                                 "[[:alpha:]]"
+;;                                                 "[^[:alpha:]]"
+;;                                                 "['’-]"
+;;                                                 t
+;;                                                 ("-d" "en_GB" )
+;;                                                 nil
+;;                                                 utf-8)
+;;                                                ("fr_BE"
+;;                                                 "[[:alpha:]ÀÂÇÈÉÊËÎÏÔÙÛÜàâçèéêëîïôùûü]"
+;;                                                 "[^[:alpha:]ÀÂÇÈÉÊËÎÏÔÙÛÜàâçèéêëîïôùûü]"
+;;                                                 "['’-]"
+;;                                                 t
+;;                                                 ("-d" "fr_BE")
+;;                                                 nil
+;;                                                 utf-8))))
+;;         ((executable-find "aspell")
+;;          (setq ispell-program-name "aspell")
+;;          (setq ispell-extra-args '("--sug-mode=ultra"))))
+;;   ;; Ignore file sections for spell checking.
+;;   (add-to-list 'ispell-skip-region-alist '("#\\+begin_align" . "#\\+end_align"))
+;;   (add-to-list 'ispell-skip-region-alist '("#\\+begin_align*" . "#\\+end_align*"))
+;;   (add-to-list 'ispell-skip-region-alist '("#\\+begin_equation" . "#\\+end_equation"))
+;;   (add-to-list 'ispell-skip-region-alist '("#\\+begin_equation*" . "#\\+end_equation*"))
+;;   (add-to-list 'ispell-skip-region-alist '("#\\+begin_example" . "#\\+end_example"))
+;;   (add-to-list 'ispell-skip-region-alist '("#\\+begin_labeling" . "#\\+end_labeling"))
+;;   (add-to-list 'ispell-skip-region-alist '("#\\+begin_src" . "#\\+end_src"))
+;;   (add-to-list 'ispell-skip-region-alist '("\\$" . "\\$"))
+;;   (add-to-list 'ispell-skip-region-alist '(org-property-drawer-re))
+;;   (add-to-list 'ispell-skip-region-alist '(":\\(PROPERTIES\\|LOGBOOK\\):" . ":END:")))
 
 (use-package pdf-tools
   :ensure t

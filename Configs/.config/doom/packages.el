@@ -62,7 +62,7 @@
 (package! mw-thesaurus)
 (package! org-auto-tangle)
 (package! org-web-tools)
-(package! ox-gemini)
+;;(package! ox-gemini)
 (package! peep-dired)
 (package! password-store)
 (package! rainbow-mode)
@@ -75,7 +75,7 @@
 (package! olivetti)
 (package! company)
 (package! ccls)
-(package! platformio-mode)
+;;(package! platformio-mode)
 (package! org-wild-notifier)
 (package! vterm-toggle)
 (package! auctex-latexmk)
@@ -99,8 +99,8 @@
 ;;(package! org-roam-ui :recipe (:host github :repo "jgru/org-roam-ui" :branch "add-export-capability") :disable t)
 (package! org-roam-ui :recipe (:host github :repo "uncomfyhalomacro/org-roam-ui" :branch "feature/add-export-functionality"))
 (package! fast-scroll)
-(package! copilot
-  :recipe (:host github :repo "zerolfx/copilot.el" :files ("*.el" "dist")))
+;;(package! copilot
+;;  :recipe (:host github :repo "zerolfx/copilot.el" :files ("*.el" "dist")))
 (package! format-all)
 (package! treesit-auto)
 (package! exec-path-from-shell)

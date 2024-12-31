@@ -48,7 +48,7 @@
        vc-gutter         ; vcs diff in the fringe
        vi-tilde-fringe   ; fringe tildes to mark beyond EOB
        ;;window-select     ; visually switch windows
-       ;; workspaces        ; tab emulation, persistence & separate workspaces
+       workspaces        ; tab emulation, persistence & separate workspaces
        ;;zen               ; distraction-free coding or writing
 
        :editor
@@ -62,7 +62,7 @@
        ;;objed             ; text object editing for the innocent
        ;;parinfer          ; turn lisp into python, sort of
        ;;rotate-text       ; cycle region at point between text candidates
-      ;; snippets          ; my elves. They type so I don't have to
+       ;; snippets          ; my elves. They type so I don't have to
        word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
@@ -148,7 +148,7 @@
        ;;ocaml             ; an objective camel
        (org
         +journal             ; enable org journal
-        +roam2               ; create a personal wiki 
+        +roam2               ; create a personal wiki
         +pretty              ; replace asterisks with pretty org bullets
         +publish +habit +brain +dragndrop +jupyter)            ; create static websites with org
        php               ; perl's insecure younger brother
