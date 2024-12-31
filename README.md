@@ -84,8 +84,7 @@ git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
 - [swaync](https://github.com/ErikReider/SwayNotificationCenter) - Notification center/Daemon and Control Center
 - [swaylock-effects](https://github.com/mortie/swaylock-effects) - Lock Screen
 - [Thunar](https://gitlab.xfce.org/xfce/thunar) - File manager
-- [Doom Emacs (Using Wayland Version)](https://www.gnu.org/software/emacs/) - Text Editor (use the [Wayland]()Error: target STRING not available
- version)
+- [Doom Emacs (Using Wayland Version)](https://www.gnu.org/software/emacs/) - Text Editor (use the [Wayland](https://archlinux.org/packages/extra/x86_64/emacs-wayland/ version)
 - [Clementine](https://www.clementine-player.org) - Music Player
 - [Snapper](https://github.com/openSUSE/snapper) - Utility for managing filesystem snapshots and allows for easy rollbacks
 - [btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant) - GUI for helping with managing btrfs snapshots
